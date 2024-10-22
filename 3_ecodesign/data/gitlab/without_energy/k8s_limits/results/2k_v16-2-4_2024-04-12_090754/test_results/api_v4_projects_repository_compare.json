@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 112.27209730000001,
+            "p(95)": 137.4138571,
+            "avg": 110.25755670382168,
+            "min": 58.119183,
+            "med": 87.50698399999999,
+            "max": 2626.740001
+        },
+        "http_reqs": {
+            "count": 1884,
+            "rate": 31.336370604833505,
+            "thresholds": {
+                "count>=1536": false
+            }
+        },
+        "data_received": {
+            "count": 695356140,
+            "rate": 11565784.344684975
+        },
+        "http_req_sending": {
+            "avg": 0.05564562208067934,
+            "min": 0.021542,
+            "med": 0.051463999999999996,
+            "max": 0.228646,
+            "p(90)": 0.07282410000000002,
+            "p(95)": 0.08088754999999999
+        },
+        "group_duration": {
+            "avg": 940.4584725589167,
+            "min": 80.375785,
+            "med": 989.6592145,
+            "max": 3414.567669,
+            "p(90)": 1017.4031218,
+            "p(95)": 1031.83197735
+        },
+        "http_req_duration": {
+            "med": 87.50698399999999,
+            "max": 2626.740001,
+            "p(90)": 112.27209730000001,
+            "p(95)": 137.4138571,
+            "avg": 110.25755670382168,
+            "min": 58.119183
+        },
+        "iterations": {
+            "count": 1884,
+            "rate": 31.336370604833505
+        },
+        "http_req_receiving": {
+            "max": 321.330074,
+            "p(90)": 2.1938578,
+            "p(95)": 2.6697303499999996,
+            "avg": 2.192142494161356,
+            "min": 0.711757,
+            "med": 1.5397409999999998
+        },
+        "vus_max": {
+            "value": 32,
+            "min": 32,
+            "max": 32
+        },
+        "successful_requests": {
+            "passes": 1884,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "vus": {
+            "min": 1,
+            "max": 32,
+            "value": 1
+        },
+        "http_req_connecting": {
+            "avg": 0.007088720276008491,
+            "min": 0,
+            "med": 0,
+            "max": 0.597159,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_tls_handshaking": {
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0
+        },
+        "data_sent": {
+            "count": 423900,
+            "rate": 7050.683386087539
+        },
+        "http_req_blocked": {
+            "max": 0.793035,
+            "p(90)": 0.013936700000000003,
+            "p(95)": 0.0315099,
+            "avg": 0.02090244745222933,
+            "min": 0.003998,
+            "med": 0.0100225
+        },
+        "http_req_waiting": {
+            "avg": 108.00976858757957,
+            "min": 56.630424,
+            "med": 85.87931950000001,
+            "max": 2362.973959,
+            "p(90)": 110.144611,
+            "p(95)": 135.01746075,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "iteration_duration": {
+            "p(95)": 1031.8558627999998,
+            "avg": 940.0205331819637,
+            "min": 0.42866,
+            "med": 989.712603,
+            "max": 3414.619636,
+            "p(90)": 1017.4541065999999
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1884,
+            "value": 0
+        }
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a"
+            },
+            "API - Project Repository Compare Branches": {
+                "name": "API - Project Repository Compare Branches",
+                "path": "::API - Project Repository Compare Branches",
+                "id": "8c210516c6587605098658901f315f88",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {},
+        "name": ""
+    }
+}

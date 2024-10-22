@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_receiving": {
+            "avg": 0.13400894843205585,
+            "min": 0.063279,
+            "med": 0.130369,
+            "max": 0.243762,
+            "p(90)": 0.1603652,
+            "p(95)": 0.1723501
+        },
+        "http_req_sending": {
+            "avg": 0.055087018815330964,
+            "min": 0.027948,
+            "med": 0.051202,
+            "max": 0.153675,
+            "p(90)": 0.0732676,
+            "p(95)": 0.0806133
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1435,
+            "value": 0
+        },
+        "http_req_duration": {
+            "p(95)": 93.8797566,
+            "avg": 60.423494777700306,
+            "min": 35.014895,
+            "med": 56.610602,
+            "max": 259.418049,
+            "p(90)": 69.28336420000001
+        },
+        "http_req_blocked": {
+            "avg": 0.023545004181184673,
+            "min": 0.005585,
+            "med": 0.010264,
+            "max": 0.803171,
+            "p(90)": 0.028636400000000003,
+            "p(95)": 0.032611799999999996
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.008495080836236932,
+            "min": 0,
+            "med": 0,
+            "max": 0.597144,
+            "p(90)": 0
+        },
+        "data_sent": {
+            "count": 266910,
+            "rate": 4447.711113112165
+        },
+        "data_received": {
+            "count": 1348900,
+            "rate": 22477.67981895395
+        },
+        "successful_requests": {
+            "passes": 1435,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "iterations": {
+            "count": 1435,
+            "rate": 23.912425339312716
+        },
+        "vus_max": {
+            "value": 24,
+            "min": 24,
+            "max": 24
+        },
+        "iteration_duration": {
+            "min": 0.30969,
+            "med": 997.6576279999999,
+            "max": 1172.007928,
+            "p(90)": 1012.48771,
+            "p(95)": 1024.285246,
+            "avg": 926.507991316155
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 24
+        },
+        "http_reqs": {
+            "count": 1435,
+            "rate": 23.912425339312716,
+            "thresholds": {
+                "count>=1152": false
+            }
+        },
+        "http_req_waiting": {
+            "avg": 60.23439881045301,
+            "min": 34.814742,
+            "med": 56.430666,
+            "max": 259.140219,
+            "p(90)": 69.0783004,
+            "p(95)": 93.67930919999999,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 93.8797566,
+            "avg": 60.423494777700306,
+            "min": 35.014895,
+            "med": 56.610602,
+            "max": 259.418049,
+            "p(90)": 69.28336420000001
+        },
+        "group_duration": {
+            "min": 57.66294,
+            "med": 997.599014,
+            "max": 1171.950836,
+            "p(90)": 1012.4545324000001,
+            "p(95)": 1024.2399285000001,
+            "avg": 927.0944439721244
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Deploy Keys": {
+                "path": "::API - Project Deploy Keys",
+                "id": "5171887c28c5ba6959d8fc6bc6c35761",
+                "groups": {},
+                "checks": {},
+                "name": "API - Project Deploy Keys"
+            }
+        },
+        "checks": {}
+    }
+}

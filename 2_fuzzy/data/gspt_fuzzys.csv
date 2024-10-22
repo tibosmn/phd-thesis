@@ -1,0 +1,11 @@
+Label,Name,Variable,L,ml,mr,R,Unit
+$F_{em}$,Electricity mix,Iem,0.297774689,0.557436296,0.911556674,1.706440455,kgCO2e
+$I_{e}^{device}$,Device and battery embodied impact,ied,31.41255831,48.75370079,65.61518623,101.8377149,kg CO2e
+$I_{e}^{bat.}$,Battery embodied impact,ieb,0.7232,1.1663,1.6263,2.6226,kg CO2e
+$C_{max}$,Maximum battery cycles,cmax,328.7205048,500.0690211,661.1587322,1005.793661,
+$V$,Battery Voltage,V,3.7899,3.8085,3.8179,3.8366,V
+$B_{cap}$,Battery capacity,bcap,1.727550815,2.61803652,3.449888948,5.228173422,Ah
+$C_{eff}$,Charger efficiency,C_eff,59.03846655,68.60388934,74.51836986,86.59184932,
+$R$,Battery to device replacement ratio,R,0.089185731,0.170800259,0.287162963,0.549947933,
+$\overline{R}$,Avg. batteries replacements,rmax,1,1,1,1,
+$S$,Share of users,S,100,100,100,100,

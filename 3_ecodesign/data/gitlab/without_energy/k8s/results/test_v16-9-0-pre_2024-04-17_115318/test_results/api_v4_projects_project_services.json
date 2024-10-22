@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_connecting": {
+            "avg": 0.004279282229965156,
+            "min": 0,
+            "med": 0,
+            "max": 0.395488,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_receiving": {
+            "avg": 0.11073892473867585,
+            "min": 0.049472,
+            "med": 0.108989,
+            "max": 0.537148,
+            "p(90)": 0.13417480000000004,
+            "p(95)": 0.1451236
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1435,
+            "value": 0
+        },
+        "successful_requests": {
+            "passes": 1435,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_sending": {
+            "avg": 0.1547761909407665,
+            "min": 0.072163,
+            "med": 0.153008,
+            "max": 0.621761,
+            "p(90)": 0.18302659999999998,
+            "p(95)": 0.1985766
+        },
+        "http_reqs": {
+            "count": 1435,
+            "rate": 23.893903288279667,
+            "thresholds": {
+                "count>=1152": false
+            }
+        },
+        "group_duration": {
+            "min": 62.264139,
+            "med": 996.864715,
+            "max": 1143.602796,
+            "p(90)": 1016.1087666,
+            "p(95)": 1024.2425672,
+            "avg": 926.2987505198608
+        },
+        "iteration_duration": {
+            "avg": 925.7122767144868,
+            "min": 0.262792,
+            "med": 996.894823,
+            "max": 1143.644668,
+            "p(90)": 1016.164488,
+            "p(95)": 1024.298821
+        },
+        "iterations": {
+            "count": 1435,
+            "rate": 23.893903288279667
+        },
+        "http_req_waiting": {
+            "avg": 66.86512589337977,
+            "min": 38.853285,
+            "med": 63.313646,
+            "max": 196.33024,
+            "p(90)": 81.20935700000001,
+            "p(95)": 88.1699091,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0.3985049797909407,
+            "min": 0,
+            "med": 0,
+            "max": 27.650585,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "vus_max": {
+            "value": 24,
+            "min": 24,
+            "max": 24
+        },
+        "data_sent": {
+            "count": 68474,
+            "rate": 1140.1471315412277
+        },
+        "http_req_duration": {
+            "p(95)": 88.3708012,
+            "avg": 67.1306410090592,
+            "min": 39.063147,
+            "med": 63.599085,
+            "max": 196.591346,
+            "p(90)": 81.492345
+        },
+        "data_received": {
+            "count": 640645,
+            "rate": 10667.254126912841
+        },
+        "http_req_blocked": {
+            "avg": 0.4084553094076647,
+            "min": 0.000305,
+            "med": 0.001041,
+            "max": 28.142046,
+            "p(90)": 0.0014246,
+            "p(95)": 0.0016465999999999998
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 81.492345,
+            "p(95)": 88.3708012,
+            "avg": 67.1306410090592,
+            "min": 39.063147,
+            "med": 63.599085,
+            "max": 196.591346
+        },
+        "vus": {
+            "min": 1,
+            "max": 24,
+            "value": 1
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Services": {
+                "name": "API - Project Services",
+                "path": "::API - Project Services",
+                "id": "2778068a11245384f3f3182579cf2794",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

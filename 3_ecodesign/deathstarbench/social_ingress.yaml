@@ -1,0 +1,52 @@
+apiVersion:  traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: frontend
+  namespace: default
+spec:
+  routes:
+  - kind: Rule
+    match: Host(`social.kubernetes`)
+    # middlewares:
+    # - name: cors-all
+    #   namespace: default
+    services:
+    - kind: Service
+      name: nginx-thrift
+      namespace: default
+      port: 8080
+      scheme: http
+---
+apiVersion:  traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: jaeger
+  namespace: default
+spec:
+  routes:
+  - kind: Rule
+    match: Host(`jaeger.kubernetes`)
+    services:
+    - kind: Service
+      name: jaeger
+      namespace: default
+      port: 16686
+      scheme: http
+# ---
+# apiVersion: traefik.containo.us/v1alpha1
+# kind: Middleware
+# metadata:
+#   name: cors-all
+#   namespace: default
+# spec:
+#   headers:
+#     accessControlAllowMethods:
+#       - "GET"
+#       - "OPTIONS"
+#       - "PUT"
+#       - "POST"
+#     # accessControlAllowOrigin: "origin-list-or-null"
+#     accessControlMaxAge: 100
+#     accessControlAllowHeaders:
+#       - "Content-Type"
+#     addVaryHeader: true

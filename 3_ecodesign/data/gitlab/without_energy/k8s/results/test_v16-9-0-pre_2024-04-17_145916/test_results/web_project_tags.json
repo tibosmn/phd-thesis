@@ -1,0 +1,154 @@
+{
+    "metrics": {
+        "vus": {
+            "value": 2,
+            "min": 1,
+            "max": 4
+        },
+        "successful_requests": {
+            "passes": 223,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_sending": {
+            "max": 0.477464,
+            "p(90)": 0.18110360000000003,
+            "p(95)": 0.1981582,
+            "avg": 0.14182423214285714,
+            "min": 0.045293,
+            "med": 0.140657
+        },
+        "data_sent": {
+            "count": 219520,
+            "rate": 3601.1469052614616
+        },
+        "http_reqs": {
+            "count": 224,
+            "rate": 3.6746396992463892,
+            "thresholds": {
+                "count>=138": false
+            }
+        },
+        "data_received": {
+            "rate": 415245.3427432228,
+            "count": 25312674
+        },
+        "iteration_duration": {
+            "avg": 1005.2663442187501,
+            "min": 658.062007,
+            "med": 983.7992565,
+            "max": 2661.053945,
+            "p(90)": 1105.0860499,
+            "p(95)": 1169.6327551
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 224,
+            "value": 0
+        },
+        "http_req_receiving": {
+            "avg": 2.8765602232142826,
+            "min": 0.711826,
+            "med": 2.9491305,
+            "max": 5.782069,
+            "p(90)": 4.022099600000001,
+            "p(95)": 4.3455818
+        },
+        "http_req_blocked": {
+            "avg": 0.5602066026785719,
+            "min": 0.000364,
+            "med": 0.001005,
+            "max": 26.150707,
+            "p(90)": 0.0014668,
+            "p(95)": 0.0017858499999999996
+        },
+        "vus_max": {
+            "value": 4,
+            "min": 4,
+            "max": 4
+        },
+        "group_duration": {
+            "avg": 1006.0193044484307,
+            "min": 657.977882,
+            "med": 983.800385,
+            "max": 2660.991614,
+            "p(90)": 1105.183201,
+            "p(95)": 1169.7142772
+        },
+        "http_req_duration": {
+            "max": 2394.024839,
+            "p(90)": 907.7755966000001,
+            "p(95)": 972.7226031999999,
+            "avg": 818.6505460892855,
+            "min": 628.949516,
+            "med": 773.140219
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 972.7226031999999,
+            "avg": 818.6505460892855,
+            "min": 628.949516,
+            "med": 773.140219,
+            "max": 2394.024839,
+            "p(90)": 907.7755966000001
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0.5465174196428572,
+            "min": 0,
+            "med": 0,
+            "max": 25.614558,
+            "p(90)": 0
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.006252566964285715,
+            "min": 0,
+            "med": 0,
+            "max": 0.301379,
+            "p(90)": 0
+        },
+        "iterations": {
+            "count": 223,
+            "rate": 3.6582350577318965
+        },
+        "http_req_waiting": {
+            "avg": 815.632161633929,
+            "min": 626.095192,
+            "med": 769.3195025,
+            "max": 2390.67122,
+            "p(90)": 903.6440007000001,
+            "p(95)": 969.6418870499998,
+            "thresholds": {
+                "p(90)<1500": false
+            }
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/tags"
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup"
+            },
+            "Web - Project Tags Page": {
+                "name": "Web - Project Tags Page",
+                "path": "::Web - Project Tags Page",
+                "id": "857229d0e025f96671d1318a6ff3492b",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

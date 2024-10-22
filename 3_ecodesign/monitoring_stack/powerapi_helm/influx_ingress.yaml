@@ -1,0 +1,18 @@
+apiVersion:  traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: influxdb-influxdb2
+  namespace: powerapi
+spec:
+  routes:
+  - kind: Rule
+    match: Host(`influxdb.kubernetes`)
+    # middlewares:
+    # - name: cors-all
+    #   namespace: default
+    services:
+    - kind: Service
+      name: influxdb-influxdb2
+      namespace: powerapi
+      port: 80
+      scheme: http

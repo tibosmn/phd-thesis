@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "group_duration": {
+            "avg": 931.5611411409355,
+            "min": 89.00709,
+            "med": 989.92862,
+            "max": 1875.970975,
+            "p(90)": 1030.1701022,
+            "p(95)": 1047.330259
+        },
+        "http_req_duration": {
+            "avg": 123.67273171392496,
+            "min": 79.127628,
+            "med": 116.344909,
+            "max": 995.573273,
+            "p(90)": 151.260104,
+            "p(95)": 181.25364959999996
+        },
+        "vus_max": {
+            "value": 40,
+            "min": 40,
+            "max": 40
+        },
+        "data_received": {
+            "count": 74456507,
+            "rate": 1239673.5179027687
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 40
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2377,
+            "value": 0
+        },
+        "data_sent": {
+            "count": 645583,
+            "rate": 10748.720037433708
+        },
+        "http_req_waiting": {
+            "min": 78.296687,
+            "med": 115.567881,
+            "max": 994.60475,
+            "p(90)": 150.2005542,
+            "p(95)": 180.01954499999982,
+            "avg": 122.84472331762738,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_receiving": {
+            "p(90)": 1.0071174,
+            "p(95)": 1.1725931999999997,
+            "avg": 0.7005703235170381,
+            "min": 0.153603,
+            "med": 0.670205,
+            "max": 5.55039
+        },
+        "http_reqs": {
+            "rate": 39.57617770136439,
+            "count": 2377,
+            "thresholds": {
+                "count>=1920": false
+            }
+        },
+        "successful_requests": {
+            "passes": 2377,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 151.260104,
+            "p(95)": 181.25364959999996,
+            "avg": 123.67273171392496,
+            "min": 79.127628,
+            "med": 116.344909,
+            "max": 995.573273
+        },
+        "iterations": {
+            "count": 2377,
+            "rate": 39.57617770136439
+        },
+        "http_req_sending": {
+            "avg": 0.12743807278081629,
+            "min": 0.043594,
+            "med": 0.127504,
+            "max": 0.419017,
+            "p(90)": 0.16216860000000002,
+            "p(95)": 0.17791559999999995
+        },
+        "http_req_connecting": {
+            "avg": 0.004023023138409759,
+            "min": 0,
+            "med": 0,
+            "max": 0.357066,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0.3961790542700884,
+            "min": 0,
+            "med": 0,
+            "max": 26.77896,
+            "p(90)": 0
+        },
+        "iteration_duration": {
+            "avg": 931.2254541606392,
+            "min": 0.234276,
+            "med": 989.966449,
+            "max": 1876.013903,
+            "p(90)": 1030.1948928,
+            "p(95)": 1047.38461735
+        },
+        "http_req_blocked": {
+            "med": 0.001073,
+            "max": 27.153537,
+            "p(90)": 0.001506,
+            "p(95)": 0.001732999999999999,
+            "avg": 0.40553244047118003,
+            "min": 0.000248
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Merge Request Diffs": {
+                "name": "API - Merge Request Diffs",
+                "path": "::API - Merge Request Diffs",
+                "id": "ac5d35b4d8842b235b5ff9c2ef3ac9a7",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

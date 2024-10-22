@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "successful_requests": {
+            "passes": 1896,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_duration": {
+            "avg": 112.78412181540075,
+            "min": 72.910031,
+            "med": 110.84977,
+            "max": 484.043727,
+            "p(90)": 131.95579350000003,
+            "p(95)": 139.41782
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1896,
+            "value": 0
+        },
+        "http_req_waiting": {
+            "avg": 112.22058708227839,
+            "min": 72.4282,
+            "med": 110.3669955,
+            "max": 483.26014,
+            "p(90)": 131.344759,
+            "p(95)": 138.95835275000002,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_receiving": {
+            "p(90)": 0.7032555,
+            "p(95)": 0.76434475,
+            "avg": 0.5124241840717304,
+            "min": 0.178367,
+            "med": 0.47678149999999997,
+            "max": 6.76433
+        },
+        "group_duration": {
+            "p(90)": 1023.442411,
+            "p(95)": 1031.1119724999999,
+            "avg": 933.6844995058001,
+            "min": 84.495633,
+            "med": 995.682485,
+            "max": 1108.053145
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 32
+        },
+        "iterations": {
+            "rate": 31.59043543862628,
+            "count": 1896
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 139.41782,
+            "avg": 112.78412181540075,
+            "min": 72.910031,
+            "med": 110.84977,
+            "max": 484.043727,
+            "p(90)": 131.95579350000003
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.007661876582278481,
+            "min": 0,
+            "med": 0,
+            "max": 0.646181,
+            "p(90)": 0
+        },
+        "http_reqs": {
+            "count": 1896,
+            "rate": 31.59043543862628,
+            "thresholds": {
+                "count>=1536": false
+            }
+        },
+        "data_received": {
+            "count": 151443000,
+            "rate": 2523286.030660274
+        },
+        "data_sent": {
+            "count": 346968,
+            "rate": 5781.049685268609
+        },
+        "http_req_sending": {
+            "avg": 0.051110549050632885,
+            "min": 0.020099,
+            "med": 0.047476000000000004,
+            "max": 0.177006,
+            "p(90)": 0.0677525,
+            "p(95)": 0.0744195
+        },
+        "vus_max": {
+            "value": 32,
+            "min": 32,
+            "max": 32
+        },
+        "iteration_duration": {
+            "max": 1108.124766,
+            "p(90)": 1023.4913528,
+            "p(95)": 1031.1535138,
+            "avg": 933.2492284322615,
+            "min": 0.352185,
+            "med": 995.734794
+        },
+        "http_req_blocked": {
+            "p(90)": 0.0129645,
+            "p(95)": 0.03034525,
+            "avg": 0.02086542299578063,
+            "min": 0.004414,
+            "med": 0.0094225,
+            "max": 0.787062
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Releases List": {
+                "name": "API - Project Releases List",
+                "path": "::API - Project Releases List",
+                "id": "885feb2183677178fda3a2ab17df61f8",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "iteration_duration": {
+            "avg": 926.3813104256199,
+            "min": 0.263533,
+            "med": 998.557963,
+            "max": 1051.309919,
+            "p(90)": 1014.4872792000001,
+            "p(95)": 1020.9287998
+        },
+        "successful_requests": {
+            "passes": 241,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 114.69065035684643,
+            "min": 78.830422,
+            "med": 112.063986,
+            "max": 200.323567,
+            "p(90)": 125.289262,
+            "p(95)": 133.179098
+        },
+        "http_req_waiting": {
+            "p(95)": 132.947854,
+            "avg": 114.44890996680502,
+            "min": 78.665395,
+            "med": 111.827238,
+            "max": 200.08314,
+            "p(90)": 125.065821,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 4
+        },
+        "http_req_duration": {
+            "avg": 114.69065035684643,
+            "min": 78.830422,
+            "med": 112.063986,
+            "max": 200.323567,
+            "p(90)": 125.289262,
+            "p(95)": 133.179098
+        },
+        "vus_max": {
+            "value": 4,
+            "min": 4,
+            "max": 4
+        },
+        "data_sent": {
+            "count": 51815,
+            "rate": 861.8418524792089
+        },
+        "http_req_blocked": {
+            "min": 0.007172,
+            "med": 0.011682,
+            "max": 0.796099,
+            "p(90)": 0.017246,
+            "p(95)": 0.03928,
+            "avg": 0.02601502074688798
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 241,
+            "value": 0
+        },
+        "group_duration": {
+            "max": 1051.239155,
+            "p(90)": 1014.425197,
+            "p(95)": 1020.909917,
+            "avg": 930.1544794564321,
+            "min": 118.411909,
+            "med": 998.612349
+        },
+        "http_req_receiving": {
+            "med": 0.168864,
+            "max": 1.41277,
+            "p(90)": 0.212589,
+            "p(95)": 0.227674,
+            "avg": 0.18034111618257267,
+            "min": 0.10891
+        },
+        "http_req_sending": {
+            "min": 0.034677,
+            "med": 0.060391,
+            "max": 0.158131,
+            "p(90)": 0.082417,
+            "p(95)": 0.093888,
+            "avg": 0.061399273858921175
+        },
+        "data_received": {
+            "count": 974122,
+            "rate": 16202.626826609128
+        },
+        "iterations": {
+            "count": 241,
+            "rate": 4.008566755717251
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0
+        },
+        "http_reqs": {
+            "count": 241,
+            "rate": 4.008566755717251,
+            "thresholds": {
+                "count>=192": false
+            }
+        },
+        "http_req_connecting": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.009556572614107884,
+            "min": 0,
+            "med": 0,
+            "max": 0.635424
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Repository Tree": {
+                "path": "::API - Project Repository Tree",
+                "id": "c093018754c94b20494bba45ba5ddb5e",
+                "groups": {},
+                "checks": {},
+                "name": "API - Project Repository Tree"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

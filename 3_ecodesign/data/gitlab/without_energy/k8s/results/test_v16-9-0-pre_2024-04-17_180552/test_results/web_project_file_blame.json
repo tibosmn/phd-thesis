@@ -1,0 +1,154 @@
+{
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project File Blame Page": {
+                "path": "::Web - Project File Blame Page",
+                "id": "b99519b6e40906066815c8efbdcff1e9",
+                "groups": {},
+                "checks": {},
+                "name": "Web - Project File Blame Page"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    },
+    "metrics": {
+        "http_req_receiving": {
+            "min": 20.731041,
+            "med": 22.856589,
+            "max": 31.624198,
+            "p(90)": 25.4642996,
+            "p(95)": 26.7995566,
+            "avg": 23.36472094285714
+        },
+        "data_received": {
+            "count": 33627502,
+            "rate": 540332.250958627
+        },
+        "vus": {
+            "value": 1,
+            "min": 0,
+            "max": 1
+        },
+        "group_duration": {
+            "med": 1756.5433385000001,
+            "max": 2034.024045,
+            "p(90)": 1853.1134418,
+            "p(95)": 1873.60084005,
+            "avg": 1776.7242758823531,
+            "min": 1675.927708
+        },
+        "iterations": {
+            "count": 34,
+            "rate": 0.5463176102879517
+        },
+        "http_req_waiting": {
+            "min": 1653.141345,
+            "med": 1736.689348,
+            "max": 1981.019133,
+            "p(90)": 1827.7503118,
+            "p(95)": 1849.2360153,
+            "avg": 1752.5831726571428,
+            "thresholds": {
+                "p(90)<2400": false
+            }
+        },
+        "http_req_duration": {
+            "avg": 1776.0727587999997,
+            "min": 1675.526167,
+            "med": 1758.861965,
+            "max": 2008.034229,
+            "p(90)": 1850.8056214,
+            "p(95)": 1872.236961
+        },
+        "successful_requests": {
+            "passes": 34,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_tls_handshaking": {
+            "avg": 1.4659636,
+            "min": 0,
+            "med": 0,
+            "max": 26.420854,
+            "p(90)": 0,
+            "p(95)": 7.46636159999993
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 35,
+            "value": 0
+        },
+        "http_reqs": {
+            "count": 35,
+            "rate": 0.5623857752964209,
+            "thresholds": {
+                "count>=10": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 2008.034229,
+            "p(90)": 1850.8056214,
+            "p(95)": 1872.236961,
+            "avg": 1776.0727587999997,
+            "min": 1675.526167,
+            "med": 1758.861965
+        },
+        "data_sent": {
+            "count": 331036,
+            "rate": 5319.141071743599
+        },
+        "http_req_blocked": {
+            "p(90)": 0.0013646,
+            "p(95)": 7.602081199999928,
+            "avg": 1.4987862571428572,
+            "min": 0.000562,
+            "med": 0.001025,
+            "max": 27.086848
+        },
+        "iteration_duration": {
+            "med": 1759.195269,
+            "max": 2034.228403,
+            "p(90)": 1851.2226884000002,
+            "p(95)": 1872.6558291000001,
+            "avg": 1778.0295191142857,
+            "min": 1675.992529
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_sending": {
+            "avg": 0.12486519999999998,
+            "min": 0.063926,
+            "med": 0.108191,
+            "max": 0.374234,
+            "p(90)": 0.1353148,
+            "p(95)": 0.28871299999999994
+        },
+        "http_req_connecting": {
+            "p(95)": 0.06282899999999941,
+            "avg": 0.013841885714285714,
+            "min": 0,
+            "med": 0,
+            "max": 0.275036,
+            "p(90)": 0
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/blame/master/spec%2fmodels%2fproject_spec%2erb"
+    }
+}

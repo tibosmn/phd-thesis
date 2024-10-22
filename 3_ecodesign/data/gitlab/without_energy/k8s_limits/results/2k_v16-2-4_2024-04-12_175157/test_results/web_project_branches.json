@@ -1,0 +1,154 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project Branches Page": {
+                "name": "Web - Project Branches Page",
+                "path": "::Web - Project Branches Page",
+                "id": "807c8f926f1361fc1eaa5a0b45298bbf",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    },
+    "metrics": {
+        "http_req_sending": {
+            "p(90)": 0.058043399999999995,
+            "p(95)": 0.06944894999999995,
+            "avg": 0.04760999152542372,
+            "min": 0.031988,
+            "med": 0.04488,
+            "max": 0.23047
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 1732.353839,
+            "p(90)": 612.6998486,
+            "p(95)": 647.2292720999995,
+            "avg": 562.6958864745761,
+            "min": 462.567319,
+            "med": 543.691899
+        },
+        "vus_max": {
+            "value": 2,
+            "min": 2,
+            "max": 2
+        },
+        "group_duration": {
+            "med": 993.225744,
+            "max": 1732.693985,
+            "p(90)": 1079.4714786,
+            "p(95)": 1093.71938,
+            "avg": 968.5243261282053,
+            "min": 506.740481
+        },
+        "successful_requests": {
+            "fails": 0,
+            "passes": 117,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_receiving": {
+            "avg": 0.4828521610169491,
+            "min": 0.27716,
+            "med": 0.4656495,
+            "max": 0.823141,
+            "p(90)": 0.6306816,
+            "p(95)": 0.6742040499999997
+        },
+        "data_received": {
+            "count": 8528983,
+            "rate": 139385.1133540026
+        },
+        "iterations": {
+            "count": 117,
+            "rate": 1.9120753626098568
+        },
+        "data_sent": {
+            "count": 12626,
+            "rate": 206.340713917197
+        },
+        "iteration_duration": {
+            "min": 506.802171,
+            "med": 992.5882349999999,
+            "max": 1732.753307,
+            "p(90)": 1079.441035,
+            "p(95)": 1093.49742025,
+            "avg": 966.4661720423725
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 2
+        },
+        "http_req_blocked": {
+            "avg": 0.027761872881355933,
+            "min": 0.005484,
+            "med": 0.010458,
+            "max": 0.778668,
+            "p(90)": 0.0129023,
+            "p(95)": 0.019992049999999945
+        },
+        "http_req_waiting": {
+            "avg": 562.165424322034,
+            "min": 462.048232,
+            "med": 543.1397455,
+            "max": 1731.765099,
+            "p(90)": 611.9796021999999,
+            "p(95)": 646.7975091999997,
+            "thresholds": {
+                "p(90)<900": false
+            }
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 0.600797,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.012364957627118645,
+            "min": 0
+        },
+        "http_reqs": {
+            "count": 118,
+            "rate": 1.9284178870766076,
+            "thresholds": {
+                "count>=86": false
+            }
+        },
+        "http_req_duration": {
+            "med": 543.691899,
+            "max": 1732.353839,
+            "p(90)": 612.6998486,
+            "p(95)": 647.2292720999995,
+            "avg": 562.6958864745761,
+            "min": 462.567319
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 118,
+            "value": 0
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/branches"
+    }
+}

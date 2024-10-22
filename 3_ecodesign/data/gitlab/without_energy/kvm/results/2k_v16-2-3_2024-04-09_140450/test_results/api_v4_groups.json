@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "iteration_duration": {
+            "avg": 925.5976892983338,
+            "min": 0.297613,
+            "med": 997.5063485,
+            "max": 1360.869377,
+            "p(90)": 1012.1318867,
+            "p(95)": 1017.8411638499999
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 10
+        },
+        "http_req_duration": {
+            "min": 58.944522,
+            "med": 79.957224,
+            "max": 438.104362,
+            "p(90)": 91.8018856,
+            "p(95)": 97.5318838,
+            "avg": 85.1980385893156
+        },
+        "group_duration": {
+            "avg": 927.0846676210356,
+            "min": 79.722464,
+            "med": 997.479473,
+            "max": 1360.815365,
+            "p(90)": 1012.0947516,
+            "p(95)": 1017.7952643
+        },
+        "data_received": {
+            "rate": 170670.64848598166,
+            "count": 10250687
+        },
+        "http_req_sending": {
+            "avg": 0.05135329883138559,
+            "min": 0.029071,
+            "med": 0.048285,
+            "max": 0.147563,
+            "p(90)": 0.06716460000000003,
+            "p(95)": 0.07286340000000001
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.009619404006677797,
+            "min": 0,
+            "med": 0,
+            "max": 1.15828,
+            "p(90)": 0
+        },
+        "http_req_blocked": {
+            "min": 0.00503,
+            "med": 0.010066,
+            "max": 1.555586,
+            "p(90)": 0.029609000000000007,
+            "p(95)": 0.033128200000000003,
+            "avg": 0.02505749248747915
+        },
+        "vus_max": {
+            "min": 10,
+            "max": 10,
+            "value": 10
+        },
+        "http_req_waiting": {
+            "med": 79.721726,
+            "max": 437.844232,
+            "p(90)": 91.57914099999999,
+            "p(95)": 97.26976180000001,
+            "avg": 84.95354934223703,
+            "min": 58.736618,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_receiving": {
+            "max": 3.053164,
+            "p(90)": 0.23317900000000005,
+            "p(95)": 0.25592020000000004,
+            "avg": 0.1931359482470784,
+            "min": 0.105323,
+            "med": 0.177854
+        },
+        "iterations": {
+            "count": 599,
+            "rate": 9.973157744754378
+        },
+        "http_reqs": {
+            "count": 599,
+            "rate": 9.973157744754378,
+            "thresholds": {
+                "count>=480": false
+            }
+        },
+        "data_sent": {
+            "count": 83261,
+            "rate": 1386.2689265208585
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 599,
+            "value": 0
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "successful_requests": {
+            "passes": 599,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 85.1980385893156,
+            "min": 58.944522,
+            "med": 79.957224,
+            "max": 438.104362,
+            "p(90)": 91.8018856,
+            "p(95)": 97.5318838
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Groups List": {
+                "name": "API - Groups List",
+                "path": "::API - Groups List",
+                "id": "7bb0de0c0be863b8816bbab89c05b56b",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

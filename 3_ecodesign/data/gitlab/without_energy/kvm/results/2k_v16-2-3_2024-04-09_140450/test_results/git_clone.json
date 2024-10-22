@@ -1,0 +1,289 @@
+{
+    "root_group": {
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Git - Git Clone HTTP": {
+                "path": "::Git - Git Clone HTTP",
+                "id": "344b21993424b64ab0d64f7e3f5e9792",
+                "groups": {
+                    "Git - Get Refs List": {
+                        "name": "Git - Get Refs List",
+                        "path": "::Git - Git Clone HTTP::Git - Get Refs List",
+                        "id": "5d354f67da13c7026843dc6a4086ab98",
+                        "groups": {},
+                        "checks": {}
+                    },
+                    "Git - Git Clone Refs": {
+                        "name": "Git - Git Clone Refs",
+                        "path": "::Git - Git Clone HTTP::Git - Git Clone Refs",
+                        "id": "aef266853a9651dae50dc7cc306e9f93",
+                        "groups": {},
+                        "checks": {}
+                    }
+                },
+                "checks": {},
+                "name": "Git - Git Clone HTTP"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "metrics": {
+        "http_reqs": {
+            "rate": 0.8483639966486145,
+            "count": 52,
+            "thresholds": {
+                "count>=1": false
+            }
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 52,
+            "value": 0
+        },
+        "http_req_blocked": {
+            "p(90)": 0.0313148,
+            "p(95)": 0.06304634999999975,
+            "avg": 0.041753365384615375,
+            "min": 0.005767,
+            "med": 0.011151,
+            "max": 0.872272
+        },
+        "http_req_sending": {
+            "p(90)": 0.0922922,
+            "p(95)": 0.12372824999999998,
+            "avg": 0.06925759615384615,
+            "min": 0.039574,
+            "med": 0.062043,
+            "max": 0.139482
+        },
+        "http_req_waiting": {
+            "p(90)": 221.9142221,
+            "p(95)": 354.4538710499989,
+            "avg": 149.40294067307696,
+            "min": 63.885681,
+            "med": 140.5832175,
+            "max": 578.80256,
+            "thresholds": {
+                "p(90)<800": false
+            }
+        },
+        "iteration_duration": {
+            "avg": 2357.363887423077,
+            "min": 1169.171239,
+            "med": 1994.1264055000001,
+            "max": 8190.197406,
+            "p(90)": 2078.497159,
+            "p(95)": 5596.0288792500005
+        },
+        "data_sent": {
+            "count": 14518,
+            "rate": 236.85670198739587
+        },
+        "http_req_duration": {
+            "p(90)": 222.1383607,
+            "p(95)": 374.2808122999987,
+            "avg": 374.2459772884616,
+            "min": 80.044023,
+            "med": 152.2986645,
+            "max": 6358.926555
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "iterations": {
+            "count": 25,
+            "rate": 0.4078673060810647
+        },
+        "http_req_receiving": {
+            "p(95)": 29.08007515,
+            "avg": 224.77377901923077,
+            "min": 0.090871,
+            "med": 17.854103,
+            "max": 5780.081937,
+            "p(90)": 28.4120209
+        },
+        "http_req_connecting": {
+            "avg": 0.021240538461538463,
+            "min": 0,
+            "med": 0,
+            "max": 0.673605,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "vus": {
+            "value": 1,
+            "min": 0,
+            "max": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 374.2808122999987,
+            "avg": 374.2459772884616,
+            "min": 80.044023,
+            "med": 152.2986645,
+            "max": 6358.926555,
+            "p(90)": 222.1383607
+        },
+        "data_received": {
+            "count": 1216050697,
+            "rate": 19839492.87373564
+        },
+        "group_duration": {
+            "avg": 1603.1319132666665,
+            "min": 95.855387,
+            "med": 1067.098282,
+            "max": 8190.002991,
+            "p(90)": 2032.3476366000002,
+            "p(95)": 3440.864493199987
+        },
+        "successful_requests": {
+            "passes": 50,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        }
+    },
+    "setup_data": [
+        {
+            "branch_search": "stable",
+            "file_source_path": "fixtures%2femojis%2findex%2ejson",
+            "mr_changes_iid": "8785",
+            "mr_commits_iid": "4954",
+            "branch": "10-0-stable",
+            "commit_sha": "8f9beefa",
+            "git_push_data": [
+                {
+                    "branch_new_head_sha": "8bcb4fd6f5780ebe9dc1ec80904b060b89a937d2",
+                    "branch_current_head_sha": "8606c89683c913641243fc667edeb90600fe1a0e",
+                    "branch_name": "12-1-auto-deploy-20190714"
+                }
+            ],
+            "issue_iid": "4218",
+            "unencoded_path": "gpt/large_projects/gitlabhq1",
+            "git_clone_data": [
+                "8f9beefac3774b30e911fb00a68f4c7a5244cf27",
+                "3f242b6bb267fea02de29c67cc5cf0384020662e"
+            ],
+            "commit_sha_signed": "6526e91f",
+            "compare_branches": [
+                "12-2-stable",
+                "12-1-stable"
+            ],
+            "dir_path": "spec%2Flib%2Fgitlab",
+            "encoded_group_path": "gpt%2Flarge_projects",
+            "encoded_path": "gpt%2Flarge_projects%2Fgitlabhq1",
+            "file_raw_path": "doc%2fapi%2fprojects%2emd",
+            "file_rendered_path": "CHANGELOG%2emd",
+            "metadata": {
+                "issue_count": 6722,
+                "merge_request_count": 3609,
+                "pipelines_count": 11,
+                "version": 2
+            },
+            "mr_discussions_iid": "8785",
+            "file_blame_path": "spec%2fmodels%2fproject_spec%2erb",
+            "git_pull_data": [
+                {
+                    "want_commit_sha": "8606c89683c913641243fc667edeb90600fe1a0e",
+                    "have_commit_sha": "92d536a03120b7095b2a78553e76f1913c30e7a9"
+                }
+            ],
+            "name": "gitlabhq1",
+            "pipeline_sha": "bca0bc9e5ed1da25aff3d407eddfc0fe1606ec2b",
+            "search": {
+                "users": [
+                    "root",
+                    "test",
+                    "john",
+                    "doe",
+                    "jane",
+                    "gitlab",
+                    "bot"
+                ],
+                "blobs": [
+                    "test",
+                    "the",
+                    "and",
+                    "gitlab",
+                    "for",
+                    "while",
+                    "add"
+                ],
+                "commits": [
+                    "fix",
+                    "add",
+                    "gitlab",
+                    "update",
+                    "remove",
+                    "test",
+                    "project"
+                ],
+                "issues": [
+                    "gitlab",
+                    "bot",
+                    "push",
+                    "repo",
+                    "error",
+                    "database",
+                    "issue"
+                ],
+                "merge_requests": [
+                    "the",
+                    "test",
+                    "gitlab",
+                    "project",
+                    "merge",
+                    "user",
+                    "login"
+                ],
+                "milestones": [
+                    "2.6",
+                    "3.1",
+                    "4.0",
+                    "5.2",
+                    "6.0",
+                    "7.12",
+                    "8.0"
+                ],
+                "notes": [
+                    "test",
+                    "gitlab",
+                    "the",
+                    "and",
+                    "merge",
+                    "user",
+                    "issue"
+                ],
+                "projects": [
+                    "gitlab",
+                    "username",
+                    "merge",
+                    "remove",
+                    "test",
+                    "project",
+                    "public"
+                ]
+            }
+        }
+    ]
+}

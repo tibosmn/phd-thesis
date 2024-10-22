@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "iterations": {
+            "count": 241,
+            "rate": 4.010503660120425
+        },
+        "data_received": {
+            "count": 900484,
+            "rate": 14985.03891236465
+        },
+        "vus_max": {
+            "max": 4,
+            "value": 4,
+            "min": 4
+        },
+        "http_req_waiting": {
+            "max": 210.06101,
+            "p(90)": 142.121315,
+            "p(95)": 149.284201,
+            "avg": 120.58645641078833,
+            "min": 82.571047,
+            "med": 114.045057,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0.41499318257261403,
+            "min": 0,
+            "med": 0,
+            "max": 25.881904,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "successful_requests": {
+            "passes": 241,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "data_sent": {
+            "count": 15774,
+            "rate": 262.4966171565958
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 210.499757,
+            "p(90)": 142.466708,
+            "p(95)": 149.698039,
+            "avg": 120.96386122406633,
+            "min": 83.00521,
+            "med": 114.353147
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 4
+        },
+        "iteration_duration": {
+            "med": 996.9878715,
+            "max": 1108.51565,
+            "p(90)": 1026.0507452,
+            "p(95)": 1033.6816359,
+            "avg": 926.2976002314059,
+            "min": 0.238164
+        },
+        "http_req_failed": {
+            "fails": 241,
+            "passes": 0,
+            "value": 0
+        },
+        "http_reqs": {
+            "count": 241,
+            "rate": 4.010503660120425,
+            "thresholds": {
+                "count>=192": false
+            }
+        },
+        "http_req_blocked": {
+            "min": 0.000789,
+            "med": 0.001172,
+            "max": 26.426405,
+            "p(90)": 0.001534,
+            "p(95)": 0.001676,
+            "avg": 0.4256316224066391
+        },
+        "http_req_receiving": {
+            "avg": 0.19111215352697097,
+            "min": 0.100374,
+            "med": 0.186233,
+            "max": 0.89161,
+            "p(90)": 0.260977,
+            "p(95)": 0.26955
+        },
+        "http_req_duration": {
+            "min": 83.00521,
+            "med": 114.353147,
+            "max": 210.499757,
+            "p(90)": 142.466708,
+            "p(95)": 149.698039,
+            "avg": 120.96386122406633
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.004231829875518672,
+            "min": 0,
+            "med": 0,
+            "max": 0.263248,
+            "p(90)": 0
+        },
+        "http_req_sending": {
+            "avg": 0.18629265975103723,
+            "min": 0.145659,
+            "med": 0.182779,
+            "max": 0.363392,
+            "p(90)": 0.210402,
+            "p(95)": 0.225008
+        },
+        "group_duration": {
+            "max": 1108.459429,
+            "p(90)": 1026.110371,
+            "p(95)": 1033.629084,
+            "avg": 930.0735810622415,
+            "min": 174.391024,
+            "med": 996.943118
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Repository Tree": {
+                "checks": {},
+                "name": "API - Project Repository Tree",
+                "path": "::API - Project Repository Tree",
+                "id": "c093018754c94b20494bba45ba5ddb5e",
+                "groups": {}
+            }
+        },
+        "checks": {}
+    }
+}

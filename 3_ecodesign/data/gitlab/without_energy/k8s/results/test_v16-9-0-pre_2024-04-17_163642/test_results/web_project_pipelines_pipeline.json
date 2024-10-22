@@ -1,0 +1,366 @@
+{
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a"
+            },
+            "Web - Project Pipeline Page": {
+                "id": "7a35899076b1a441bf4cebea9f856763",
+                "groups": {},
+                "checks": {},
+                "name": "Web - Project Pipeline Page",
+                "path": "::Web - Project Pipeline Page"
+            }
+        },
+        "checks": {},
+        "name": ""
+    },
+    "metrics": {
+        "http_req_waiting{controller:Projects::PipelinesController#status}": {
+            "avg": 105.89664950000001,
+            "min": 86.537554,
+            "med": 105.470661,
+            "max": 126.438865,
+            "p(90)": 125.6710561,
+            "p(95)": 126.18977715,
+            "thresholds": {
+                "p(90)<2500": false
+            }
+        },
+        "http_req_waiting{controller:Projects::PipelinesController#show.json}": {
+            "avg": 1129.6600534166666,
+            "min": 875.566681,
+            "med": 1121.1562405,
+            "max": 1348.093829,
+            "p(90)": 1319.1304785,
+            "p(95)": 1334.0098381999999,
+            "thresholds": {
+                "p(90)<2500": false
+            }
+        },
+        "http_req_sending": {
+            "med": 0.160922,
+            "max": 0.719894,
+            "p(90)": 0.24630100000000002,
+            "p(95)": 0.26158839999999994,
+            "avg": 0.18248431746031754,
+            "min": 0.108633
+        },
+        "http_reqs{controller:Projects::PipelinesController#jobs}": {
+            "count": 12,
+            "rate": 0.19111925833935453,
+            "thresholds": {
+                "count>=4": false
+            }
+        },
+        "http_reqs{controller:Projects::PipelinesController#status}": {
+            "rate": 0.19111925833935453,
+            "count": 12,
+            "thresholds": {
+                "count>=4": false
+            }
+        },
+        "group_duration": {
+            "min": 4762.029856,
+            "med": 5030.1311885,
+            "max": 5410.110378,
+            "p(90)": 5146.7814086,
+            "p(95)": 5267.2722595,
+            "avg": 5033.788937833334
+        },
+        "vus_max": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "data_sent": {
+            "count": 56356,
+            "rate": 897.5597435810553
+        },
+        "http_reqs": {
+            "count": 63,
+            "rate": 1.0033761062816113,
+            "thresholds": {
+                "count>=19": false
+            }
+        },
+        "http_req_waiting{controller:Projects::PipelinesController#show}": {
+            "min": 185.48049,
+            "med": 272.67299149999997,
+            "max": 339.757412,
+            "p(90)": 309.7083058,
+            "p(95)": 323.97263804999994,
+            "avg": 262.90679208333336,
+            "thresholds": {
+                "p(90)<2500": false
+            }
+        },
+        "http_req_duration": {
+            "avg": 455.9219399206349,
+            "min": 63.34226,
+            "med": 270.498381,
+            "max": 1350.459432,
+            "p(90)": 1102.1147380000002,
+            "p(95)": 1204.8089209999998
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 63,
+            "value": 0
+        },
+        "http_reqs{controller:Projects::PipelinesController#show.json}": {
+            "count": 12,
+            "rate": 0.19111925833935453,
+            "thresholds": {
+                "count>=4": false
+            }
+        },
+        "vus": {
+            "value": 1,
+            "min": 0,
+            "max": 1
+        },
+        "http_req_waiting": {
+            "avg": 454.845614984127,
+            "min": 63.041464,
+            "med": 269.552914,
+            "max": 1348.093829,
+            "p(90)": 1100.0012248,
+            "p(95)": 1202.4746906999999
+        },
+        "http_req_connecting": {
+            "avg": 0.008080539682539682,
+            "min": 0,
+            "med": 0,
+            "max": 0.25584,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_receiving": {
+            "med": 0.670253,
+            "max": 2.814993,
+            "p(90)": 2.1629156000000003,
+            "p(95)": 2.3099967,
+            "avg": 0.893840619047619,
+            "min": 0.103476
+        },
+        "http_req_blocked": {
+            "avg": 0.8427806031746029,
+            "min": 0.000403,
+            "med": 0.001066,
+            "max": 26.998559,
+            "p(90)": 0.0016792,
+            "p(95)": 0.0019264999999999998
+        },
+        "data_received": {
+            "count": 2418708,
+            "rate": 38521.80659162196
+        },
+        "successful_requests": {
+            "passes": 60,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0.8214484603174603,
+            "min": 0,
+            "med": 0,
+            "max": 26.492203,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "iteration_duration": {
+            "p(90)": 5143.2134888,
+            "p(95)": 5254.382627999999,
+            "avg": 4829.564103923077,
+            "min": 2378.021141,
+            "med": 5015.78478,
+            "max": 5410.266651
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 455.9219399206349,
+            "min": 63.34226,
+            "med": 270.498381,
+            "max": 1350.459432,
+            "p(90)": 1102.1147380000002,
+            "p(95)": 1204.8089209999998
+        },
+        "http_reqs{controller:Projects::PipelinesController#show}": {
+            "count": 12,
+            "rate": 0.19111925833935453,
+            "thresholds": {
+                "count>=4": false
+            }
+        },
+        "iterations": {
+            "count": 12,
+            "rate": 0.19111925833935453
+        },
+        "http_req_waiting{controller:Projects::Pipelines::TestsController}": {
+            "avg": 75.37073391666667,
+            "min": 63.041464,
+            "med": 78.25358750000001,
+            "max": 84.675209,
+            "p(90)": 82.5652231,
+            "p(95)": 83.5247696,
+            "thresholds": {
+                "p(90)<2500": false
+            }
+        },
+        "http_req_waiting{controller:Projects::PipelinesController#jobs}": {
+            "p(95)": 841.8980368,
+            "avg": 755.4761266666669,
+            "min": 636.87277,
+            "med": 774.4738295,
+            "max": 874.804572,
+            "p(90)": 813.5528093,
+            "thresholds": {
+                "p(90)<2500": false
+            }
+        },
+        "http_reqs{controller:Projects::Pipelines::TestsController}": {
+            "count": 12,
+            "rate": 0.19111925833935453,
+            "thresholds": {
+                "count>=4": false
+            }
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/pipelines",
+        "projects": [
+            {
+                "encoded_group_path": "gpt%2Flarge_projects",
+                "file_source_path": "fixtures%2femojis%2findex%2ejson",
+                "git_push_data": [
+                    {
+                        "branch_current_head_sha": "8606c89683c913641243fc667edeb90600fe1a0e",
+                        "branch_name": "12-1-auto-deploy-20190714",
+                        "branch_new_head_sha": "8bcb4fd6f5780ebe9dc1ec80904b060b89a937d2"
+                    }
+                ],
+                "mr_commits_iid": "4954",
+                "commit_sha_signed": "6526e91f",
+                "encoded_path": "gpt%2Flarge_projects%2Fgitlabhq1",
+                "file_raw_path": "doc%2fapi%2fprojects%2emd",
+                "file_rendered_path": "CHANGELOG%2emd",
+                "git_clone_data": [
+                    "8f9beefac3774b30e911fb00a68f4c7a5244cf27",
+                    "3f242b6bb267fea02de29c67cc5cf0384020662e"
+                ],
+                "mr_changes_iid": "8785",
+                "name": "gitlabhq1",
+                "pipelineId": 14,
+                "unencoded_path": "gpt/large_projects/gitlabhq1",
+                "branch_search": "stable",
+                "commit_sha": "8f9beefa",
+                "dir_path": "spec%2Flib%2Fgitlab",
+                "branch": "10-0-stable",
+                "compare_branches": [
+                    "12-2-stable",
+                    "12-1-stable"
+                ],
+                "file_blame_path": "spec%2fmodels%2fproject_spec%2erb",
+                "git_pull_data": [
+                    {
+                        "have_commit_sha": "92d536a03120b7095b2a78553e76f1913c30e7a9",
+                        "want_commit_sha": "8606c89683c913641243fc667edeb90600fe1a0e"
+                    }
+                ],
+                "graphqlQuery": "{\"query\":\"fragment CiNeeds on JobNeedUnion {\\n  ...CiBuildNeedFields\\n  ...CiJobNeedFields\\n}\\n\\nfragment CiBuildNeedFields on CiBuildNeed {\\n  id\\n  name\\n}\\n\\nfragment CiJobNeedFields on CiJob {\\n  id\\n  name\\n}\\n\\nfragment LinkedPipelineData on Pipeline {\\n  __typename\\n  id\\n  iid\\n  path\\n  cancelable\\n  retryable\\n  userPermissions {\\n    updatePipeline\\n  }\\n  status: detailedStatus {\\n    __typename\\n    id\\n    group\\n    label\\n    icon\\n  }\\n  sourceJob {\\n    __typename\\n    id\\n    name\\n    retried\\n  }\\n  project {\\n    __typename\\n    id\\n    name\\n    fullPath\\n  }\\n}\\n\\nquery getPipelineDetails($projectPath: ID!, $iid: ID!) {\\n  project(fullPath: $projectPath) {\\n    __typename\\n    id\\n    pipeline(iid: $iid) {\\n      __typename\\n      id\\n      iid\\n      complete\\n      usesNeeds\\n      userPermissions {\\n        updatePipeline\\n      }\\n      downstream {\\n        __typename\\n        nodes {\\n          ...LinkedPipelineData\\n        }\\n      }\\n      upstream {\\n        ...LinkedPipelineData\\n      }\\n      stages {\\n        __typename\\n        nodes {\\n          __typename\\n          id\\n          name\\n          status: detailedStatus {\\n            __typename\\n            id\\n            action {\\n              __typename\\n              id\\n              icon\\n              path\\n              title\\n            }\\n          }\\n          groups {\\n            __typename\\n            nodes {\\n              __typename\\n              id\\n              status: detailedStatus {\\n                __typename\\n                id\\n                label\\n                group\\n                icon\\n              }\\n              name\\n              size\\n              jobs {\\n                __typename\\n                nodes {\\n                  __typename\\n                  id\\n                  name\\n                  kind\\n                  scheduledAt\\n                  needs {\\n                    __typename\\n                    nodes {\\n                      __typename\\n                      id\\n                      name\\n                    }\\n                  }\\n                  previousStageJobsOrNeeds {\\n                    __typename\\n                    nodes {\\n                      ...CiNeeds\\n                    }\\n                  }\\n                  status: detailedStatus {\\n                    __typename\\n                    id\\n                    icon\\n                    tooltip\\n                    hasDetails\\n                    detailsPath\\n                    group\\n                    label\\n                    action {\\n                      __typename\\n                      id\\n                      buttonTitle\\n                      icon\\n                      path\\n                      title\\n                    }\\n                  }\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"projectPath\":\"gpt/large_projects/gitlabhq1\",\"iid\":3}}",
+                "issue_iid": "4218",
+                "metadata": {
+                    "issue_count": 6722,
+                    "merge_request_count": 3609,
+                    "pipelines_count": 11,
+                    "version": 2
+                },
+                "mr_discussions_iid": "8785",
+                "pipeline_sha": "bca0bc9e5ed1da25aff3d407eddfc0fe1606ec2b",
+                "search": {
+                    "users": [
+                        "root",
+                        "test",
+                        "john",
+                        "doe",
+                        "jane",
+                        "gitlab",
+                        "bot"
+                    ],
+                    "blobs": [
+                        "test",
+                        "the",
+                        "and",
+                        "gitlab",
+                        "for",
+                        "while",
+                        "add"
+                    ],
+                    "commits": [
+                        "fix",
+                        "add",
+                        "gitlab",
+                        "update",
+                        "remove",
+                        "test",
+                        "project"
+                    ],
+                    "issues": [
+                        "gitlab",
+                        "bot",
+                        "push",
+                        "repo",
+                        "error",
+                        "database",
+                        "issue"
+                    ],
+                    "merge_requests": [
+                        "the",
+                        "test",
+                        "gitlab",
+                        "project",
+                        "merge",
+                        "user",
+                        "login"
+                    ],
+                    "milestones": [
+                        "2.6",
+                        "3.1",
+                        "4.0",
+                        "5.2",
+                        "6.0",
+                        "7.12",
+                        "8.0"
+                    ],
+                    "notes": [
+                        "test",
+                        "gitlab",
+                        "the",
+                        "and",
+                        "merge",
+                        "user",
+                        "issue"
+                    ],
+                    "projects": [
+                        "gitlab",
+                        "username",
+                        "merge",
+                        "remove",
+                        "test",
+                        "project",
+                        "public"
+                    ]
+                }
+            }
+        ]
+    }
+}

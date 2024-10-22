@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_sending": {
+            "p(90)": 0.0712251,
+            "p(95)": 0.07721749999999998,
+            "avg": 0.05393821601489756,
+            "min": 0.024721,
+            "med": 0.050491499999999995,
+            "max": 0.15383
+        },
+        "vus_max": {
+            "max": 18,
+            "value": 18,
+            "min": 18
+        },
+        "successful_requests": {
+            "passes": 1074,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "data_received": {
+            "rate": 81157.920027235,
+            "count": 4874886
+        },
+        "http_req_waiting": {
+            "min": 59.11165,
+            "med": 83.285804,
+            "max": 512.077189,
+            "p(90)": 103.4772314,
+            "p(95)": 119.83301374999996,
+            "avg": 88.32993442458087,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "data_sent": {
+            "count": 197616,
+            "rate": 3289.9443236420443
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 88.59679454283057,
+            "min": 59.311687,
+            "med": 83.6673675,
+            "max": 512.284825,
+            "p(90)": 103.7521171,
+            "p(95)": 120.04702934999996
+        },
+        "http_req_receiving": {
+            "p(95)": 0.2630515499999998,
+            "avg": 0.21292190223463733,
+            "min": 0.0707,
+            "med": 0.1528005,
+            "max": 18.652453,
+            "p(90)": 0.2054767
+        },
+        "iteration_duration": {
+            "avg": 930.0650288465113,
+            "min": 0.253156,
+            "med": 996.77876,
+            "max": 1432.575052,
+            "p(90)": 1018.3924142,
+            "p(95)": 1029.2248847
+        },
+        "http_reqs": {
+            "count": 1074,
+            "rate": 17.880132193706764,
+            "thresholds": {
+                "count>=864": false
+            }
+        },
+        "iterations": {
+            "count": 1074,
+            "rate": 17.880132193706764
+        },
+        "group_duration": {
+            "avg": 930.8733175400374,
+            "min": 86.329386,
+            "med": 996.7301769999999,
+            "max": 1432.516702,
+            "p(90)": 1018.3356028000001,
+            "p(95)": 1029.1762523500001
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 18
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "http_req_failed": {
+            "fails": 1074,
+            "passes": 0,
+            "value": 0
+        },
+        "http_req_connecting": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.008776414338919925,
+            "min": 0,
+            "med": 0,
+            "max": 0.661693
+        },
+        "http_req_blocked": {
+            "p(95)": 0.031764799999999996,
+            "avg": 0.023017059590316528,
+            "min": 0.005258,
+            "med": 0.0098665,
+            "max": 0.869678,
+            "p(90)": 0.02465390000000001
+        },
+        "http_req_duration": {
+            "med": 83.6673675,
+            "max": 512.284825,
+            "p(90)": 103.7521171,
+            "p(95)": 120.04702934999996,
+            "avg": 88.59679454283057,
+            "min": 59.311687
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Pipelines": {
+                "id": "9962536e228acf4ee326e13af2b4c178",
+                "groups": {},
+                "checks": {},
+                "name": "API - Project Pipelines",
+                "path": "::API - Project Pipelines"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

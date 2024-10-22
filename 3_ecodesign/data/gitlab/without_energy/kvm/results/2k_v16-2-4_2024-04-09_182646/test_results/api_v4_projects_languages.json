@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "data_sent": {
+            "count": 198168,
+            "rate": 3302.0343592743357
+        },
+        "http_req_sending": {
+            "p(90)": 0.0724802,
+            "p(95)": 0.08007019999999997,
+            "avg": 0.05355372887650884,
+            "min": 0.024725,
+            "med": 0.050705,
+            "max": 0.145134
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_receiving": {
+            "max": 0.271601,
+            "p(90)": 0.14895899999999998,
+            "p(95)": 0.1643604,
+            "avg": 0.12332955988857945,
+            "min": 0.048901,
+            "med": 0.119235
+        },
+        "http_req_waiting": {
+            "avg": 62.73551648746509,
+            "min": 38.803847,
+            "med": 58.93104,
+            "max": 1085.365295,
+            "p(90)": 69.7924182,
+            "p(95)": 84.25520299999998,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "iteration_duration": {
+            "med": 998.2250745,
+            "max": 1274.539302,
+            "p(90)": 1010.1865586,
+            "p(95)": 1017.1985528499999,
+            "avg": 924.9264258933214,
+            "min": 0.28047
+        },
+        "vus_max": {
+            "value": 18,
+            "min": 18,
+            "max": 18
+        },
+        "http_reqs": {
+            "count": 1077,
+            "rate": 17.945838909099653,
+            "thresholds": {
+                "count>=864": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 1085.582443,
+            "p(90)": 69.95791,
+            "p(95)": 84.46098359999998,
+            "avg": 62.91239977623023,
+            "min": 38.957955,
+            "med": 59.088685
+        },
+        "group_duration": {
+            "max": 1274.441411,
+            "p(90)": 1010.1375486,
+            "p(95)": 1017.1835705999999,
+            "avg": 925.7244291281347,
+            "min": 53.044878,
+            "med": 998.173423
+        },
+        "iterations": {
+            "count": 1077,
+            "rate": 17.945838909099653
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 18
+        },
+        "http_req_duration": {
+            "p(90)": 69.95791,
+            "p(95)": 84.46098359999998,
+            "avg": 62.91239977623023,
+            "min": 38.957955,
+            "med": 59.088685,
+            "max": 1085.582443
+        },
+        "http_req_blocked": {
+            "p(95)": 0.03214479999999996,
+            "avg": 0.022491798514391807,
+            "min": 0.005087,
+            "med": 0.010253,
+            "max": 0.773512,
+            "p(90)": 0.0160994
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1077,
+            "value": 0
+        },
+        "data_received": {
+            "count": 642969,
+            "rate": 10713.665828732492
+        },
+        "http_req_connecting": {
+            "avg": 0.008268584958217268,
+            "min": 0,
+            "med": 0,
+            "max": 0.61383,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "successful_requests": {
+            "passes": 1077,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {},
+                "name": "setup"
+            },
+            "API - Project Languages List": {
+                "checks": {},
+                "name": "API - Project Languages List",
+                "path": "::API - Project Languages List",
+                "id": "1e786bf7c1613772c019470ac07ac4ff",
+                "groups": {}
+            }
+        },
+        "checks": {}
+    }
+}

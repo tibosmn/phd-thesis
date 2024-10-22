@@ -1,0 +1,223 @@
+{
+    "metrics": {
+        "vus": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "http_req_waiting{controller:Projects::CommitController#merge_requests.json}": {
+            "max": 195.187373,
+            "p(90)": 178.4374156,
+            "p(95)": 187.39422919999998,
+            "avg": 134.26188484615383,
+            "min": 113.867966,
+            "med": 120.629648,
+            "thresholds": {
+                "p(90)<3500": false
+            }
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 53,
+            "value": 0
+        },
+        "http_reqs{controller:Projects::CommitController#show}": {
+            "count": 13,
+            "rate": 0.1998801360890955,
+            "thresholds": {
+                "count>=5": false
+            }
+        },
+        "http_req_duration": {
+            "avg": 707.475834490566,
+            "min": 95.934314,
+            "med": 492.911374,
+            "max": 2977.369134,
+            "p(90)": 1837.442149,
+            "p(95)": 1919.311579
+        },
+        "http_req_connecting": {
+            "avg": 0.03383958490566038,
+            "min": 0,
+            "med": 0,
+            "max": 0.617935,
+            "p(90)": 0,
+            "p(95)": 0.22570359999999917
+        },
+        "http_req_waiting": {
+            "min": 95.752235,
+            "med": 492.183882,
+            "max": 2973.877946,
+            "p(90)": 1835.1626622,
+            "p(95)": 1916.614214,
+            "avg": 706.5774124150942
+        },
+        "successful_requests": {
+            "passes": 52,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "iterations": {
+            "count": 13,
+            "rate": 0.1998801360890955
+        },
+        "group_duration": {
+            "p(95)": 5923.8041964,
+            "avg": 4960.608568076923,
+            "min": 3797.875196,
+            "med": 4860.939072,
+            "max": 5978.260848,
+            "p(90)": 5763.0183094
+        },
+        "http_reqs{controller:Projects::CommitController#merge_requests.json}": {
+            "count": 13,
+            "rate": 0.1998801360890955,
+            "thresholds": {
+                "count>=5": false
+            }
+        },
+        "http_reqs{controller:Projects::CommitController#diff_files}": {
+            "rate": 0.1998801360890955,
+            "count": 13,
+            "thresholds": {
+                "count>=5": false
+            }
+        },
+        "http_req_waiting{controller:Projects::CommitController#diff_files}": {
+            "med": 1826.743627,
+            "max": 2973.877946,
+            "p(90)": 2703.0647174000005,
+            "p(95)": 2919.5274212,
+            "avg": 1983.142797,
+            "min": 1716.100463,
+            "thresholds": {
+                "p(90)<3500": false
+            }
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_reqs": {
+            "count": 53,
+            "rate": 0.8148959394401585,
+            "thresholds": {
+                "count>=19": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 707.475834490566,
+            "min": 95.934314,
+            "med": 492.911374,
+            "max": 2977.369134,
+            "p(90)": 1837.442149,
+            "p(95)": 1919.311579
+        },
+        "data_sent": {
+            "rate": 100.8933425397419,
+            "count": 6562
+        },
+        "iteration_duration": {
+            "max": 5978.308148,
+            "p(90)": 5700.879112300001,
+            "p(95)": 5919.32229315,
+            "avg": 4645.426079928572,
+            "min": 547.158367,
+            "med": 4845.4943015
+        },
+        "http_req_waiting{controller:Projects::CommitController#branches}": {
+            "max": 317.204445,
+            "p(90)": 206.88681060000002,
+            "p(95)": 251.90146859999984,
+            "avg": 148.39176584615385,
+            "min": 95.752235,
+            "med": 125.351398,
+            "thresholds": {
+                "p(90)<3500": false
+            }
+        },
+        "http_reqs{controller:Projects::CommitController#branches}": {
+            "count": 13,
+            "rate": 0.1998801360890955,
+            "thresholds": {
+                "count>=5": false
+            }
+        },
+        "data_received": {
+            "count": 9009330,
+            "rate": 138522.0081901208
+        },
+        "http_req_sending": {
+            "avg": 0.05040683018867925,
+            "min": 0.029913,
+            "med": 0.048442,
+            "max": 0.10429,
+            "p(90)": 0.06418660000000002,
+            "p(95)": 0.07939359999999997
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0
+        },
+        "http_req_waiting{controller:Projects::CommitController#show}": {
+            "max": 712.382899,
+            "p(90)": 628.5968678,
+            "p(95)": 663.9199215999998,
+            "avg": 572.9532145384616,
+            "min": 492.183882,
+            "med": 576.673437,
+            "thresholds": {
+                "p(90)<3500": false
+            }
+        },
+        "http_req_blocked": {
+            "p(90)": 0.014440000000000001,
+            "p(95)": 0.28724939999999904,
+            "avg": 0.053617169811320774,
+            "min": 0.004448,
+            "med": 0.01047,
+            "max": 0.843157
+        },
+        "http_req_receiving": {
+            "avg": 0.8480152452830189,
+            "min": 0.064688,
+            "med": 0.310056,
+            "max": 3.442746,
+            "p(90)": 2.6473902000000002,
+            "p(95)": 2.876827
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/commit/8f9beefa"
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Commit Details Page": {
+                "name": "Web - Commit Details Page",
+                "path": "::Web - Commit Details Page",
+                "id": "0cc84be428f62d1e21da36cad5970306",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

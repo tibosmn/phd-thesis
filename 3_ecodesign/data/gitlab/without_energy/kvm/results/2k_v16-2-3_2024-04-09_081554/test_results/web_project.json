@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_sending": {
+            "max": 0.187757,
+            "p(90)": 0.0659245,
+            "p(95)": 0.0701365,
+            "avg": 0.04911600568181818,
+            "min": 0.029046,
+            "med": 0.047521
+        },
+        "http_req_duration": {
+            "avg": 374.25259182386344,
+            "min": 289.057848,
+            "med": 352.39076850000004,
+            "max": 884.960537,
+            "p(90)": 413.873695,
+            "p(95)": 616.32861375
+        },
+        "http_reqs": {
+            "count": 176,
+            "rate": 2.932292654459846,
+            "thresholds": {
+                "count>=115": false
+            }
+        },
+        "http_req_waiting": {
+            "min": 288.365078,
+            "med": 351.74112049999997,
+            "max": 883.569546,
+            "p(90)": 413.3265345,
+            "p(95)": 615.7142065,
+            "avg": 373.62378591477267,
+            "thresholds": {
+                "p(90)<800": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 289.057848,
+            "med": 352.39076850000004,
+            "max": 884.960537,
+            "p(90)": 413.873695,
+            "p(95)": 616.32861375,
+            "avg": 374.25259182386344
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 176,
+            "value": 0
+        },
+        "http_req_blocked": {
+            "avg": 0.02418653977272728,
+            "min": 0.005506,
+            "med": 0.010806,
+            "max": 0.830227,
+            "p(90)": 0.015117000000000002,
+            "p(95)": 0.03408725
+        },
+        "group_duration": {
+            "p(90)": 1057.1164835,
+            "p(95)": 1074.9313385,
+            "avg": 957.9623131534088,
+            "min": 326.454221,
+            "med": 988.6546055,
+            "max": 1278.332229
+        },
+        "vus_max": {
+            "max": 3,
+            "value": 3,
+            "min": 3
+        },
+        "iterations": {
+            "rate": 2.932292654459846,
+            "count": 176
+        },
+        "data_sent": {
+            "count": 16896,
+            "rate": 281.5000948281452
+        },
+        "http_req_connecting": {
+            "avg": 0.0086914375,
+            "min": 0,
+            "med": 0,
+            "max": 0.644556,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 3
+        },
+        "data_received": {
+            "count": 12508031,
+            "rate": 208393.22399463662
+        },
+        "http_req_receiving": {
+            "p(95)": 0.79059225,
+            "avg": 0.5796899034090909,
+            "min": 0.22055,
+            "med": 0.5360375,
+            "max": 3.903258,
+            "p(90)": 0.6898495
+        },
+        "iteration_duration": {
+            "avg": 952.6130247401134,
+            "min": 0.279467,
+            "med": 988.48907,
+            "max": 1278.452994,
+            "p(90)": 1056.9749676000001,
+            "p(95)": 1074.6177871999998
+        },
+        "successful_requests": {
+            "fails": 0,
+            "passes": 176,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        }
+    },
+    "root_group": {
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project Page": {
+                "path": "::Web - Project Page",
+                "id": "efd1428482dd42a4efca34992c1e0e7b",
+                "groups": {},
+                "checks": {},
+                "name": "Web - Project Page"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

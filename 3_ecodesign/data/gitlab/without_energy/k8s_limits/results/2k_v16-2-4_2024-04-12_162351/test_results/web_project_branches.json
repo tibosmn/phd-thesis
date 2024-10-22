@@ -1,0 +1,154 @@
+{
+    "metrics": {
+        "http_reqs": {
+            "rate": 3.790507564147224,
+            "count": 234,
+            "thresholds": {
+                "count>=192": false
+            }
+        },
+        "http_req_receiving": {
+            "min": 0.224371,
+            "med": 0.479348,
+            "max": 2.243946,
+            "p(90)": 0.6658480000000001,
+            "p(95)": 0.75675985,
+            "avg": 0.5076647905982905
+        },
+        "data_sent": {
+            "count": 25038,
+            "rate": 405.58430936375294
+        },
+        "group_duration": {
+            "max": 1794.90851,
+            "p(90)": 1060.699971,
+            "p(95)": 1101.5609092,
+            "avg": 961.2509157081546,
+            "min": 491.280101,
+            "med": 990.162803
+        },
+        "data_received": {
+            "count": 16912999,
+            "rate": 273969.4471876685
+        },
+        "vus_max": {
+            "value": 4,
+            "min": 4,
+            "max": 4
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 1377.484534,
+            "p(90)": 603.0945274,
+            "p(95)": 656.7226653999999,
+            "avg": 550.1953528589743,
+            "min": 471.34574,
+            "med": 529.861443
+        },
+        "iterations": {
+            "count": 233,
+            "rate": 3.7743088138730903
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 234,
+            "value": 0
+        },
+        "http_req_waiting": {
+            "avg": 549.6385923504272,
+            "min": 470.838815,
+            "med": 529.411301,
+            "max": 1376.785616,
+            "p(90)": 602.6505592,
+            "p(95)": 656.2610101999999,
+            "thresholds": {
+                "p(90)<900": false
+            }
+        },
+        "vus": {
+            "max": 4,
+            "value": 1,
+            "min": 0
+        },
+        "http_req_duration": {
+            "avg": 550.1953528589743,
+            "min": 471.34574,
+            "med": 529.861443,
+            "max": 1377.484534,
+            "p(90)": 603.0945274,
+            "p(95)": 656.7226653999999
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_sending": {
+            "avg": 0.04909571794871796,
+            "min": 0.022207,
+            "med": 0.046397,
+            "max": 0.118846,
+            "p(90)": 0.0684551,
+            "p(95)": 0.07481829999999999
+        },
+        "successful_requests": {
+            "fails": 0,
+            "passes": 233,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_blocked": {
+            "p(95)": 0.032780899999999995,
+            "avg": 0.02736615384615386,
+            "min": 0.004097,
+            "med": 0.010663,
+            "max": 0.799021,
+            "p(90)": 0.029645800000000014
+        },
+        "http_req_connecting": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.011357316239316238,
+            "min": 0,
+            "med": 0,
+            "max": 0.605203
+        },
+        "iteration_duration": {
+            "p(95)": 1103.2867337,
+            "avg": 963.0982107307691,
+            "min": 491.337508,
+            "med": 990.637914,
+            "max": 1794.984358,
+            "p(90)": 1061.9917391000001
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/branches"
+    },
+    "root_group": {
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project Branches Page": {
+                "groups": {},
+                "checks": {},
+                "name": "Web - Project Branches Page",
+                "path": "::Web - Project Branches Page",
+                "id": "807c8f926f1361fc1eaa5a0b45298bbf"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

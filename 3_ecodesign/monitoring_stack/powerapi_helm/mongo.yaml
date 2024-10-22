@@ -1,0 +1,31 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: mongo
+  name: mongo-svc
+spec:
+  ports:
+  - port: 27017
+    protocol: TCP
+    targetPort: 27017
+  selector:
+    app: mongo
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongo
+  labels:
+    app: mongo
+spec:
+  containers:
+  - image: mongo
+    imagePullPolicy: IfNotPresent
+    name: mongodb
+    ports:
+    - containerPort: 27017
+      name: mongoport
+      protocol: TCP
+  terminationGracePeriodSeconds: 0

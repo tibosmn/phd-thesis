@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_receiving": {
+            "med": 0.105346,
+            "max": 0.286446,
+            "p(90)": 0.130138,
+            "p(95)": 0.14181539999999998,
+            "avg": 0.1071156429468397,
+            "min": 0.041924
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.004004501046462955,
+            "min": 0,
+            "med": 0,
+            "max": 0.32113,
+            "p(90)": 0
+        },
+        "vus_max": {
+            "value": 40,
+            "min": 40,
+            "max": 40
+        },
+        "data_received": {
+            "count": 1066147,
+            "rate": 17762.953227715494
+        },
+        "http_req_sending": {
+            "med": 0.142218,
+            "max": 0.662003,
+            "p(90)": 0.17444040000000005,
+            "p(95)": 0.1925718,
+            "avg": 0.1444808233570532,
+            "min": 0.053242
+        },
+        "iteration_duration": {
+            "avg": 926.7407058066946,
+            "min": 0.240011,
+            "med": 997.8061665,
+            "max": 1117.314833,
+            "p(90)": 1012.131694,
+            "p(95)": 1019.33806505
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 28.891666,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.41238584596065303,
+            "min": 0
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 63.00334733696123,
+            "min": 38.698517,
+            "med": 60.332611,
+            "max": 196.441774,
+            "p(90)": 74.5728684,
+            "p(95)": 83.12924699999999
+        },
+        "group_duration": {
+            "avg": 927.0695835454154,
+            "min": 40.59083,
+            "med": 997.756107,
+            "max": 1117.261031,
+            "p(90)": 1012.0836424,
+            "p(95)": 1019.2936732
+        },
+        "successful_requests": {
+            "passes": 2389,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2389,
+            "value": 0
+        },
+        "http_req_waiting": {
+            "avg": 62.75175087065706,
+            "min": 38.393901,
+            "med": 60.07048,
+            "max": 196.184899,
+            "p(90)": 74.30911119999999,
+            "p(95)": 82.8501794,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_reqs": {
+            "count": 2389,
+            "rate": 39.802855760990106,
+            "thresholds": {
+                "count>=1920": false
+            }
+        },
+        "data_sent": {
+            "count": 114022,
+            "rate": 1899.7075008704956
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 40
+        },
+        "http_req_duration": {
+            "avg": 63.00334733696123,
+            "min": 38.698517,
+            "med": 60.332611,
+            "max": 196.441774,
+            "p(90)": 74.5728684,
+            "p(95)": 83.12924699999999
+        },
+        "http_req_blocked": {
+            "max": 29.319636,
+            "p(90)": 0.001409,
+            "p(95)": 0.0016523999999999996,
+            "avg": 0.4217315554625355,
+            "min": 0.000272,
+            "med": 0.001007
+        },
+        "iterations": {
+            "count": 2389,
+            "rate": 39.802855760990106
+        }
+    },
+    "root_group": {
+        "groups": {
+            "setup": {
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup"
+            },
+            "API - Project Services": {
+                "id": "2778068a11245384f3f3182579cf2794",
+                "groups": {},
+                "checks": {},
+                "name": "API - Project Services",
+                "path": "::API - Project Services"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

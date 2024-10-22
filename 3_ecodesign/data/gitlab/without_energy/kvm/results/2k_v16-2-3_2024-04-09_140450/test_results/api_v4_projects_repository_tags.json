@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "iteration_duration": {
+            "med": 997.452492,
+            "max": 1122.475726,
+            "p(90)": 1016.1617152,
+            "p(95)": 1025.8232324,
+            "avg": 925.4185348113523,
+            "min": 0.295306
+        },
+        "http_req_blocked": {
+            "min": 0.004561,
+            "med": 0.010667,
+            "max": 0.739791,
+            "p(90)": 0.026332400000000075,
+            "p(95)": 0.0335735,
+            "avg": 0.023227404682274223
+        },
+        "data_received": {
+            "count": 25429352,
+            "rate": 423669.56659603585
+        },
+        "http_req_sending": {
+            "med": 0.055067000000000005,
+            "max": 0.151751,
+            "p(90)": 0.07712650000000001,
+            "p(95)": 0.085976,
+            "avg": 0.05962093812709018,
+            "min": 0.025399
+        },
+        "http_req_receiving": {
+            "avg": 0.3007112591973246,
+            "min": 0.146142,
+            "med": 0.2726315,
+            "max": 1.585828,
+            "p(90)": 0.41587240000000003,
+            "p(95)": 0.46021094999999995
+        },
+        "iterations": {
+            "count": 598,
+            "rate": 9.963069480670582
+        },
+        "data_sent": {
+            "count": 113620,
+            "rate": 1892.9832013274106
+        },
+        "vus_max": {
+            "max": 10,
+            "value": 10,
+            "min": 10
+        },
+        "successful_requests": {
+            "passes": 598,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 598,
+            "value": 0
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 10
+        },
+        "http_req_duration": {
+            "avg": 130.9293107959865,
+            "min": 88.935909,
+            "med": 127.879437,
+            "max": 250.934806,
+            "p(90)": 143.3706524,
+            "p(95)": 157.3838541
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 130.9293107959865,
+            "min": 88.935909,
+            "med": 127.879437,
+            "max": 250.934806,
+            "p(90)": 143.3706524,
+            "p(95)": 157.3838541
+        },
+        "http_req_waiting": {
+            "avg": 130.5689785986621,
+            "min": 88.645787,
+            "med": 127.6222925,
+            "max": 250.677582,
+            "p(90)": 143.0798585,
+            "p(95)": 156.99759745,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "group_duration": {
+            "min": 116.813964,
+            "med": 997.4146745,
+            "max": 1122.41555,
+            "p(90)": 1016.1048451,
+            "p(95)": 1025.78643525,
+            "avg": 926.9029272608694
+        },
+        "http_reqs": {
+            "count": 598,
+            "rate": 9.963069480670582,
+            "thresholds": {
+                "count>=480": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        },
+        "http_req_connecting": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.00783528093645485,
+            "min": 0,
+            "med": 0,
+            "max": 0.579787
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup"
+            },
+            "API - Project Repository Tags List": {
+                "name": "API - Project Repository Tags List",
+                "path": "::API - Project Repository Tags List",
+                "id": "f0ac0320e1dcf2fa12c347807020d95f",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

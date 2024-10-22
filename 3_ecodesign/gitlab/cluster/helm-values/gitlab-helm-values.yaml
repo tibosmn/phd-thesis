@@ -1,0 +1,28 @@
+global:
+  ingress:
+    # enabled: true # Toggle the TCP configuration and annotations to Traefik.
+    # class: traefik # Alter the `kubernetes.io/ingress.class` annotation chart wide.
+    # provider: traefik
+    class: nginx
+    proxyBodySize: "0"
+    configureCertmanager: false
+    annotations:
+      nginx.org/client-max-body-size: "0"
+      nginx.ingress.kubernetes.io/proxy-body-size: "0"
+gitlab:
+  webservice:
+    ingress:
+      proxyBodySize: "0"
+      annotations:
+        nginx.org/client-max-body-size: "0"
+        nginx.ingress.kubernetes.io/proxy-body-size: "0"
+# Don't use certmanager, we'll self-sign
+certmanager:
+  install: false
+# Provide gitlab-runner with secret object containing self-signed certificate chain
+gitlab-runner:
+  install: false # Disable gitlab runner
+    #certsSecretName: gitlab-wildcard-tls-chain
+# # Do not use Gitlab nginx
+nginx-ingress:
+  enabled: false # Disable the deployment of the in-chart NGINX Ingress provider.

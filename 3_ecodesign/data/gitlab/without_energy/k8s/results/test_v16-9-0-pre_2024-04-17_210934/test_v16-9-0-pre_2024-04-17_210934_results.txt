@@ -1,0 +1,80 @@
+* Environment:                Test
+* Environment Version:        16.9.0-pre `62ccc82d8bf`
+* Option:                     60s_40rps
+* Date:                       2024-04-17
+* Run Time:                   1h 23m 45.99s (Start: 21:09:34 UTC, End: 22:33:20 UTC)
+* GPT Version:                v2.13.0
+
+❯ Overall Results Score: 93.85%
+
+NAME                                                     | RPS  | RPS RESULT         | TTFB AVG  | TTFB P90             | REQ STATUS     | RESULT  
+---------------------------------------------------------|------|--------------------|-----------|----------------------|----------------|---------
+api_v4_groups                                            | 40/s | 9.6/s (>32.00/s)   | 3828.29ms | 4683.69ms (<200ms)   | 100.00% (>99%) | FAILED² 
+api_v4_groups_group                                      | 40/s | 13.21/s (>1.60/s)  | 2750.65ms | 5113.29ms (<24000ms) | 100.00% (>20%) | Passed¹ 
+api_v4_groups_group_subgroups                            | 40/s | 38.13/s (>32.00/s) | 806.56ms  | 1595.15ms (<200ms)   | 100.00% (>99%) | FAILED² 
+api_v4_groups_issues                                     | 40/s | 38.38/s (>6.40/s)  | 470.39ms  | 619.21ms (<8000ms)   | 100.00% (>99%) | Passed¹ 
+api_v4_groups_merge_requests                             | 40/s | 38.75/s (>3.20/s)  | 415.18ms  | 775.20ms (<17500ms)  | 100.00% (>99%) | Passed¹ 
+api_v4_groups_projects                                   | 40/s | 31.36/s (>1.60/s)  | 1142.27ms | 2163.10ms (<22000ms) | 99.89% (>30%)  | Passed¹ 
+api_v4_projects                                          | 40/s | 12.43/s (>4.80/s)  | 2863.37ms | 4827.11ms (<7000ms)  | 99.87% (>99%)  | Passed¹ 
+api_v4_projects_deploy_keys                              | 40/s | 39.72/s (>32.00/s) | 71.67ms   | 86.72ms (<200ms)     | 100.00% (>99%) | Passed  
+api_v4_projects_issues                                   | 40/s | 39.13/s (>32.00/s) | 371.60ms  | 711.76ms (<1000ms)   | 100.00% (>99%) | Passed¹ 
+api_v4_projects_issues_issue                             | 40/s | 38.67/s (>32.00/s) | 290.04ms  | 464.43ms (<2600ms)   | 100.00% (>99%) | Passed¹ 
+api_v4_projects_issues_search                            | 40/s | 39.91/s (>32.00/s) | 48.36ms   | 51.96ms (<800ms)     | 1.25% (>99%)   | FAILED¹²
+api_v4_projects_languages                                | 40/s | 39.72/s (>32.00/s) | 72.84ms   | 86.73ms (<200ms)     | 100.00% (>99%) | Passed  
+api_v4_projects_merge_requests                           | 40/s | 39.22/s (>32.00/s) | 226.84ms  | 390.64ms (<400ms)    | 100.00% (>99%) | Passed¹ 
+api_v4_projects_merge_requests_merge_request             | 40/s | 38.9/s (>16.00/s)  | 461.49ms  | 869.36ms (<3500ms)   | 100.00% (>99%) | Passed¹ 
+api_v4_projects_merge_requests_merge_request_commits     | 40/s | 39.5/s (>32.00/s)  | 139.02ms  | 166.43ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_projects_merge_requests_merge_request_diffs       | 40/s | 39.58/s (>32.00/s) | 122.84ms  | 150.20ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_projects_merge_requests_merge_request_discussions | 40/s | 39.11/s (>32.00/s) | 255.65ms  | 399.04ms (<400ms)    | 100.00% (>99%) | Passed¹ 
+api_v4_projects_merge_requests_search                    | 40/s | 39.77/s (>9.60/s)  | 79.28ms   | 97.76ms (<5000ms)    | 1.25% (>99%)   | FAILED¹²
+api_v4_projects_project                                  | 40/s | 39.45/s (>32.00/s) | 187.56ms  | 302.01ms (<200ms)    | 100.00% (>99%) | FAILED² 
+api_v4_projects_project_pipelines                        | 40/s | 39.65/s (>32.00/s) | 94.30ms   | 113.84ms (<200ms)    | 99.83% (>99%)  | Passed  
+api_v4_projects_project_pipelines_pipeline               | 40/s | 39.47/s (>32.00/s) | 112.99ms  | 148.47ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_projects_project_pipelines_pipeline_jobs          | 40/s | 38.56/s (>6.40/s)  | 675.10ms  | 1151.29ms (<2000ms)  | 91.12% (>99%)  | FAILED¹²
+api_v4_projects_project_services                         | 40/s | 39.8/s (>32.00/s)  | 62.75ms   | 74.31ms (<200ms)     | 100.00% (>99%) | Passed  
+api_v4_projects_releases                                 | 40/s | 39.44/s (>32.00/s) | 198.60ms  | 321.20ms (<200ms)    | 100.00% (>99%) | FAILED² 
+api_v4_projects_repository_branches                      | 40/s | 39.37/s (>32.00/s) | 82.96ms   | 98.85ms (<200ms)     | 100.00% (>99%) | Passed  
+api_v4_projects_repository_branches_branch               | 40/s | 39.58/s (>32.00/s) | 124.59ms  | 151.50ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_projects_repository_branches_search               | 40/s | 39.5/s (>32.00/s)  | 77.85ms   | 96.14ms (<200ms)     | 100.00% (>99%) | Passed  
+api_v4_projects_repository_commits                       | 40/s | 39.62/s (>32.00/s) | 123.67ms  | 146.08ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_projects_repository_commits_commit                | 40/s | 39.56/s (>32.00/s) | 122.00ms  | 152.93ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_projects_repository_commits_commit_diff           | 40/s | 39.27/s (>32.00/s) | 456.24ms  | 708.38ms (<200ms)    | 100.00% (>99%) | FAILED² 
+api_v4_projects_repository_compare                       | 40/s | 39.57/s (>32.00/s) | 119.90ms  | 151.89ms (<200ms)    | 94.82% (>99%)  | FAILED² 
+api_v4_projects_repository_files_file                    | 40/s | 39.61/s (>32.00/s) | 117.47ms  | 139.30ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_projects_repository_files_file_blame              | 40/s | 13.43/s (>0.32/s)  | 2674.92ms | 4853.15ms (<35000ms) | 100.00% (>15%) | Passed¹ 
+api_v4_projects_repository_files_file_raw                | 40/s | 39.45/s (>32.00/s) | 128.89ms  | 158.13ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_projects_repository_tags                          | 40/s | 39.42/s (>32.00/s) | 146.75ms  | 175.44ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_projects_repository_tree                          | 40/s | 39.57/s (>32.00/s) | 132.33ms  | 162.72ms (<200ms)    | 100.00% (>99%) | Passed  
+api_v4_user                                              | 40/s | 39.73/s (>32.00/s) | 62.42ms   | 75.30ms (<200ms)     | 100.00% (>99%) | Passed  
+api_v4_users                                             | 40/s | 39.56/s (>32.00/s) | 106.98ms  | 133.94ms (<300ms)    | 100.00% (>99%) | Passed¹ 
+git_clone                                                | 2/s  | 0.41/s (>0.05/s)   | 288.91ms  | 499.90ms (<800ms)    | 100.00% (>99%) | Passed¹ 
+git_ls_remote                                            | 4/s  | 4.01/s (>3.20/s)   | 85.17ms   | 97.87ms (<200ms)     | 100.00% (>99%) | Passed  
+git_pull                                                 | 4/s  | 3.98/s (>3.20/s)   | 136.14ms  | 189.16ms (<400ms)    | 100.00% (>99%) | Passed  
+web_group                                                | 4/s  | 3.96/s (>3.20/s)   | 228.49ms  | 284.30ms (<500ms)    | 100.00% (>99%) | Passed¹ 
+web_group_issues                                         | 4/s  | 3.99/s (>3.20/s)   | 228.81ms  | 271.13ms (<500ms)    | 100.00% (>99%) | Passed¹ 
+web_group_merge_requests                                 | 4/s  | 3.95/s (>3.20/s)   | 323.60ms  | 375.80ms (<800ms)    | 100.00% (>99%) | Passed¹ 
+web_project                                              | 4/s  | 3.96/s (>3.20/s)   | 286.61ms  | 404.90ms (<800ms)    | 100.00% (>99%) | Passed¹ 
+web_project_branches                                     | 4/s  | 3.82/s (>3.20/s)   | 471.37ms  | 581.40ms (<900ms)    | 100.00% (>99%) | Passed¹ 
+web_project_branches_search                              | 4/s  | 2.81/s (>3.20/s)   | 1206.49ms | 1728.85ms (<1600ms)  | 100.00% (>99%) | FAILED¹²
+web_project_commit                                       | 4/s  | 3.86/s (>1.28/s)   | 725.14ms  | 1883.01ms (<3500ms)  | 100.00% (>99%) | Passed¹ 
+web_project_commits                                      | 4/s  | 3.75/s (>3.20/s)   | 547.35ms  | 629.33ms (<1000ms)   | 100.00% (>99%) | Passed¹ 
+web_project_file_blame                                   | 4/s  | 1.39/s (>0.64/s)   | 2534.96ms | 3904.23ms (<2400ms)  | 100.00% (>99%) | FAILED¹²
+web_project_file_rendered                                | 4/s  | 3.92/s (>2.56/s)   | 573.44ms  | 729.69ms (<1700ms)   | 100.00% (>99%) | Passed¹ 
+web_project_file_source                                  | 4/s  | 3.76/s (>1.28/s)   | 805.19ms  | 1149.27ms (<4000ms)  | 100.00% (>99%) | Passed¹ 
+web_project_files                                        | 4/s  | 3.92/s (>3.20/s)   | 205.47ms  | 321.51ms (<1200ms)   | 100.00% (>99%) | Passed¹ 
+web_project_issue                                        | 4/s  | 3.96/s (>3.20/s)   | 262.23ms  | 442.34ms (<2000ms)   | 100.00% (>99%) | Passed¹ 
+web_project_issues                                       | 4/s  | 3.98/s (>3.20/s)   | 246.79ms  | 323.36ms (<700ms)    | 100.00% (>99%) | Passed¹ 
+web_project_issues_search                                | 4/s  | 3.98/s (>3.20/s)   | 218.36ms  | 262.86ms (<700ms)    | 100.00% (>99%) | Passed¹ 
+web_project_merge_request                                | 4/s  | 3.51/s (>3.20/s)   | 615.64ms  | 1589.70ms (<2800ms)  | 100.00% (>99%) | Passed¹ 
+web_project_merge_request_changes                        | 4/s  | 3.85/s (>3.20/s)   | 567.18ms  | 794.12ms (<1500ms)   | 100.00% (>99%) | Passed¹ 
+web_project_merge_request_commits                        | 4/s  | 2.93/s (>1.92/s)   | 1167.75ms | 1773.91ms (<1950ms)  | 100.00% (>99%) | Passed¹ 
+web_project_merge_requests                               | 4/s  | 3.9/s (>3.20/s)    | 352.31ms  | 431.57ms (<900ms)    | 100.00% (>99%) | Passed¹ 
+web_project_merge_requests_search                        | 4/s  | 3.95/s (>3.20/s)   | 359.00ms  | 441.29ms (<700ms)    | 100.00% (>99%) | Passed¹ 
+web_project_pipelines                                    | 4/s  | 3.94/s (>2.56/s)   | 348.23ms  | 514.96ms (<600ms)    | 100.00% (>99%) | Passed¹ 
+web_project_pipelines_pipeline                           | 4/s  | 3.92/s (>3.20/s)   | 473.46ms  | 1035.90ms (<2500ms)  | 100.00% (>99%) | Passed¹ 
+web_project_repository_compare                           | 4/s  | 0.85/s (>0.16/s)   | 4290.44ms | 6969.64ms (<7500ms)  | 100.00% (>99%) | Passed¹ 
+web_project_tags                                         | 4/s  | 3.67/s (>2.56/s)   | 805.18ms  | 898.05ms (<1500ms)   | 100.00% (>99%) | Passed¹ 
+web_user                                                 | 4/s  | 3.97/s (>1.92/s)   | 232.29ms  | 347.31ms (<4000ms)   | 100.00% (>99%) | Passed  
+
+¹ Result covers endpoint(s) that have known issue(s). Threshold(s) have been adjusted to compensate.
+² Failure may not be clear from summary alone. Refer to the individual test's full output for further debugging.

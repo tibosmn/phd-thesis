@@ -1,0 +1,6 @@
+# more info here https://k3d.io/usage/guides/registries
+# https://rancher.com/docs/k3s/latest/en/installation/private-registry/
+mirrors:
+  "registry.localhost:5000":
+    endpoint:
+      - http://registry.localhost:5000

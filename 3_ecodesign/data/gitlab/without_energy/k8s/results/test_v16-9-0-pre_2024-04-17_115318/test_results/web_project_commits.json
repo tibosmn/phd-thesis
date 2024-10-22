@@ -1,0 +1,169 @@
+{
+    "root_group": {
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+                "setup": {
+                    "groups": {},
+                    "checks": {},
+                    "name": "setup",
+                    "path": "::setup",
+                    "id": "5c0f8025f7e0b6654089e5b00e950f1a"
+                },
+                "Web - Project Commits Page": {
+                    "path": "::Web - Project Commits Page",
+                    "id": "a2ddf5dba687a1934f8e77ac2a231c16",
+                    "groups": {},
+                    "checks": {},
+                    "name": "Web - Project Commits Page"
+                }
+            }
+    },
+    "metrics": {
+        "http_req_waiting": {
+            "avg": 570.5367821807905,
+            "min": 404.058212,
+            "med": 524.43275,
+            "max": 1898.974469,
+            "p(90)": 638.690454,
+            "p(95)": 792.1269989999967
+        },
+        "iteration_duration": {
+            "p(95)": 1245.1526895999984,
+            "avg": 959.660243355932,
+            "min": 415.275816,
+            "med": 976.298246,
+            "max": 2405.579413,
+            "p(90)": 1147.536386
+        },
+        "http_req_blocked": {
+            "p(90)": 0.001604,
+            "p(95)": 0.0018665999999999982,
+            "avg": 0.5970848248587574,
+            "min": 0.000601,
+            "med": 0.00123,
+            "max": 28.106932
+        },
+        "http_req_duration": {
+            "min": 408.257888,
+            "med": 527.984762,
+            "max": 1903.292395,
+            "p(90)": 642.981994,
+            "p(95)": 796.6527903999967,
+            "avg": 574.3076726666666
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.005920621468926555,
+            "min": 0,
+            "med": 0,
+            "max": 0.287376,
+            "p(90)": 0
+        },
+        "group_duration": {
+            "p(95)": 1188.69968225,
+            "avg": 956.8205309431819,
+            "min": 415.218707,
+            "med": 975.7578745000001,
+            "max": 2405.519604,
+            "p(90)": 1144.188398
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0.5823833502824859,
+            "min": 0,
+            "med": 0,
+            "max": 27.495837,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_reqs": {
+            "count": 177,
+            "rate": 2.8792356195751276,
+            "thresholds": {
+                "count>=115": false
+            }
+        },
+        "http_req_receiving": {
+            "min": 0.642449,
+            "med": 3.567749,
+            "max": 5.441948,
+            "p(90)": 4.4801952,
+            "p(95)": 4.8202028,
+            "avg": 3.616728220338985
+        },
+        "http_req_waiting{endpoint:commits}": {
+            "p(95)": 727.71203625,
+            "avg": 565.7278972840905,
+            "min": 404.058212,
+            "med": 524.01354,
+            "max": 1898.974469,
+            "p(90)": 635.300389,
+            "thresholds": {
+                "p(90)<1000": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "med": 527.984762,
+            "max": 1903.292395,
+            "p(90)": 642.981994,
+            "p(95)": 796.6527903999967,
+            "avg": 574.3076726666666,
+            "min": 408.257888
+        },
+        "http_req_sending": {
+            "avg": 0.1541622655367232,
+            "min": 0.078841,
+            "med": 0.152909,
+            "max": 0.488935,
+            "p(90)": 0.1794726,
+            "p(95)": 0.18974639999999998
+        },
+        "vus": {
+            "value": 1,
+            "min": 0,
+            "max": 3
+        },
+        "data_received": {
+            "count": 23970811,
+            "rate": 389930.0161655553
+        },
+        "vus_max": {
+            "value": 3,
+            "min": 3,
+            "max": 3
+        },
+        "http_reqs{endpoint:commits}": {
+            "count": 176,
+            "rate": 2.8629687516679234,
+            "thresholds": {
+                "count>=115": false
+            }
+        },
+        "successful_requests": {
+            "passes": 176,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "iterations": {
+            "count": 176,
+            "rate": 2.8629687516679234
+        },
+        "data_sent": {
+            "count": 214140,
+            "rate": 3483.3870936486883
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 177,
+            "value": 0
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/commits/master"
+    }
+}

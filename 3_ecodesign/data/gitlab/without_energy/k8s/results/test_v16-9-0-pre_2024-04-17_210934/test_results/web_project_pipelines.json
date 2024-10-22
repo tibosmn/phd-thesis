@@ -1,0 +1,187 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a"
+            },
+            "Web - Project Pipelines Page": {
+                "name": "Web - Project Pipelines Page",
+                "path": "::Web - Project Pipelines Page",
+                "id": "56af35592ad973d4328683c5cc138612",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    },
+    "metrics": {
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 516.3251272,
+            "p(95)": 554.2470162,
+            "avg": 349.50342476569,
+            "min": 153.796329,
+            "med": 392.353907,
+            "max": 1110.044234
+        },
+        "http_reqs{endpoint:/pipelines}": {
+            "count": 119,
+            "rate": 1.9617091885609896,
+            "thresholds": {
+                "count>=77": false
+            }
+        },
+        "successful_requests": {
+            "passes": 238,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "data_sent": {
+            "count": 87103,
+            "rate": 1435.8887012708226
+        },
+        "iterations": {
+            "count": 119,
+            "rate": 1.9617091885609896
+        },
+        "http_req_blocked": {
+            "avg": 0.5068965941422594,
+            "min": 0.000204,
+            "med": 0.001062,
+            "max": 26.418056,
+            "p(90)": 0.0013256000000000003,
+            "p(95)": 0.0016307
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0.4941211171548117,
+            "min": 0,
+            "med": 0,
+            "max": 25.784675,
+            "p(90)": 0
+        },
+        "http_req_waiting{endpoint:/pipelines.json}": {
+            "avg": 479.34378273109235,
+            "min": 388.571073,
+            "med": 467.801838,
+            "max": 1108.427549,
+            "p(90)": 553.1945986000001,
+            "p(95)": 576.6556411999999,
+            "thresholds": {
+                "p(90)<600": false
+            }
+        },
+        "data_received": {
+            "rate": 198945.10534774748,
+            "count": 12068286
+        },
+        "http_req_duration": {
+            "p(90)": 516.3251272,
+            "p(95)": 554.2470162,
+            "avg": 349.50342476569,
+            "min": 153.796329,
+            "med": 392.353907,
+            "max": 1110.044234
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 239,
+            "value": 0
+        },
+        "group_duration": {
+            "avg": 1899.726800504203,
+            "min": 679.639904,
+            "med": 1995.790822,
+            "max": 2361.617404,
+            "p(90)": 2085.502097,
+            "p(95)": 2135.2486091
+        },
+        "http_req_receiving": {
+            "p(90)": 1.6591310000000004,
+            "p(95)": 1.9344066999999998,
+            "avg": 1.1343812761506287,
+            "min": 0.352275,
+            "med": 1.097483,
+            "max": 2.677645
+        },
+        "vus": {
+            "value": 2,
+            "min": 1,
+            "max": 4
+        },
+        "http_reqs{endpoint:/pipelines.json}": {
+            "rate": 1.9617091885609896,
+            "count": 119,
+            "thresholds": {
+                "count>=77": false
+            }
+        },
+        "http_req_waiting": {
+            "avg": 348.225309338912,
+            "min": 152.868305,
+            "med": 390.842717,
+            "max": 1108.427549,
+            "p(90)": 514.9595212,
+            "p(95)": 552.6015983
+        },
+        "http_req_waiting{endpoint:/pipelines}": {
+            "med": 205.897806,
+            "max": 427.208505,
+            "p(90)": 269.83241100000004,
+            "p(95)": 298.12582849999995,
+            "avg": 217.72339328571437,
+            "min": 152.868305,
+            "thresholds": {
+                "p(90)<600": false
+            }
+        },
+        "http_reqs": {
+            "count": 239,
+            "rate": 3.9399033282863574,
+            "thresholds": {
+                "count>=154": false
+            }
+        },
+        "http_req_sending": {
+            "p(90)": 0.17515540000000004,
+            "p(95)": 0.1990461,
+            "avg": 0.14373415062761502,
+            "min": 0.068982,
+            "med": 0.141399,
+            "max": 0.366134
+        },
+        "iteration_duration": {
+            "avg": 1886.4810943250004,
+            "min": 303.072895,
+            "med": 1994.7775820000002,
+            "max": 2361.685779,
+            "p(90)": 2085.1400152,
+            "p(95)": 2134.24937715
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 0.325769,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.005687907949790796,
+            "min": 0
+        },
+        "vus_max": {
+            "value": 4,
+            "min": 4,
+            "max": 4
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/pipelines"
+    }
+}

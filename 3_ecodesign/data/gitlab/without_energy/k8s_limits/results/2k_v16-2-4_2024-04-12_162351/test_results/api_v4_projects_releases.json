@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "group_duration": {
+            "p(90)": 1028.0952197,
+            "p(95)": 1040.2887081000001,
+            "avg": 938.1170729487719,
+            "min": 84.575759,
+            "med": 994.8354605,
+            "max": 1559.949167
+        },
+        "vus_max": {
+            "value": 40,
+            "min": 40,
+            "max": 40
+        },
+        "http_req_duration": {
+            "p(90)": 135.7653066,
+            "p(95)": 151.06312254999992,
+            "avg": 120.37531257027936,
+            "min": 67.713157,
+            "med": 109.4367345,
+            "max": 1028.353272
+        },
+        "http_req_blocked": {
+            "max": 0.761707,
+            "p(90)": 0.015296800000000001,
+            "p(95)": 0.031808449999999995,
+            "avg": 0.020791882726503005,
+            "min": 0.004196,
+            "med": 0.0097655
+        },
+        "http_req_receiving": {
+            "med": 0.4834525,
+            "max": 43.951242,
+            "p(90)": 0.7077506000000001,
+            "p(95)": 0.7924687999999996,
+            "avg": 0.611810831075359,
+            "min": 0.178725
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.007180148179508889,
+            "min": 0,
+            "med": 0,
+            "max": 0.564486,
+            "p(90)": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2362,
+            "value": 0
+        },
+        "http_req_sending": {
+            "p(95)": 0.07655775,
+            "avg": 0.051936645639288695,
+            "min": 0.019582,
+            "med": 0.049178,
+            "max": 0.145999,
+            "p(90)": 0.0703962
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "vus": {
+            "value": 4,
+            "min": 4,
+            "max": 40
+        },
+        "http_reqs": {
+            "count": 2362,
+            "rate": 39.070424822149995,
+            "thresholds": {
+                "count>=1920": false
+            }
+        },
+        "successful_requests": {
+            "passes": 2362,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_waiting": {
+            "avg": 119.71156509356476,
+            "min": 67.050273,
+            "med": 108.926662,
+            "max": 1018.668999,
+            "p(90)": 135.13352790000002,
+            "p(95)": 150.47655979999993,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "data_received": {
+            "count": 188664750,
+            "rate": 3120750.1826692307
+        },
+        "iteration_duration": {
+            "p(95)": 1040.3704514,
+            "avg": 937.7772166242065,
+            "min": 0.214857,
+            "med": 994.88168,
+            "max": 1560.011734,
+            "p(90)": 1028.142149
+        },
+        "iterations": {
+            "count": 2362,
+            "rate": 39.070424822149995
+        },
+        "data_sent": {
+            "count": 432246,
+            "rate": 7149.8877424534485
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 120.37531257027936,
+            "min": 67.713157,
+            "med": 109.4367345,
+            "max": 1028.353272,
+            "p(90)": 135.7653066,
+            "p(95)": 151.06312254999992
+        }
+    },
+    "root_group": {
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+                "setup": {
+                    "name": "setup",
+                    "path": "::setup",
+                    "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                    "groups": {},
+                    "checks": {}
+                },
+                "API - Project Releases List": {
+                    "groups": {},
+                    "checks": {},
+                    "name": "API - Project Releases List",
+                    "path": "::API - Project Releases List",
+                    "id": "885feb2183677178fda3a2ab17df61f8"
+                }
+            }
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1426,
+            "value": 0
+        },
+        "group_duration": {
+            "avg": 932.7088014782602,
+            "min": 102.965283,
+            "med": 994.536771,
+            "max": 1161.459888,
+            "p(90)": 1028.278676,
+            "p(95)": 1040.54441
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 0.355593,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.004362321178120617,
+            "min": 0
+        },
+        "http_req_blocked": {
+            "avg": 0.4270764901823263,
+            "min": 0.000342,
+            "med": 0.001153,
+            "max": 31.218708,
+            "p(90)": 0.001668,
+            "p(95)": 0.0020037500000000003
+        },
+        "http_req_receiving": {
+            "min": 0.563247,
+            "med": 2.3127044999999997,
+            "max": 8.302816,
+            "p(90)": 3.0739400000000003,
+            "p(95)": 3.3713402500000003,
+            "avg": 2.3380389438990163
+        },
+        "iterations": {
+            "count": 1426,
+            "rate": 23.732679297976265
+        },
+        "data_received": {
+            "count": 133940068,
+            "rate": 2229142.1311312295
+        },
+        "iteration_duration": {
+            "max": 1161.518417,
+            "p(90)": 1028.3379972,
+            "p(95)": 1040.5991707,
+            "avg": 932.118616912405,
+            "min": 0.276864,
+            "med": 994.598332
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0.41727293338008414,
+            "min": 0,
+            "med": 0,
+            "max": 30.677808,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_sent": {
+            "count": 1222199,
+            "rate": 20340.85336978071
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 129.26346260098188,
+            "min": 93.444966,
+            "med": 125.8057475,
+            "max": 279.737341,
+            "p(90)": 155.853593,
+            "p(95)": 170.23667425000002
+        },
+        "http_req_waiting": {
+            "p(90)": 153.5174595,
+            "p(95)": 167.746865,
+            "avg": 126.78509239691454,
+            "min": 91.141837,
+            "med": 123.222127,
+            "max": 277.228591,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_duration": {
+            "p(90)": 155.853593,
+            "p(95)": 170.23667425000002,
+            "avg": 129.26346260098188,
+            "min": 93.444966,
+            "med": 125.8057475,
+            "max": 279.737341
+        },
+        "vus_max": {
+            "min": 24,
+            "max": 24,
+            "value": 24
+        },
+        "successful_requests": {
+            "passes": 1426,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "vus": {
+            "max": 24,
+            "value": 1,
+            "min": 1
+        },
+        "http_req_sending": {
+            "p(90)": 0.178186,
+            "p(95)": 0.1941875,
+            "avg": 0.14033126016830297,
+            "min": 0.044538,
+            "med": 0.140521,
+            "max": 0.396529
+        },
+        "http_reqs": {
+            "count": 1426,
+            "rate": 23.732679297976265,
+            "thresholds": {
+                "count>=1152": false
+            }
+        }
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Repository File Raw": {
+                "name": "API - Project Repository File Raw",
+                "path": "::API - Project Repository File Raw",
+                "id": "ea636dd0531da6e5388d189bdb11f8c5",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {},
+        "name": ""
+    }
+}

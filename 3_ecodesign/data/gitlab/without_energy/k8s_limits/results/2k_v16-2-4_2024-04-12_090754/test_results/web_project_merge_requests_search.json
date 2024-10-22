@@ -1,0 +1,154 @@
+{
+    "metrics": {
+        "http_req_waiting": {
+            "p(90)": 455.5759035,
+            "p(95)": 478.03857074999996,
+            "avg": 405.90362938559355,
+            "min": 287.800705,
+            "med": 399.44404499999996,
+            "max": 888.747319,
+            "thresholds": {
+                "p(90)<700": false
+            }
+        },
+        "http_req_receiving": {
+            "p(90)": 0.842993,
+            "p(95)": 0.9865925,
+            "avg": 0.6829756271186441,
+            "min": 0.278515,
+            "med": 0.64541,
+            "max": 6.666071
+        },
+        "http_req_duration": {
+            "avg": 406.6378308728815,
+            "min": 288.896231,
+            "med": 400.10772399999996,
+            "max": 889.487535,
+            "p(90)": 456.311963,
+            "p(95)": 478.68307425
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 236,
+            "value": 0
+        },
+        "vus_max": {
+            "min": 4,
+            "max": 4,
+            "value": 4
+        },
+        "http_reqs": {
+            "count": 236,
+            "rate": 3.9135040327536577,
+            "thresholds": {
+                "count>=154": false
+            }
+        },
+        "data_received": {
+            "count": 24469256,
+            "rate": 405764.96624780353
+        },
+        "group_duration": {
+            "p(95)": 1071.7959065,
+            "avg": 950.4561009999994,
+            "min": 339.226469,
+            "med": 994.707233,
+            "max": 1298.850912,
+            "p(90)": 1048.7892044
+        },
+        "iterations": {
+            "count": 235,
+            "rate": 3.8969213885470744
+        },
+        "successful_requests": {
+            "passes": 235,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_sending": {
+            "avg": 0.051225860169491474,
+            "min": 0.02605,
+            "med": 0.046437,
+            "max": 0.148266,
+            "p(90)": 0.067789,
+            "p(95)": 0.073677
+        },
+        "data_sent": {
+            "count": 38737,
+            "rate": 642.3618886304171
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 0.546311,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.009604478813559322,
+            "min": 0
+        },
+        "iteration_duration": {
+            "min": 290.491963,
+            "med": 994.7130945,
+            "max": 1298.908309,
+            "p(90)": 1048.64802,
+            "p(95)": 1071.80363375,
+            "avg": 947.7224874576267
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 478.68307425,
+            "avg": 406.6378308728815,
+            "min": 288.896231,
+            "med": 400.10772399999996,
+            "max": 889.487535,
+            "p(90)": 456.311963
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 4
+        },
+        "http_req_blocked": {
+            "avg": 0.02524641101694915,
+            "min": 0.004003,
+            "med": 0.010492999999999999,
+            "max": 0.697639,
+            "p(90)": 0.016035,
+            "p(95)": 0.03327075
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/merge_requests"
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project Merge Requests Search Page": {
+                "name": "Web - Project Merge Requests Search Page",
+                "path": "::Web - Project Merge Requests Search Page",
+                "id": "065af53702b92169115e173194281fad",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {},
+        "name": ""
+    }
+}

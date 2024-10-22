@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_duration": {
+            "min": 296.360541,
+            "med": 381.33710099999996,
+            "max": 1346.907455,
+            "p(90)": 471.2031934,
+            "p(95)": 543.5967712999999,
+            "avg": 409.9293748474577
+        },
+        "http_req_sending": {
+            "avg": 0.05335529661016948,
+            "min": 0.019,
+            "med": 0.048507,
+            "max": 0.127599,
+            "p(90)": 0.0750855,
+            "p(95)": 0.08240915
+        },
+        "iterations": {
+            "rate": 1.9600573609225274,
+            "count": 118
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 2
+        },
+        "iteration_duration": {
+            "max": 1439.459582,
+            "p(90)": 1077.0250232,
+            "p(95)": 1121.4453839999999,
+            "avg": 947.9237831344543,
+            "min": 0.305534,
+            "med": 990.784104
+        },
+        "http_req_blocked": {
+            "avg": 0.024431805084745753,
+            "min": 0.003099,
+            "med": 0.011639,
+            "max": 0.757338,
+            "p(90)": 0.016166599999999996,
+            "p(95)": 0.03378449999999999
+        },
+        "http_reqs": {
+            "count": 118,
+            "rate": 1.9600573609225274,
+            "thresholds": {
+                "count>=86": false
+            }
+        },
+        "successful_requests": {
+            "passes": 118,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "data_received": {
+            "rate": 139300.32983339476,
+            "count": 8386203
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 118,
+            "value": 0
+        },
+        "vus_max": {
+            "value": 2,
+            "min": 2,
+            "max": 2
+        },
+        "http_req_connecting": {
+            "avg": 0.008494728813559322,
+            "min": 0,
+            "med": 0,
+            "max": 0.582852,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_sent": {
+            "rate": 188.16550664856263,
+            "count": 11328
+        },
+        "http_req_receiving": {
+            "avg": 0.5938825169491523,
+            "min": 0.224142,
+            "med": 0.546028,
+            "max": 4.219222,
+            "p(90)": 0.7863481,
+            "p(95)": 0.8502156999999998
+        },
+        "group_duration": {
+            "avg": 955.8920350169493,
+            "min": 362.835425,
+            "med": 991.2920145,
+            "max": 1439.387276,
+            "p(90)": 1077.4093358,
+            "p(95)": 1121.6805909
+        },
+        "http_req_waiting": {
+            "avg": 409.2821370338986,
+            "min": 295.778237,
+            "med": 380.847132,
+            "max": 1346.41646,
+            "p(90)": 470.7292753,
+            "p(95)": 543.1043672999998,
+            "thresholds": {
+                "p(90)<800": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 409.9293748474577,
+            "min": 296.360541,
+            "med": 381.33710099999996,
+            "max": 1346.907455,
+            "p(90)": 471.2031934,
+            "p(95)": 543.5967712999999
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a"
+            },
+            "Web - Project Page": {
+                "path": "::Web - Project Page",
+                "id": "efd1428482dd42a4efca34992c1e0e7b",
+                "groups": {},
+                "checks": {},
+                "name": "Web - Project Page"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

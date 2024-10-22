@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "iterations": {
+            "count": 1907,
+            "rate": 31.75324813412889
+        },
+        "iteration_duration": {
+            "med": 994.939542,
+            "max": 1318.357842,
+            "p(90)": 1021.0096906,
+            "p(95)": 1030.3918022,
+            "avg": 928.2636690849059,
+            "min": 0.329328
+        },
+        "vus": {
+            "max": 32,
+            "value": 1,
+            "min": 1
+        },
+        "http_req_sending": {
+            "med": 0.049266,
+            "max": 0.204346,
+            "p(90)": 0.0696978,
+            "p(95)": 0.07586259999999997,
+            "avg": 0.05238307656004196,
+            "min": 0.019009
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 130.665299,
+            "avg": 103.19846534976394,
+            "min": 72.83602,
+            "med": 99.16944,
+            "max": 445.006143,
+            "p(90)": 119.6869894
+        },
+        "http_reqs": {
+            "count": 1907,
+            "rate": 31.75324813412889,
+            "thresholds": {
+                "count>=1536": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1907,
+            "value": 0
+        },
+        "http_req_blocked": {
+            "max": 0.82496,
+            "p(90)": 0.013315400000000003,
+            "p(95)": 0.030437499999999975,
+            "avg": 0.021335245936025142,
+            "min": 0.003416,
+            "med": 0.009479
+        },
+        "http_req_receiving": {
+            "med": 0.228543,
+            "max": 4.809347,
+            "p(90)": 0.3481142,
+            "p(95)": 0.38627089999999986,
+            "avg": 0.25266881227058197,
+            "min": 0.090776
+        },
+        "data_received": {
+            "count": 58706995,
+            "rate": 977523.7438091579
+        },
+        "successful_requests": {
+            "passes": 1907,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "data_sent": {
+            "count": 381400,
+            "rate": 6350.649626825778
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.00787763607760881,
+            "min": 0,
+            "med": 0,
+            "max": 0.626377,
+            "p(90)": 0
+        },
+        "http_req_waiting": {
+            "avg": 102.8934134609334,
+            "min": 72.438153,
+            "med": 98.912325,
+            "max": 444.778115,
+            "p(90)": 119.4166316,
+            "p(95)": 130.4442673,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "group_duration": {
+            "min": 79.776938,
+            "med": 994.893084,
+            "max": 1318.306496,
+            "p(90)": 1020.964736,
+            "p(95)": 1030.3470852,
+            "avg": 928.6937027273211
+        },
+        "vus_max": {
+            "value": 32,
+            "min": 32,
+            "max": 32
+        },
+        "http_req_duration": {
+            "p(90)": 119.6869894,
+            "p(95)": 130.665299,
+            "avg": 103.19846534976394,
+            "min": 72.83602,
+            "med": 99.16944,
+            "max": 445.006143
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a"
+            },
+            "API - Merge Request Diffs": {
+                "name": "API - Merge Request Diffs",
+                "path": "::API - Merge Request Diffs",
+                "id": "ac5d35b4d8842b235b5ff9c2ef3ac9a7",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

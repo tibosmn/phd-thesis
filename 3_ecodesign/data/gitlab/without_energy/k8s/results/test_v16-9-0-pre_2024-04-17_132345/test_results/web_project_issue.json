@@ -1,0 +1,241 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {}
+            },
+            "Web - Project Issue Page": {
+                "groups": {},
+                "checks": {},
+                "name": "Web - Project Issue Page",
+                "path": "::Web - Project Issue Page",
+                "id": "e5f405764f269cc5b73ba86f99e90037"
+            }
+        },
+        "checks": {}
+    },
+    "metrics": {
+        "http_reqs{controller:Projects::IssuesController#show}": {
+            "count": 31,
+            "rate": 0.49450854603692085,
+            "thresholds": {
+                "count>=19": false
+            }
+        },
+        "http_req_waiting{controller:Projects::IssuesController#show}": {
+            "p(95)": 524.6273255,
+            "avg": 289.831952483871,
+            "min": 226.39299,
+            "med": 245.923655,
+            "max": 595.591611,
+            "p(90)": 420.861234,
+            "thresholds": {
+                "p(90)<2000": false
+            }
+        },
+        "http_req_waiting{controller:Projects::IssuesController#can_create_branch}": {
+            "max": 189.83495,
+            "p(90)": 101.589409,
+            "p(95)": 131.3887375,
+            "avg": 83.98673696774193,
+            "min": 67.131836,
+            "med": 74.406988,
+            "thresholds": {
+                "p(90)<2000": false
+            }
+        },
+        "http_req_duration": {
+            "avg": 248.8538852851406,
+            "min": 67.379439,
+            "med": 236.450739,
+            "max": 1620.636222,
+            "p(90)": 434.65705140000006,
+            "p(95)": 479.044
+        },
+        "data_received": {
+            "count": 15046871,
+            "rate": 240026.0096972616
+        },
+        "group_duration": {
+            "p(95)": 8503.86938,
+            "avg": 7532.193752354837,
+            "min": 3432.097822,
+            "med": 7990.93927,
+            "max": 9002.148188,
+            "p(90)": 8023.26541
+        },
+        "data_sent": {
+            "count": 130847,
+            "rate": 2087.2567652675157
+        },
+        "http_req_waiting{controller:Projects::IssuesController#discussions.json}": {
+            "min": 179.253058,
+            "med": 320.85294250000004,
+            "max": 1613.160466,
+            "p(90)": 466.92456219999997,
+            "p(95)": 484.09258645,
+            "avg": 339.27591725000013,
+            "thresholds": {
+                "p(90)<2000": false
+            }
+        },
+        "http_req_waiting{controller:Projects::IssuesController#related_branches}": {
+            "min": 115.007084,
+            "med": 134.804512,
+            "max": 240.631808,
+            "p(90)": 170.110943,
+            "p(95)": 179.0714185,
+            "avg": 143.31815622580652,
+            "thresholds": {
+                "p(90)<2000": false
+            }
+        },
+        "iterations": {
+            "count": 31,
+            "rate": 0.49450854603692085
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 25.924309,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.47776941365461845
+        },
+        "http_reqs{controller:Projects::IssuesController#can_create_branch}": {
+            "count": 31,
+            "rate": 0.49450854603692085,
+            "thresholds": {
+                "count>=19": false
+            }
+        },
+        "http_req_receiving": {
+            "avg": 1.6694439477911656,
+            "min": 0.090614,
+            "med": 1.261477,
+            "max": 7.349832,
+            "p(90)": 4.0640924,
+            "p(95)": 4.711945599999999
+        },
+        "successful_requests": {
+            "passes": 248,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "vus": {
+            "min": 1,
+            "max": 4,
+            "value": 1
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 249,
+            "value": 0
+        },
+        "http_req_connecting": {
+            "max": 0.296268,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.005368261044176707,
+            "min": 0,
+            "med": 0
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 67.379439,
+            "med": 236.450739,
+            "max": 1620.636222,
+            "p(90)": 434.65705140000006,
+            "p(95)": 479.044,
+            "avg": 248.8538852851406
+        },
+        "http_req_blocked": {
+            "p(95)": 0.0016745999999999998,
+            "avg": 0.49014731726907623,
+            "min": 0.000418,
+            "med": 0.001074,
+            "max": 26.51314,
+            "p(90)": 0.0014930000000000004
+        },
+        "http_req_waiting": {
+            "max": 1613.160466,
+            "p(90)": 430.0774298,
+            "p(95)": 474.8863838,
+            "avg": 247.03302206024094,
+            "min": 67.131836,
+            "med": 234.022829
+        },
+        "http_reqs": {
+            "count": 249,
+            "rate": 3.972020256877203,
+            "thresholds": {
+                "count>=154": false
+            }
+        },
+        "iteration_duration": {
+            "avg": 7306.684292968748,
+            "min": 313.683736,
+            "med": 7990.0292014999995,
+            "max": 9002.206079,
+            "p(90)": 8022.9201762,
+            "p(95)": 8458.6123627
+        },
+        "vus_max": {
+            "value": 4,
+            "min": 4,
+            "max": 4
+        },
+        "http_reqs{controller:Projects::IssuesController#realtime_changes}": {
+            "count": 31,
+            "rate": 0.49450854603692085,
+            "thresholds": {
+                "count>=19": false
+            }
+        },
+        "http_reqs{controller:Projects::IssuesController#related_branches}": {
+            "count": 31,
+            "rate": 0.49450854603692085,
+            "thresholds": {
+                "count>=19": false
+            }
+        },
+        "http_req_waiting{controller:Projects::IssuesController#realtime_changes}": {
+            "p(90)": 117.87335,
+            "p(95)": 232.169636,
+            "avg": 100.7980113548387,
+            "min": 72.374951,
+            "med": 82.729881,
+            "max": 290.221526,
+            "thresholds": {
+                "p(90)<2000": false
+            }
+        },
+        "http_reqs{controller:Projects::IssuesController#discussions.json}": {
+            "count": 124,
+            "rate": 1.9780341841476834,
+            "thresholds": {
+                "count>=19": false
+            }
+        },
+        "http_req_sending": {
+            "avg": 0.1514192771084337,
+            "min": 0.067209,
+            "med": 0.150136,
+            "max": 0.403541,
+            "p(90)": 0.1797356,
+            "p(95)": 0.19128539999999997
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/issues"
+    }
+}

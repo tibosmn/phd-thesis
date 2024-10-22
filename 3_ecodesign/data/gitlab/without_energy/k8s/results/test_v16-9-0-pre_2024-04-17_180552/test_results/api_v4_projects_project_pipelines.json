@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_waiting": {
+            "med": 93.422011,
+            "max": 173.7427,
+            "p(90)": 110.1217902,
+            "p(95)": 116.6653917,
+            "avg": 93.0043733873122,
+            "min": 57.113156,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "http_req_receiving": {
+            "p(90)": 0.24969120000000003,
+            "p(95)": 0.2656163,
+            "avg": 0.1857286878130216,
+            "min": 0.083386,
+            "med": 0.183203,
+            "max": 1.112284
+        },
+        "data_sent": {
+            "count": 39082,
+            "rate": 651.2296182806175
+        },
+        "data_received": {
+            "count": 2702026,
+            "rate": 45024.291504127315
+        },
+        "http_req_duration": {
+            "med": 93.722625,
+            "max": 174.150182,
+            "p(90)": 110.5124192,
+            "p(95)": 117.0463052,
+            "avg": 93.3430800951586,
+            "min": 57.496698
+        },
+        "http_req_sending": {
+            "p(90)": 0.18048519999999998,
+            "p(95)": 0.19063539999999998,
+            "avg": 0.15297802003338884,
+            "min": 0.078958,
+            "med": 0.14895,
+            "max": 0.527941
+        },
+        "iteration_duration": {
+            "p(90)": 1020.6706283000001,
+            "p(95)": 1028.49308585,
+            "avg": 925.1058315550002,
+            "min": 0.295855,
+            "med": 997.2514165,
+            "max": 1083.397612
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.0045779265442404005,
+            "min": 0,
+            "med": 0,
+            "max": 0.345877,
+            "p(90)": 0
+        },
+        "http_reqs": {
+            "rate": 9.981232827134995,
+            "count": 599,
+            "thresholds": {
+                "count>=480": false
+            }
+        },
+        "successful_requests": {
+            "passes": 599,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 10
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 599,
+            "value": 0
+        },
+        "iterations": {
+            "rate": 9.981232827134995,
+            "count": 599
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 117.0463052,
+            "avg": 93.3430800951586,
+            "min": 57.496698,
+            "med": 93.722625,
+            "max": 174.150182,
+            "p(90)": 110.5124192
+        },
+        "http_req_blocked": {
+            "max": 27.176537,
+            "p(90)": 0.001524,
+            "p(95)": 0.0016648000000000001,
+            "avg": 0.42932588313856473,
+            "min": 0.000392,
+            "med": 0.001254
+        },
+        "http_req_tls_handshaking": {
+            "max": 26.634469,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.41871623873121866,
+            "min": 0,
+            "med": 0
+        },
+        "group_duration": {
+            "p(95)": 1028.4529993,
+            "avg": 926.5865690200333,
+            "min": 76.619461,
+            "med": 997.193122,
+            "max": 1083.336565,
+            "p(90)": 1020.6188341999999
+        }
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Pipelines": {
+                "name": "API - Project Pipelines",
+                "path": "::API - Project Pipelines",
+                "id": "9962536e228acf4ee326e13af2b4c178",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {},
+        "name": ""
+    }
+}

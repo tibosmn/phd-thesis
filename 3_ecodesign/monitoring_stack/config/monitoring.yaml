@@ -1,0 +1,21 @@
+alertManager: enable:false
+grafana:
+  sidecar:
+    datasources:
+      defaultDatasourceScrapeInterval: 15s
+  additionalDataSources:
+  - name: InfluxDB
+    type: influxdb
+    url: http://influxdb-influxdb2.powerapi.svc.cluster.local
+    basicAuth: false
+    isDefault: true
+    jsonData:
+      defaultBucket: power_consumption
+      httpMode: POST
+      organization: influxdata
+      version: Flux
+    secureJsonData:
+      token: influxdbtoken
+kube-state-metrics:
+  extraArgs:
+    - --metric-labels-allowlist=pods=[*]

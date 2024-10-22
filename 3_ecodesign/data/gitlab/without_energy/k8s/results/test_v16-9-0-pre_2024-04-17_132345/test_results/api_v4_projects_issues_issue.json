@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "iteration_duration": {
+            "avg": 938.3504832959256,
+            "min": 2.081296,
+            "med": 978.720738,
+            "max": 2981.011677,
+            "p(90)": 1042.0217734,
+            "p(95)": 1084.6700229999997
+        },
+        "vus": {
+            "min": 2,
+            "max": 32,
+            "value": 2
+        },
+        "http_req_receiving": {
+            "p(90)": 0.23321909999999998,
+            "p(95)": 0.25364729999999996,
+            "avg": 0.17198856991525407,
+            "min": 0.049015,
+            "med": 0.1716445,
+            "max": 0.62267
+        },
+        "group_duration": {
+            "p(95)": 1084.7441827999996,
+            "avg": 938.787540592692,
+            "min": 161.660394,
+            "med": 978.6592785,
+            "max": 2980.951573,
+            "p(90)": 1042.0016175
+        },
+        "http_reqs": {
+            "rate": 31.447844843256068,
+            "count": 1888,
+            "thresholds": {
+                "count>=1536": false
+            }
+        },
+        "data_sent": {
+            "count": 123300,
+            "rate": 2053.770799350357
+        },
+        "vus_max": {
+            "value": 32,
+            "min": 32,
+            "max": 32
+        },
+        "http_req_blocked": {
+            "med": 0.000949,
+            "max": 29.032914,
+            "p(90)": 0.0013963,
+            "p(95)": 0.0016544499999999983,
+            "avg": 0.4081917552966089,
+            "min": 0.000263
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 0.331357,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.004329007944915255,
+            "min": 0
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 28.563688,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.39893737976694915
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 2225.999547,
+            "p(90)": 271.25287549999996,
+            "p(95)": 338.03314474999996,
+            "avg": 228.52887431091133,
+            "min": 147.833268,
+            "med": 204.3286065
+        },
+        "http_req_duration": {
+            "avg": 228.52887431091133,
+            "min": 147.833268,
+            "med": 204.3286065,
+            "max": 2225.999547,
+            "p(90)": 271.25287549999996,
+            "p(95)": 338.03314474999996
+        },
+        "http_req_failed": {
+            "fails": 1888,
+            "passes": 0,
+            "value": 0
+        },
+        "http_req_sending": {
+            "med": 0.1449425,
+            "max": 0.363484,
+            "p(90)": 0.17881,
+            "p(95)": 0.19118870000000002,
+            "avg": 0.14264077065677952,
+            "min": 0.051006
+        },
+        "iterations": {
+            "rate": 31.447844843256068,
+            "count": 1888
+        },
+        "http_req_waiting": {
+            "p(95)": 337.67462814999993,
+            "avg": 228.2142449703387,
+            "min": 147.522525,
+            "med": 204.04258950000002,
+            "max": 2225.666581,
+            "p(90)": 270.996857,
+            "thresholds": {
+                "p(90)<2600": false
+            }
+        },
+        "successful_requests": {
+            "passes": 1888,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "data_received": {
+            "count": 8194564,
+            "rate": 136494.3735329088
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Issue Overview": {
+                "name": "API - Project Issue Overview",
+                "path": "::API - Project Issue Overview",
+                "id": "1b2b49f4e2e6fb6ed69f8c584fec297c",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

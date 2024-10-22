@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_duration{expected_response:true}": {
+            "max": 245.510128,
+            "p(90)": 85.307705,
+            "p(95)": 89.8860825,
+            "avg": 73.12703884301418,
+            "min": 43.251976,
+            "med": 72.131922
+        },
+        "vus": {
+            "min": 1,
+            "max": 32,
+            "value": 1
+        },
+        "group_duration": {
+            "avg": 926.926324556254,
+            "min": 55.497331,
+            "med": 996.712205,
+            "max": 1108.83067,
+            "p(90)": 1015.387985,
+            "p(95)": 1021.9286235
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.007818322867608581,
+            "min": 0,
+            "med": 0,
+            "max": 0.584994,
+            "p(90)": 0
+        },
+        "http_req_duration": {
+            "med": 72.131922,
+            "max": 245.510128,
+            "p(90)": 85.307705,
+            "p(95)": 89.8860825,
+            "avg": 73.12703884301418,
+            "min": 43.251976
+        },
+        "http_req_waiting": {
+            "avg": 72.94864628885408,
+            "min": 43.082378,
+            "med": 71.959208,
+            "max": 245.381935,
+            "p(90)": 85.124876,
+            "p(95)": 89.703925,
+            "thresholds": {
+                "p(90)<300": false
+            }
+        },
+        "iteration_duration": {
+            "avg": 926.5000813289762,
+            "min": 2.372546,
+            "med": 996.7706284999999,
+            "max": 1108.881618,
+            "p(90)": 1015.4233397,
+            "p(95)": 1021.9784386
+        },
+        "iterations": {
+            "count": 1911,
+            "rate": 31.809552666158236
+        },
+        "successful_requests": {
+            "passes": 1911,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_sending": {
+            "avg": 0.045886923600209344,
+            "min": 0.018513,
+            "med": 0.042107,
+            "max": 0.168856,
+            "p(90)": 0.062667,
+            "p(95)": 0.069342
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1911,
+            "value": 0
+        },
+        "data_sent": {
+            "count": 263718,
+            "rate": 4389.718267929837
+        },
+        "data_received": {
+            "count": 4108650,
+            "rate": 68390.5382322402
+        },
+        "http_req_receiving": {
+            "p(90)": 0.156995,
+            "p(95)": 0.172473,
+            "avg": 0.13250563055991643,
+            "min": 0.052203,
+            "med": 0.129483,
+            "max": 0.299186
+        },
+        "http_reqs": {
+            "count": 1911,
+            "rate": 31.809552666158236,
+            "thresholds": {
+                "count>=1536": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0
+        },
+        "http_req_blocked": {
+            "p(90)": 0.014577,
+            "p(95)": 0.0304945,
+            "avg": 0.02119117268445845,
+            "min": 0.003535,
+            "med": 0.009466,
+            "max": 0.761936
+        },
+        "vus_max": {
+            "max": 32,
+            "value": 32,
+            "min": 32
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Users List": {
+                "path": "::API - Users List",
+                "id": "2f1a4bc35ea19a5b7e83fbba8b497438",
+                "groups": {},
+                "checks": {},
+                "name": "API - Users List"
+            }
+        },
+        "checks": {}
+    }
+}

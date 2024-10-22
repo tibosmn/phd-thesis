@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_blocked": {
+            "p(95)": 0.001678,
+            "avg": 0.4149154576342273,
+            "min": 0.000293,
+            "med": 0.001039,
+            "max": 28.139996,
+            "p(90)": 0.0014144000000000006
+        },
+        "vus_max": {
+            "value": 40,
+            "min": 40,
+            "max": 40
+        },
+        "successful_requests": {
+            "passes": 2384,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "group_duration": {
+            "med": 997.129918,
+            "max": 1408.139667,
+            "p(90)": 1015.63391,
+            "p(95)": 1021.26460795,
+            "avg": 928.7358434647643,
+            "min": 58.168299
+        },
+        "iterations": {
+            "count": 2384,
+            "rate": 39.72847836892984
+        },
+        "iteration_duration": {
+            "med": 997.192324,
+            "max": 1408.215389,
+            "p(90)": 1015.6800479999999,
+            "p(95)": 1021.3094414,
+            "avg": 928.4034460545065,
+            "min": 0.866015
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 0.332814,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.004062525167785235
+        },
+        "http_req_sending": {
+            "avg": 0.13791087122483228,
+            "min": 0.040864,
+            "med": 0.1349055,
+            "max": 0.45944,
+            "p(90)": 0.1653572,
+            "p(95)": 0.17903994999999998
+        },
+        "http_req_receiving": {
+            "avg": 0.12700084605704706,
+            "min": 0.042788,
+            "med": 0.1133645,
+            "max": 0.309373,
+            "p(90)": 0.1889616,
+            "p(95)": 0.20487185
+        },
+        "http_reqs": {
+            "count": 2384,
+            "rate": 39.72847836892984,
+            "thresholds": {
+                "count>=1920": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 1229.028859,
+            "p(90)": 75.5764228,
+            "p(95)": 82.50333295,
+            "avg": 62.68025885654367,
+            "min": 34.888163,
+            "med": 59.855683
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 40
+        },
+        "data_sent": {
+            "count": 132817,
+            "rate": 2213.346187720703
+        },
+        "http_req_duration": {
+            "avg": 62.68025885654367,
+            "min": 34.888163,
+            "med": 59.855683,
+            "max": 1229.028859,
+            "p(90)": 75.5764228,
+            "p(95)": 82.50333295
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0.40530625335570475,
+            "min": 0,
+            "med": 0,
+            "max": 27.610125,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2384,
+            "value": 0
+        },
+        "http_req_waiting": {
+            "min": 34.738802,
+            "med": 59.5636515,
+            "max": 1228.734196,
+            "p(90)": 75.29567640000002,
+            "p(95)": 82.27685505,
+            "avg": 62.415347139261655,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "data_received": {
+            "count": 3641875,
+            "rate": 60690.50006704965
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - User Details": {
+                "name": "API - User Details",
+                "path": "::API - User Details",
+                "id": "92e10e2851fbf8ffb1aeef86647f63aa",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

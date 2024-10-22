@@ -1,0 +1,188 @@
+{
+    "metrics": {
+        "data_received": {
+            "count": 5896491,
+            "rate": 93556.65215482826
+        },
+        "vus_max": {
+            "value": 4,
+            "min": 4,
+            "max": 4
+        },
+        "http_req_waiting{endpoint:logs_tree}": {
+            "avg": 141.38849351707321,
+            "min": 99.591958,
+            "med": 125.139631,
+            "max": 812.886874,
+            "p(90)": 146.51666,
+            "p(95)": 164.77413339999995,
+            "thresholds": {
+                "p(90)<1200": false
+            }
+        },
+        "http_req_duration": {
+            "med": 128.2828705,
+            "max": 813.663532,
+            "p(90)": 235.47424560000002,
+            "p(95)": 247.4364229,
+            "avg": 159.95295872983874,
+            "min": 99.99744
+        },
+        "data_sent": {
+            "count": 43296,
+            "rate": 686.9558202828503
+        },
+        "http_reqs": {
+            "count": 248,
+            "rate": 3.9348910622262303,
+            "thresholds": {
+                "count>=154": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 159.95295872983874,
+            "min": 99.99744,
+            "med": 128.2828705,
+            "max": 813.663532,
+            "p(90)": 235.47424560000002,
+            "p(95)": 247.4364229
+        },
+        "http_req_receiving": {
+            "avg": 0.4741093911290319,
+            "min": 0.198208,
+            "med": 0.3311995,
+            "max": 1.934951,
+            "p(90)": 1.0819235,
+            "p(95)": 1.2141241499999995
+        },
+        "http_req_sending": {
+            "max": 0.341327,
+            "p(90)": 0.20016520000000002,
+            "p(95)": 0.21317064999999996,
+            "avg": 0.16826202419354847,
+            "min": 0.096898,
+            "med": 0.164128
+        },
+        "iterations": {
+            "count": 41,
+            "rate": 0.6505263449648203
+        },
+        "http_req_waiting{endpoint:tree}": {
+            "med": 232.945833,
+            "max": 325.733839,
+            "p(90)": 274.203073,
+            "p(95)": 304.998408,
+            "avg": 235.46099834146338,
+            "min": 195.488452,
+            "thresholds": {
+                "p(90)<1200": false
+            }
+        },
+        "successful_requests": {
+            "passes": 246,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "group_duration": {
+            "min": 2551.930573,
+            "med": 5992.586675,
+            "max": 6025.138991,
+            "p(90)": 6011.948,
+            "p(95)": 6013.058887,
+            "avg": 5694.752520756097
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 4
+        },
+        "http_reqs{endpoint:logs_tree}": {
+            "count": 205,
+            "rate": 3.2526317248241017,
+            "thresholds": {
+                "count>=26": false
+            }
+        },
+        "iteration_duration": {
+            "p(95)": 6013.09053255,
+            "avg": 5580.665414452381,
+            "min": 900.200554,
+            "med": 5992.4423719999995,
+            "max": 6025.217693,
+            "p(90)": 6011.925279
+        },
+        "http_req_waiting": {
+            "avg": 159.3105873145162,
+            "min": 99.591958,
+            "med": 127.775312,
+            "max": 812.886874,
+            "p(90)": 234.3032269,
+            "p(95)": 246.04935089999998
+        },
+        "http_reqs{endpoint:tree}": {
+            "count": 41,
+            "rate": 0.6505263449648203,
+            "thresholds": {
+                "count>=26": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 28.314557,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.5234152983870968,
+            "min": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 248,
+            "value": 0
+        },
+        "http_req_connecting": {
+            "avg": 0.006183189516129031,
+            "min": 0,
+            "med": 0,
+            "max": 0.360324,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_blocked": {
+            "avg": 0.5364071975806445,
+            "min": 0.000493,
+            "med": 0.001011,
+            "max": 28.858815,
+            "p(90)": 0.0013668000000000003,
+            "p(95)": 0.0017773999999999973
+        }
+    },
+    "setup_data": {
+        "endpointPathLogsTree": "-/refs/master/logs_tree/spec%2Flib%2Fgitlab?format=json",
+        "endpointPathTree": "-/tree/master/spec%2Flib%2Fgitlab"
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project Files Tree": {
+                "checks": {},
+                "name": "Web - Project Files Tree",
+                "path": "::Web - Project Files Tree",
+                "id": "06622438644411957448a251dbe2ec38",
+                "groups": {}
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 4
+        },
+        "iterations": {
+            "count": 241,
+            "rate": 4.007332978644059
+        },
+        "http_req_sending": {
+            "p(90)": 0.077364,
+            "p(95)": 0.082924,
+            "avg": 0.057169780082987544,
+            "min": 0.033662,
+            "med": 0.055072,
+            "max": 0.135055
+        },
+        "group_duration": {
+            "max": 1172.748646,
+            "p(90)": 1024.2705,
+            "p(95)": 1039.538307,
+            "avg": 930.5918807302908,
+            "min": 170.411621,
+            "med": 997.350151
+        },
+        "http_req_duration": {
+            "med": 132.399759,
+            "max": 302.219249,
+            "p(90)": 154.491592,
+            "p(95)": 176.792328,
+            "avg": 137.2143458962655,
+            "min": 101.885838
+        },
+        "vus_max": {
+            "min": 4,
+            "max": 4,
+            "value": 4
+        },
+        "data_received": {
+            "rate": 170407.82758385997,
+            "count": 10248284
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.009101327800829874,
+            "min": 0,
+            "med": 0,
+            "max": 0.598804,
+            "p(90)": 0
+        },
+        "http_reqs": {
+            "count": 241,
+            "rate": 4.007332978644059,
+            "thresholds": {
+                "count>=192": false
+            }
+        },
+        "http_req_blocked": {
+            "med": 0.011284,
+            "max": 0.75709,
+            "p(90)": 0.015627,
+            "p(95)": 0.033456,
+            "avg": 0.02449895850622407,
+            "min": 0.006784
+        },
+        "data_sent": {
+            "count": 45790,
+            "rate": 761.3932659423712
+        },
+        "http_req_waiting": {
+            "avg": 136.8096318589212,
+            "min": 101.512288,
+            "med": 132.122528,
+            "max": 301.916729,
+            "p(90)": 154.189063,
+            "p(95)": 176.249978,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0
+        },
+        "successful_requests": {
+            "passes": 241,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_receiving": {
+            "min": 0.14211,
+            "med": 0.342323,
+            "max": 0.745234,
+            "p(90)": 0.493533,
+            "p(95)": 0.545277,
+            "avg": 0.34754425726141064
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 241,
+            "value": 0
+        },
+        "iteration_duration": {
+            "p(90)": 1024.1060582,
+            "p(95)": 1039.541048,
+            "avg": 926.8128470619835,
+            "min": 0.242613,
+            "med": 997.375522,
+            "max": 1172.803348
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 137.2143458962655,
+            "min": 101.885838,
+            "med": 132.399759,
+            "max": 302.219249,
+            "p(90)": 154.491592,
+            "p(95)": 176.792328
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Repository Tags List": {
+                "name": "API - Project Repository Tags List",
+                "path": "::API - Project Repository Tags List",
+                "id": "f0ac0320e1dcf2fa12c347807020d95f",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

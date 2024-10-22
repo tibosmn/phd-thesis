@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "successful_requests": {
+            "passes": 1413,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1413,
+            "value": 0
+        },
+        "iteration_duration": {
+            "avg": 941.4738709130118,
+            "min": 0.370307,
+            "med": 992.9577475,
+            "max": 1546.555498,
+            "p(90)": 1034.2400017,
+            "p(95)": 1045.5044616999999
+        },
+        "http_req_blocked": {
+            "p(90)": 0.016227,
+            "p(95)": 0.03163779999999999,
+            "avg": 0.021834287331917845,
+            "min": 0.0048,
+            "med": 0.01011,
+            "max": 0.778819
+        },
+        "vus_max": {
+            "value": 24,
+            "min": 24,
+            "max": 24
+        },
+        "http_reqs": {
+            "count": 1413,
+            "rate": 23.488193997015383,
+            "thresholds": {
+                "count>=115": false
+            }
+        },
+        "http_req_receiving": {
+            "avg": 0.3420687968860578,
+            "min": 0.114141,
+            "med": 0.288737,
+            "max": 10.794343,
+            "p(90)": 0.40918679999999996,
+            "p(95)": 0.4696391999999999
+        },
+        "http_req_connecting": {
+            "avg": 0.007977261854210898,
+            "min": 0,
+            "med": 0,
+            "max": 0.607804,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "iterations": {
+            "count": 1413,
+            "rate": 23.488193997015383
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 230.17820482165587,
+            "min": 169.343095,
+            "med": 226.349666,
+            "max": 766.525354,
+            "p(90)": 258.947177,
+            "p(95)": 268.84108019999996
+        },
+        "http_req_sending": {
+            "avg": 0.050087886765746555,
+            "min": 0.021048,
+            "med": 0.047668,
+            "max": 0.667519,
+            "p(90)": 0.06786759999999999,
+            "p(95)": 0.07377519999999997
+        },
+        "group_duration": {
+            "p(95)": 1045.4509796,
+            "avg": 942.0825567643315,
+            "min": 192.278847,
+            "med": 992.998463,
+            "max": 1546.496361,
+            "p(90)": 1034.1879920000001
+        },
+        "vus": {
+            "max": 24,
+            "value": 2,
+            "min": 2
+        },
+        "http_req_waiting": {
+            "avg": 229.7860481380045,
+            "min": 169.001343,
+            "med": 225.951692,
+            "max": 766.290283,
+            "p(90)": 258.60976819999996,
+            "p(95)": 268.4680982,
+            "thresholds": {
+                "p(90)<17500": false
+            }
+        },
+        "data_received": {
+            "count": 55625571,
+            "rate": 924659.7330805046
+        },
+        "data_sent": {
+            "rate": 3711.1346515284304,
+            "count": 223254
+        },
+        "http_req_duration": {
+            "avg": 230.17820482165587,
+            "min": 169.343095,
+            "med": 226.349666,
+            "max": 766.525354,
+            "p(90)": 258.947177,
+            "p(95)": 268.84108019999996
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a"
+            },
+            "API - Group Merge Requests List": {
+                "id": "31fda4bd9a8c2b40df49456749321fb1",
+                "groups": {},
+                "checks": {},
+                "name": "API - Group Merge Requests List",
+                "path": "::API - Group Merge Requests List"
+            }
+        },
+        "checks": {}
+    }
+}

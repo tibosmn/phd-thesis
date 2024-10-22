@@ -1,0 +1,154 @@
+{
+    "metrics": {
+        "data_received": {
+            "count": 12127514,
+            "rate": 200800.8608904252
+        },
+        "http_req_connecting": {
+            "max": 0.603237,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.011126062761506277,
+            "min": 0,
+            "med": 0
+        },
+        "iterations": {
+            "count": 238,
+            "rate": 3.940676126362022
+        },
+        "http_req_blocked": {
+            "avg": 0.026159928870292882,
+            "min": 0.005023,
+            "med": 0.010339,
+            "max": 0.790722,
+            "p(90)": 0.013616400000000008,
+            "p(95)": 0.031037699999999994
+        },
+        "data_sent": {
+            "count": 25095,
+            "rate": 415.509526853172
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 239,
+            "value": 0
+        },
+        "http_req_sending": {
+            "avg": 0.049567439330543944,
+            "min": 0.028741,
+            "med": 0.044856,
+            "max": 0.183798,
+            "p(90)": 0.06934,
+            "p(95)": 0.0790473
+        },
+        "http_reqs": {
+            "rate": 3.9572335890778287,
+            "count": 239,
+            "thresholds": {
+                "count>=154": false
+            }
+        },
+        "successful_requests": {
+            "passes": 238,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "vus": {
+            "min": 1,
+            "max": 4,
+            "value": 1
+        },
+        "http_req_receiving": {
+            "p(90)": 0.5255082000000001,
+            "p(95)": 0.5794182,
+            "avg": 0.41849714644351454,
+            "min": 0.203896,
+            "med": 0.395406,
+            "max": 4.073667
+        },
+        "http_req_waiting": {
+            "min": 201.350981,
+            "med": 272.723402,
+            "max": 854.237461,
+            "p(90)": 342.14354540000005,
+            "p(95)": 365.9461209,
+            "avg": 282.96857776150654,
+            "thresholds": {
+                "p(90)<700": false
+            }
+        },
+        "http_req_duration": {
+            "p(95)": 366.3071224,
+            "avg": 283.43664234728044,
+            "min": 201.666486,
+            "med": 273.089259,
+            "max": 854.553906,
+            "p(90)": 342.65231140000003
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        },
+        "iteration_duration": {
+            "med": 995.043117,
+            "max": 1480.93321,
+            "p(90)": 1046.817901,
+            "p(95)": 1066.1387354,
+            "avg": 934.3510789999999,
+            "min": 216.413149
+        },
+        "vus_max": {
+            "value": 4,
+            "min": 4,
+            "max": 4
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 283.43664234728044,
+            "min": 201.666486,
+            "med": 273.089259,
+            "max": 854.553906,
+            "p(90)": 342.65231140000003,
+            "p(95)": 366.3071224
+        },
+        "group_duration": {
+            "med": 995.1334939999999,
+            "max": 1480.876688,
+            "p(90)": 1046.7801762000001,
+            "p(95)": 1066.2098274999998,
+            "avg": 936.903183079832,
+            "min": 216.351593
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/issues"
+    },
+    "root_group": {
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project Issues Page": {
+                "name": "Web - Project Issues Page",
+                "path": "::Web - Project Issues Page",
+                "id": "9b7268fc6b15c90bb095f4d786ef71ae",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

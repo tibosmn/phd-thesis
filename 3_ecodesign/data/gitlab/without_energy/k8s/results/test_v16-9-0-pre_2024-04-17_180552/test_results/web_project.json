@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_waiting": {
+            "avg": 242.69465588524596,
+            "min": 203.128044,
+            "med": 228.447941,
+            "max": 750.935015,
+            "p(90)": 260.350304,
+            "p(95)": 270.415197,
+            "thresholds": {
+                "p(90)<800": false
+            }
+        },
+        "iterations": {
+            "count": 61,
+            "rate": 1.0128645359996173
+        },
+        "successful_requests": {
+            "passes": 61,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_failed": {
+            "fails": 61,
+            "passes": 0,
+            "value": 0
+        },
+        "data_sent": {
+            "count": 25104,
+            "rate": 416.83526740548183
+        },
+        "iteration_duration": {
+            "avg": 971.3275929354837,
+            "min": 0.143561,
+            "med": 998.8750164999999,
+            "max": 1527.11223,
+            "p(90)": 1026.9256322,
+            "p(95)": 1037.1788701
+        },
+        "group_duration": {
+            "min": 375.079311,
+            "med": 999.118375,
+            "max": 1527.057866,
+            "p(90)": 1027.536842,
+            "p(95)": 1037.383086,
+            "avg": 987.1880438196721
+        },
+        "data_received": {
+            "count": 3467555,
+            "rate": 57576.4505922648
+        },
+        "http_req_receiving": {
+            "avg": 1.330722081967213,
+            "min": 0.932877,
+            "med": 1.245133,
+            "max": 2.069742,
+            "p(90)": 1.635038,
+            "p(95)": 1.953483
+        },
+        "http_req_duration": {
+            "avg": 244.198851,
+            "min": 204.745965,
+            "med": 229.779311,
+            "max": 752.62028,
+            "p(90)": 261.76563,
+            "p(95)": 272.066204
+        },
+        "http_req_connecting": {
+            "avg": 0.003990245901639345,
+            "min": 0,
+            "med": 0,
+            "max": 0.243405,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0.40170309836065576,
+            "min": 0,
+            "med": 0,
+            "max": 24.503889,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "vus": {
+            "max": 1,
+            "value": 1,
+            "min": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 272.066204,
+            "avg": 244.198851,
+            "min": 204.745965,
+            "med": 229.779311,
+            "max": 752.62028,
+            "p(90)": 261.76563
+        },
+        "http_req_blocked": {
+            "avg": 0.4142133770491804,
+            "min": 0.000816,
+            "med": 0.00134,
+            "max": 25.172645,
+            "p(90)": 0.001738,
+            "p(95)": 0.00185
+        },
+        "http_reqs": {
+            "count": 61,
+            "rate": 1.0128645359996173,
+            "thresholds": {
+                "count>=48": false
+            }
+        },
+        "http_req_sending": {
+            "p(90)": 0.209726,
+            "p(95)": 0.223844,
+            "avg": 0.17347303278688522,
+            "min": 0.104532,
+            "med": 0.164845,
+            "max": 0.416755
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project Page": {
+                "id": "efd1428482dd42a4efca34992c1e0e7b",
+                "groups": {},
+                "checks": {},
+                "name": "Web - Project Page",
+                "path": "::Web - Project Page"
+            }
+        },
+        "checks": {}
+    }
+}

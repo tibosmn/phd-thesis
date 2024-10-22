@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_blocked": {
+            "min": 0.004937,
+            "med": 0.00985,
+            "max": 1.082497,
+            "p(90)": 0.015254000000000021,
+            "p(95)": 0.031422999999999986,
+            "avg": 0.02201424304461943
+        },
+        "iteration_duration": {
+            "avg": 929.4894320755527,
+            "min": 0.872934,
+            "med": 994.7554540000001,
+            "max": 2328.617265,
+            "p(90)": 1018.3140464999999,
+            "p(95)": 1025.7848145
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 1448.317832,
+            "p(90)": 132.6582862,
+            "p(95)": 141.5952834,
+            "avg": 120.13313431653533,
+            "min": 84.654619,
+            "med": 116.187913
+        },
+        "vus_max": {
+            "value": 32,
+            "min": 32,
+            "max": 32
+        },
+        "successful_requests": {
+            "passes": 1905,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_tls_handshaking": {
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 0.709307,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.007954711286089239
+        },
+        "data_sent": {
+            "count": 361950,
+            "rate": 6018.544811080238
+        },
+        "data_received": {
+            "count": 81008220,
+            "rate": 1347013.6818230317
+        },
+        "http_req_waiting": {
+            "med": 115.78586,
+            "max": 1447.973444,
+            "p(90)": 132.33206500000003,
+            "p(95)": 141.22574899999998,
+            "avg": 119.75786487769032,
+            "min": 84.272837,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_receiving": {
+            "avg": 0.3209428173228354,
+            "min": 0.127198,
+            "med": 0.301188,
+            "max": 10.973552,
+            "p(90)": 0.4284296000000001,
+            "p(95)": 0.4696036
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 32
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1905,
+            "value": 0
+        },
+        "group_duration": {
+            "min": 107.191653,
+            "med": 994.714107,
+            "max": 2328.548012,
+            "p(90)": 1018.2521338,
+            "p(95)": 1025.7298782,
+            "avg": 929.9177739448801
+        },
+        "http_req_sending": {
+            "p(90)": 0.0720782,
+            "p(95)": 0.07913459999999999,
+            "avg": 0.05432662152230966,
+            "min": 0.020623,
+            "med": 0.050367,
+            "max": 0.798365
+        },
+        "http_reqs": {
+            "count": 1905,
+            "rate": 31.67655163726441,
+            "thresholds": {
+                "count>=1536": false
+            }
+        },
+        "http_req_duration": {
+            "p(90)": 132.6582862,
+            "p(95)": 141.5952834,
+            "avg": 120.13313431653533,
+            "min": 84.654619,
+            "med": 116.187913,
+            "max": 1448.317832
+        },
+        "iterations": {
+            "count": 1905,
+            "rate": 31.67655163726441
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup"
+            },
+            "API - Project Repository Tags List": {
+                "groups": {},
+                "checks": {},
+                "name": "API - Project Repository Tags List",
+                "path": "::API - Project Repository Tags List",
+                "id": "f0ac0320e1dcf2fa12c347807020d95f"
+            }
+        },
+        "checks": {}
+    }
+}

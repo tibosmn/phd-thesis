@@ -1,0 +1,13 @@
+venv/
+performance/
+.vscode/
+results/
+*.crt
+__pycache__/
+
+exio3/*.txt
+exio3/*.zip
+oecd/
+
+data/ixi/
+data/new/

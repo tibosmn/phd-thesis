@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_receiving": {
+            "p(90)": 0.342452,
+            "p(95)": 0.356922,
+            "avg": 0.24623826970954352,
+            "min": 0.127977,
+            "med": 0.227357,
+            "max": 0.590148
+        },
+        "iterations": {
+            "count": 241,
+            "rate": 4.009132644530894
+        },
+        "vus": {
+            "min": 1,
+            "max": 4,
+            "value": 1
+        },
+        "http_req_duration": {
+            "min": 81.71653,
+            "med": 107.304783,
+            "max": 340.758449,
+            "p(90)": 126.830344,
+            "p(95)": 152.355255,
+            "avg": 113.6636013983402
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "iteration_duration": {
+            "avg": 926.3343479876037,
+            "min": 0.28158,
+            "med": 997.5473115,
+            "max": 1203.486708,
+            "p(90)": 1020.2514277,
+            "p(95)": 1038.8450242499998
+        },
+        "http_req_duration{expected_response:true}": {
+            "med": 107.304783,
+            "max": 340.758449,
+            "p(90)": 126.830344,
+            "p(95)": 152.355255,
+            "avg": 113.6636013983402,
+            "min": 81.71653
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 241,
+            "value": 0
+        },
+        "successful_requests": {
+            "fails": 0,
+            "passes": 241,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_blocked": {
+            "max": 0.777788,
+            "p(90)": 0.014303,
+            "p(95)": 0.033338,
+            "avg": 0.02442641908713691,
+            "min": 0.006648,
+            "med": 0.011313
+        },
+        "http_req_waiting": {
+            "avg": 113.35788152697094,
+            "min": 81.36168,
+            "med": 106.987572,
+            "max": 340.535043,
+            "p(90)": 126.52087,
+            "p(95)": 152.116221,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "group_duration": {
+            "min": 104.168479,
+            "med": 997.538075,
+            "max": 1203.425407,
+            "p(90)": 1020.377264,
+            "p(95)": 1038.796127,
+            "avg": 930.1099582614107
+        },
+        "http_reqs": {
+            "count": 241,
+            "rate": 4.009132644530894,
+            "thresholds": {
+                "count>=192": false
+            }
+        },
+        "data_sent": {
+            "count": 48200,
+            "rate": 801.8265289061787
+        },
+        "vus_max": {
+            "value": 4,
+            "min": 4,
+            "max": 4
+        },
+        "data_received": {
+            "rate": 123421.14846188355,
+            "count": 7419185
+        },
+        "http_req_sending": {
+            "avg": 0.059481601659751034,
+            "min": 0.024585,
+            "med": 0.059321,
+            "max": 0.127258,
+            "p(90)": 0.076499,
+            "p(95)": 0.083256
+        },
+        "http_req_connecting": {
+            "avg": 0.00908295020746888,
+            "min": 0,
+            "med": 0,
+            "max": 0.61889,
+            "p(90)": 0,
+            "p(95)": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {}
+            },
+            "API - Merge Request Diffs": {
+                "name": "API - Merge Request Diffs",
+                "path": "::API - Merge Request Diffs",
+                "id": "ac5d35b4d8842b235b5ff9c2ef3ac9a7",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

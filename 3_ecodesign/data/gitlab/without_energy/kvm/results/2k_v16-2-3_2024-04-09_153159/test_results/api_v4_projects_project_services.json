@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "group_duration": {
+            "p(90)": 1010.6024226000001,
+            "p(95)": 1016.0144197,
+            "avg": 924.6341710903394,
+            "min": 50.449732,
+            "med": 998.075516,
+            "max": 1123.575921
+        },
+        "vus_max": {
+            "value": 32,
+            "min": 32,
+            "max": 32
+        },
+        "http_reqs": {
+            "count": 1915,
+            "rate": 31.89543015183358,
+            "thresholds": {
+                "count>=1536": false
+            }
+        },
+        "http_req_duration": {
+            "max": 180.970988,
+            "p(90)": 63.1002478,
+            "p(95)": 69.1209033,
+            "avg": 55.40264703342036,
+            "min": 35.367534,
+            "med": 53.920625
+        },
+        "http_req_blocked": {
+            "avg": 0.020952703394255937,
+            "min": 0.003368,
+            "med": 0.009279,
+            "max": 0.747392,
+            "p(90)": 0.012879200000000004,
+            "p(95)": 0.030985899999999993
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1915,
+            "value": 0
+        },
+        "data_received": {
+            "count": 1018780,
+            "rate": 16968.368840775463
+        },
+        "http_req_receiving": {
+            "p(95)": 0.1552402,
+            "avg": 0.11821390234986955,
+            "min": 0.044584,
+            "med": 0.113815,
+            "max": 1.31311,
+            "p(90)": 0.1433604
+        },
+        "http_req_waiting": {
+            "avg": 55.235580912793715,
+            "min": 35.214499,
+            "med": 53.759827,
+            "max": 180.813029,
+            "p(90)": 62.934021400000006,
+            "p(95)": 68.95122719999999,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "successful_requests": {
+            "passes": 1915,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "iteration_duration": {
+            "avg": 924.2121018246361,
+            "min": 0.948476,
+            "med": 998.1298225,
+            "max": 1123.632791,
+            "p(90)": 1010.6536395,
+            "p(95)": 1016.0689985
+        },
+        "http_req_sending": {
+            "p(95)": 0.07183019999999998,
+            "avg": 0.04885221827676233,
+            "min": 0.021641,
+            "med": 0.044565,
+            "max": 0.18101,
+            "p(90)": 0.0661228
+        },
+        "http_req_connecting": {
+            "avg": 0.007855656919060053,
+            "min": 0,
+            "med": 0,
+            "max": 0.593945,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "iterations": {
+            "count": 1915,
+            "rate": 31.89543015183358
+        },
+        "data_sent": {
+            "rate": 5836.863717785545,
+            "count": 350445
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 35.367534,
+            "med": 53.920625,
+            "max": 180.970988,
+            "p(90)": 63.1002478,
+            "p(95)": 69.1209033,
+            "avg": 55.40264703342036
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 32
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Services": {
+                "path": "::API - Project Services",
+                "id": "2778068a11245384f3f3182579cf2794",
+                "groups": {},
+                "checks": {},
+                "name": "API - Project Services"
+            }
+        },
+        "checks": {}
+    }
+}

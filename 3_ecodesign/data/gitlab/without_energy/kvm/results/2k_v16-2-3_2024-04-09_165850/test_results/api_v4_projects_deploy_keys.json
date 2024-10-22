@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "vus_max": {
+            "value": 40,
+            "min": 40,
+            "max": 40
+        },
+        "http_req_sending": {
+            "p(95)": 0.07229295000000001,
+            "avg": 0.049937459866220724,
+            "min": 0.017416,
+            "med": 0.046175,
+            "max": 0.555216,
+            "p(90)": 0.0663235
+        },
+        "iterations": {
+            "count": 2392,
+            "rate": 39.828661644599464
+        },
+        "iteration_duration": {
+            "max": 1218.455282,
+            "p(90)": 1015.0154148,
+            "p(95)": 1022.7572442,
+            "avg": 925.2778295770994,
+            "min": 0.21245,
+            "med": 996.410903
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 0.559633,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.007737451923076922
+        },
+        "http_reqs": {
+            "count": 2392,
+            "rate": 39.828661644599464,
+            "thresholds": {
+                "count>=1920": false
+            }
+        },
+        "http_req_receiving": {
+            "min": 0.044632,
+            "med": 0.122538,
+            "max": 0.244394,
+            "p(90)": 0.1556317,
+            "p(95)": 0.16850194999999998,
+            "avg": 0.12636573787625396
+        },
+        "http_req_blocked": {
+            "med": 0.009292,
+            "max": 0.733711,
+            "p(90)": 0.01360250000000001,
+            "p(95)": 0.029916599999999995,
+            "avg": 0.020820926421404626,
+            "min": 0.004377
+        },
+        "http_req_duration": {
+            "max": 303.366968,
+            "p(90)": 69.44690170000001,
+            "p(95)": 79.26544189999998,
+            "avg": 59.011281617056916,
+            "min": 30.99583,
+            "med": 56.4041675
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 40
+        },
+        "http_req_waiting": {
+            "avg": 58.834978419314524,
+            "min": 30.834805,
+            "med": 56.2315575,
+            "max": 303.208604,
+            "p(90)": 69.269432,
+            "p(95)": 79.08076654999998,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "data_sent": {
+            "count": 444912,
+            "rate": 7408.131065895501
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2392,
+            "value": 0
+        },
+        "group_duration": {
+            "p(95)": 1022.707237,
+            "avg": 925.6091993603671,
+            "min": 45.18998,
+            "med": 996.355076,
+            "max": 1218.399827,
+            "p(90)": 1014.9756953
+        },
+        "data_received": {
+            "count": 2248480,
+            "rate": 37438.9419459235
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 69.44690170000001,
+            "p(95)": 79.26544189999998,
+            "avg": 59.011281617056916,
+            "min": 30.99583,
+            "med": 56.4041675,
+            "max": 303.366968
+        },
+        "successful_requests": {
+            "passes": 2392,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Deploy Keys": {
+                "name": "API - Project Deploy Keys",
+                "path": "::API - Project Deploy Keys",
+                "id": "5171887c28c5ba6959d8fc6bc6c35761",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

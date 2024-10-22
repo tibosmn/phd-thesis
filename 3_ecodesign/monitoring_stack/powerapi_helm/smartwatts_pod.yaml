@@ -1,0 +1,85 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: nrj-account
+  namespace: powerapi
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: nrj-role
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get","watch","list"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: nrj-binding
+subjects:
+- kind: ServiceAccount
+  name: nrj-account
+  namespace: powerapi
+roleRef:
+  kind: ClusterRole
+  name: nrj-role
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: smartwatts
+  labels:
+    app: smartwatts
+spec:
+  serviceAccountName: nrj-account
+  containers:
+  - env:
+    - name: POWERAPI_VERBOSE
+      value: 'true'
+    - name: POWERAPI_STREAM
+      value: 'true'
+    - name: POWERAPI_CPU_BASE_FREQ
+      value: '1900'
+    - name: POWERAPI_CPU_ERROR_THRESHOLD
+      value: '2.0'
+    - name: POWERAPI_DISABLE_DRAM_FORMULA
+      value: 'true'
+    - name: POWERAPI_SENSOR_REPORTS_FREQUENCY
+      value: '1000'
+    - name: POWERAPI_INPUT_PULLER_MODEL
+      value: HWPCReport
+    - name: POWERAPI_INPUT_PULLER_TYPE
+      value: mongodb
+    - name: POWERAPI_INPUT_PULLER_URI
+      value: mongodb://mongo-svc.powerapi.svc.cluster.local
+    - name: POWERAPI_INPUT_PULLER_DB
+      value: db_sensor
+    - name: POWERAPI_INPUT_PULLER_COLLECTION
+      value: report_0
+    - name: POWERAPI_OUTPUT_PUSHER_POWER_MODEL
+      value: PowerReport
+    - name: POWERAPI_OUTPUT_PUSHER_POWER_TYPE
+      value: influxdb2
+    - name: POWERAPI_OUTPUT_PUSHER_POWER_URI
+      value: influxdb-influxdb2.powerapi.svc.cluster.local
+    - name: POWERAPI_OUTPUT_PUSHER_POWER_ORG
+      value: influxdata
+    - name: POWERAPI_OUTPUT_PUSHER_POWER_DB
+      value: power_consumption
+    - name: POWERAPI_OUTPUT_PUSHER_POWER_TOKEN
+      value: influxdbtoken
+    - name: POWERAPI_OUTPUT_PUSHER_POWER_PORT
+      value: '0'
+    - name: POWERAPI_PRE_PROCESSOR_P1_TYPE
+      value: k8s
+    - name: POWERAPI_PRE_PROCESSOR_P1_API_MODE
+      value: cluster
+    - name: POWERAPI_PRE_PROCESSOR_P1_PULLER
+      value: puller
+    image: k3d-myregistry.localhost:12345/smartwatts-formula
+    name: smartwatts
+    imagePullPolicy: Always
+    tty: true

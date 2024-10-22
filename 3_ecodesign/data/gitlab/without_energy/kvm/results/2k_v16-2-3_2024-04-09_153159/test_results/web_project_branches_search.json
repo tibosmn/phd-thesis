@@ -1,0 +1,154 @@
+{
+    "metrics": {
+        "http_req_receiving": {
+            "min": 0.457649,
+            "med": 0.7962279999999999,
+            "max": 8.266337,
+            "p(90)": 1.1316783000000001,
+            "p(95)": 1.2025172499999999,
+            "avg": 0.8559368437500001
+        },
+        "http_req_waiting": {
+            "max": 2013.248252,
+            "p(90)": 968.7584165000001,
+            "p(95)": 1009.8514304999999,
+            "avg": 904.4687066785717,
+            "min": 559.302881,
+            "med": 888.4566235,
+            "thresholds": {
+                "p(90)<1600": false
+            }
+        },
+        "http_req_sending": {
+            "avg": 0.04836602232142857,
+            "min": 0.018068,
+            "med": 0.046227000000000004,
+            "max": 0.132612,
+            "p(90)": 0.06312870000000001,
+            "p(95)": 0.07757739999999998
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 4
+        },
+        "http_reqs": {
+            "count": 224,
+            "rate": 3.672198382543569,
+            "thresholds": {
+                "count>=154": false
+            }
+        },
+        "http_req_blocked": {
+            "avg": 0.025291558035714284,
+            "min": 0.003562,
+            "med": 0.010646,
+            "max": 0.714198,
+            "p(90)": 0.014947900000000004,
+            "p(95)": 0.0329596
+        },
+        "group_duration": {
+            "med": 996.115743,
+            "max": 2135.709349,
+            "p(90)": 1100.54919,
+            "p(95)": 1149.8285646999998,
+            "avg": 1006.65179961435,
+            "min": 814.362008
+        },
+        "data_sent": {
+            "count": 27982,
+            "rate": 458.72971044792035
+        },
+        "successful_requests": {
+            "passes": 223,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 2014.401315,
+            "p(90)": 971.0553788000001,
+            "p(95)": 1010.5104525999999,
+            "avg": 905.3730095446433,
+            "min": 560.011219,
+            "med": 889.166548
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 0.527751,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.010722120535714285
+        },
+        "iteration_duration": {
+            "min": 561.358031,
+            "med": 996.1378925,
+            "max": 2135.770613,
+            "p(90)": 1100.4776356,
+            "p(95)": 1149.62877415,
+            "avg": 1004.725055031251
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 224,
+            "value": 0
+        },
+        "http_req_duration": {
+            "p(95)": 1010.5104525999999,
+            "avg": 905.3730095446433,
+            "min": 560.011219,
+            "med": 889.166548,
+            "max": 2014.401315,
+            "p(90)": 971.0553788000001
+        },
+        "vus_max": {
+            "min": 4,
+            "max": 4,
+            "value": 4
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        },
+        "data_received": {
+            "rate": 532073.0041243846,
+            "count": 32455859
+        },
+        "iterations": {
+            "count": 223,
+            "rate": 3.655804639764357
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/branches"
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project Branches Search Page": {
+                "id": "5e1a58f7d999bdce626b5d5ea03cc796",
+                "groups": {},
+                "checks": {},
+                "name": "Web - Project Branches Search Page",
+                "path": "::Web - Project Branches Search Page"
+            }
+        },
+        "checks": {}
+    }
+}

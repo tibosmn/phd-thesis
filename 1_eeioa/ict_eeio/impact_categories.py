@@ -1,0 +1,32 @@
+minerals_impact_categories = [
+    # "Domestic Extraction Used - Crop and Crop Residue",
+    # "Domestic Extraction Used - Grazing and Fodder",
+    # "Domestic Extraction Used - Forestry and Timber",
+    # "Domestic Extraction Used â\x80\x93 Fisheries",
+    "Domestic Extraction Used - Non-metalic Minerals",
+    "Domestic Extraction Used - Iron Ore",
+    "Domestic Extraction Used - Non-ferous metal ores",
+    # "Unused Domestic Extraction - Crop and Crop Residue",
+    # "Unused Domestic Extraction - Grazing and Fodder",
+    # "Unused Domestic Extraction - Forestry and Timber",
+    # "Unused Domestic Extraction â\x80\x93 Fisheries",
+    "Unused Domestic Extraction - Coal and Peat",
+    # "Unused Domestic Extraction - Oil and Gas",
+    "Unused Domestic Extraction - Non-metalic Minerals",
+    "Unused Domestic Extraction - Iron Ore",
+    "Unused Domestic Extraction - Non-ferous metal ores",
+]
+
+water_impact_categories = [
+    # "Water Consumption Green - Agriculture",
+    # "Water Consumption Blue - Agriculture",
+    "Water Consumption Blue - Livestock",
+    "Water Consumption Blue - Manufacturing",
+    "Water Consumption Blue - Electricity",
+    "Water Consumption Blue - Domestic",
+    # "Water Consumption Blue - Total",
+    "Water Withdrawal Blue - Manufacturing",
+    "Water Withdrawal Blue - Electricity",
+    "Water Withdrawal Blue - Domestic",
+    # "Water Withdrawal Blue - Total",
+]

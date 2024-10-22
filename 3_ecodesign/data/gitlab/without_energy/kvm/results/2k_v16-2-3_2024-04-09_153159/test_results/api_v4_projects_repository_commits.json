@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_received": {
+            "count": 27680838,
+            "rate": 460552.9895552734
+        },
+        "data_sent": {
+            "count": 367858,
+            "rate": 6120.410864433503
+        },
+        "group_duration": {
+            "max": 1347.610436,
+            "p(90)": 1015.8826575,
+            "p(95)": 1022.89157525,
+            "avg": 929.0950115650575,
+            "min": 94.539933,
+            "med": 996.6535195
+        },
+        "iteration_duration": {
+            "avg": 928.668162937073,
+            "min": 0.63007,
+            "med": 996.701889,
+            "max": 1347.667776,
+            "p(90)": 1015.9384304,
+            "p(95)": 1022.9473207999999
+        },
+        "http_req_sending": {
+            "max": 0.242322,
+            "p(90)": 0.07331750000000001,
+            "p(95)": 0.07776,
+            "avg": 0.05533831479538291,
+            "min": 0.021257,
+            "med": 0.0515145
+        },
+        "http_reqs": {
+            "count": 1906,
+            "rate": 31.711973390847167,
+            "thresholds": {
+                "count>=1536": false
+            }
+        },
+        "http_req_receiving": {
+            "p(95)": 0.24859675,
+            "avg": 0.18474418940188864,
+            "min": 0.087059,
+            "med": 0.1656785,
+            "max": 8.893092,
+            "p(90)": 0.22793000000000002
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 0.600084,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.00841906558237146,
+            "min": 0
+        },
+        "successful_requests": {
+            "passes": 1906,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "iterations": {
+            "count": 1906,
+            "rate": 31.711973390847167
+        },
+        "http_req_waiting": {
+            "avg": 104.90367231427086,
+            "min": 70.874758,
+            "med": 102.844128,
+            "max": 433.476615,
+            "p(90)": 117.739734,
+            "p(95)": 124.9227635,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_duration": {
+            "p(90)": 117.992399,
+            "p(95)": 125.22245925,
+            "avg": 105.14375481846805,
+            "min": 71.009783,
+            "med": 103.0809705,
+            "max": 433.764309
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1906,
+            "value": 0
+        },
+        "vus": {
+            "min": 1,
+            "max": 32,
+            "value": 1
+        },
+        "vus_max": {
+            "value": 32,
+            "min": 32,
+            "max": 32
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 105.14375481846805,
+            "min": 71.009783,
+            "med": 103.0809705,
+            "max": 433.764309,
+            "p(90)": 117.992399,
+            "p(95)": 125.22245925
+        },
+        "http_req_blocked": {
+            "avg": 0.022866290136411335,
+            "min": 0.004365,
+            "med": 0.010074,
+            "max": 0.759521,
+            "p(90)": 0.017569500000000002,
+            "p(95)": 0.03211775
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {}
+            },
+            "API - Project Repository Commits List": {
+                "name": "API - Project Repository Commits List",
+                "path": "::API - Project Repository Commits List",
+                "id": "3f7dccbf47cf80ed4d5901a6f3812ed3",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

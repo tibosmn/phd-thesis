@@ -1,0 +1,12 @@
+matplotlib
+numpy
+scipy
+networkx
+scikit-fuzzy
+pandas
+seaborn
+matplotlib
+squarify
+ete3
+PyQt5
+Jinja2

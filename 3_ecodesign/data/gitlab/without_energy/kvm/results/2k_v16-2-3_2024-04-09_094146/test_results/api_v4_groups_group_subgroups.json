@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1909,
+            "value": 0
+        },
+        "http_req_duration": {
+            "p(95)": 106.81436619999998,
+            "avg": 88.080545227868,
+            "min": 53.779199,
+            "med": 86.588714,
+            "max": 460.072108,
+            "p(90)": 101.308103
+        },
+        "successful_requests": {
+            "passes": 1909,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "iteration_duration": {
+            "min": 0.17866,
+            "med": 996.8036810000001,
+            "max": 1369.207036,
+            "p(90)": 1015.6865795,
+            "p(95)": 1021.4399672999999,
+            "avg": 927.6176470774864
+        },
+        "group_duration": {
+            "max": 1369.156404,
+            "p(90)": 1015.6461816,
+            "p(95)": 1021.3805314,
+            "avg": 928.0452952702983,
+            "min": 80.88999,
+            "med": 996.75569
+        },
+        "vus_max": {
+            "value": 32,
+            "min": 32,
+            "max": 32
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 106.81436619999998,
+            "avg": 88.080545227868,
+            "min": 53.779199,
+            "med": 86.588714,
+            "max": 460.072108,
+            "p(90)": 101.308103
+        },
+        "http_req_blocked": {
+            "avg": 0.020250619172341545,
+            "min": 0.004116,
+            "med": 0.009491,
+            "max": 0.689162,
+            "p(90)": 0.013465800000000002,
+            "p(95)": 0.0308498
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.007090444211629127,
+            "min": 0,
+            "med": 0,
+            "max": 0.54694,
+            "p(90)": 0
+        },
+        "http_reqs": {
+            "count": 1909,
+            "rate": 31.7701309411214,
+            "thresholds": {
+                "count>=1536": false
+            }
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 32
+        },
+        "iterations": {
+            "count": 1909,
+            "rate": 31.7701309411214
+        },
+        "data_received": {
+            "count": 33394137,
+            "rate": 555754.9005530367
+        },
+        "http_req_waiting": {
+            "p(95)": 106.54555039999998,
+            "avg": 87.82114029963347,
+            "min": 53.532044,
+            "med": 86.307052,
+            "max": 459.771666,
+            "p(90)": 101.0882984,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "data_sent": {
+            "count": 343620,
+            "rate": 5718.623569401852
+        },
+        "http_req_receiving": {
+            "avg": 0.2089067752750132,
+            "min": 0.087997,
+            "med": 0.183389,
+            "max": 5.30075,
+            "p(90)": 0.26678840000000004,
+            "p(95)": 0.2989304
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_sending": {
+            "min": 0.021554,
+            "med": 0.04645,
+            "max": 0.162994,
+            "p(90)": 0.069318,
+            "p(95)": 0.07464159999999999,
+            "avg": 0.05049815295966475
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a"
+            },
+            "API - Group Subgroups List": {
+                "groups": {},
+                "checks": {},
+                "name": "API - Group Subgroups List",
+                "path": "::API - Group Subgroups List",
+                "id": "7f54718d7aa265610dfb83a95817a435"
+            }
+        },
+        "checks": {}
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_connecting": {
+            "avg": 0.0077924715719063535,
+            "min": 0,
+            "med": 0,
+            "max": 0.642196,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_received": {
+            "count": 3803016,
+            "rate": 63368.83763466208
+        },
+        "http_req_duration": {
+            "avg": 64.10205698160541,
+            "min": 34.651688,
+            "med": 58.145216500000004,
+            "max": 696.442284,
+            "p(90)": 70.8372827,
+            "p(95)": 78.04447484999993
+        },
+        "vus_max": {
+            "min": 40,
+            "max": 40,
+            "value": 40
+        },
+        "data_sent": {
+            "rate": 8666.547713055805,
+            "count": 520114
+        },
+        "iterations": {
+            "rate": 39.8573815156475,
+            "count": 2392
+        },
+        "iteration_duration": {
+            "avg": 926.1520210229825,
+            "min": 0.396372,
+            "med": 997.099841,
+            "max": 1614.732679,
+            "p(90)": 1014.4420398,
+            "p(95)": 1021.9500308
+        },
+        "http_reqs": {
+            "count": 2392,
+            "rate": 39.8573815156475,
+            "thresholds": {
+                "count>=576": false
+            }
+        },
+        "http_req_sending": {
+            "max": 0.940584,
+            "p(90)": 0.06800500000000001,
+            "p(95)": 0.07534075,
+            "avg": 0.05103703051839467,
+            "min": 0.019918,
+            "med": 0.047507
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 40
+        },
+        "group_duration": {
+            "avg": 926.482295361206,
+            "min": 44.918024,
+            "med": 997.0457105,
+            "max": 1614.68766,
+            "p(90)": 1014.3925032999999,
+            "p(95)": 1021.90403575
+        },
+        "successful_requests": {
+            "passes": 30,
+            "fails": 2362,
+            "thresholds": {
+                "rate>0.99": true
+            },
+            "value": 0.01254180602006689
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 413.1284453999999,
+            "min": 196.537693,
+            "med": 414.3313465,
+            "max": 696.442284,
+            "p(90)": 529.0615482000001,
+            "p(95)": 584.5705372499999
+        },
+        "http_req_receiving": {
+            "med": 0.109313,
+            "max": 3.087543,
+            "p(90)": 0.1369986,
+            "p(95)": 0.14839365,
+            "avg": 0.11941982190635443,
+            "min": 0.044364
+        },
+        "http_req_failed": {
+            "passes": 2362,
+            "fails": 30,
+            "value": 0.9874581939799331
+        },
+        "http_req_waiting": {
+            "min": 34.508447,
+            "med": 58.0033125,
+            "max": 696.028205,
+            "p(90)": 70.67226370000002,
+            "p(95)": 77.88354614999994,
+            "avg": 63.93160012918055,
+            "thresholds": {
+                "p(90)<5000": false
+            }
+        },
+        "http_req_blocked": {
+            "med": 0.009356,
+            "max": 0.967767,
+            "p(90)": 0.013233400000000001,
+            "p(95)": 0.0304098,
+            "avg": 0.020969913461538436,
+            "min": 0.003288
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Merge Requests Search": {
+                "name": "API - Project Merge Requests Search",
+                "path": "::API - Project Merge Requests Search",
+                "id": "c6907cc5e298a1f611d101e4169bed7d",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

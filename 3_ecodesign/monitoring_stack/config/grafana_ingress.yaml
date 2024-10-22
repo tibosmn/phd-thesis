@@ -1,0 +1,15 @@
+apiVersion:  traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: prometheus-stack-grafana
+  namespace: monitoring
+spec:
+  routes:
+  - kind: Rule
+    match: Host(`grafana.kubernetes`)
+    services:
+    - kind: Service
+      name: prometheus-stack-grafana
+      namespace: monitoring
+      port: 80
+      scheme: http

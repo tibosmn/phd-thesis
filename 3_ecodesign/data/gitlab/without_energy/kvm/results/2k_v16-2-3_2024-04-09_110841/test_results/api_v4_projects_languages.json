@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "group_duration": {
+            "med": 997.972957,
+            "max": 1075.162696,
+            "p(90)": 1013.0311921,
+            "p(95)": 1018.22641835,
+            "avg": 926.4206498959113,
+            "min": 37.916784
+        },
+        "iterations": {
+            "rate": 35.86146518109247,
+            "count": 2152
+        },
+        "http_req_duration": {
+            "p(95)": 69.78759199999999,
+            "avg": 55.90501524442372,
+            "min": 34.125004,
+            "med": 54.932221,
+            "max": 145.207738,
+            "p(90)": 65.4563315
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        },
+        "http_req_sending": {
+            "p(90)": 0.0658451,
+            "p(95)": 0.07199824999999997,
+            "avg": 0.0481061826208179,
+            "min": 0.020677,
+            "med": 0.04448,
+            "max": 0.139337
+        },
+        "http_req_waiting": {
+            "med": 54.778141500000004,
+            "max": 145.016064,
+            "p(90)": 65.27840499999999,
+            "p(95)": 69.6076712,
+            "avg": 55.74034360920081,
+            "min": 33.962271,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "data_sent": {
+            "count": 395968,
+            "rate": 6598.509593321014
+        },
+        "data_received": {
+            "count": 1284744,
+            "rate": 21409.294713112202
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 65.4563315,
+            "p(95)": 69.78759199999999,
+            "avg": 55.90501524442372,
+            "min": 34.125004,
+            "med": 54.932221,
+            "max": 145.207738
+        },
+        "successful_requests": {
+            "passes": 2152,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "iteration_duration": {
+            "min": 0.793622,
+            "med": 998.018656,
+            "max": 1075.225428,
+            "p(90)": 1013.0739416,
+            "p(95)": 1018.273144,
+            "avg": 926.047384181607
+        },
+        "vus_max": {
+            "max": 36,
+            "value": 36,
+            "min": 36
+        },
+        "http_reqs": {
+            "rate": 35.86146518109247,
+            "count": 2152,
+            "thresholds": {
+                "count>=1728": false
+            }
+        },
+        "http_req_receiving": {
+            "avg": 0.11656545260223031,
+            "min": 0.041743,
+            "med": 0.1127755,
+            "max": 0.271244,
+            "p(90)": 0.1410718,
+            "p(95)": 0.15284
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 36
+        },
+        "http_req_connecting": {
+            "avg": 0.007399998605947956,
+            "min": 0,
+            "med": 0,
+            "max": 0.574001,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2152,
+            "value": 0
+        },
+        "http_req_blocked": {
+            "p(90)": 0.012791,
+            "p(95)": 0.02989679999999999,
+            "avg": 0.020225124999999972,
+            "min": 0.005026,
+            "med": 0.0091995,
+            "max": 0.742018
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {},
+                "name": "setup",
+                "path": "::setup"
+            },
+            "API - Project Languages List": {
+                "checks": {},
+                "name": "API - Project Languages List",
+                "path": "::API - Project Languages List",
+                "id": "1e786bf7c1613772c019470ac07ac4ff",
+                "groups": {}
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

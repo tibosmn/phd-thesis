@@ -1,0 +1,84 @@
+#  App
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hwpc-sensor
+  labels:
+    app: hwpc-sensor
+spec:
+  volumes:
+#    - name: proc
+#      hostPath:
+#        path: /proc
+#        type: ''
+    - name: sys
+      hostPath:
+        path: /sys
+        type: ''
+        
+  containers:
+    - name: hwpc-sensor
+      image: k3d-myregistry.localhost:12345/hwpc-sensor
+      imagePullPolicy: Always
+      volumeMounts:
+#        - name: proc
+#          # readOnly: true
+#          mountPath: /proc
+        - name: sys
+          # readOnly: true
+          mountPath: /sys                        
+      securityContext:
+        privileged: true      
+        capabilities: 
+          add: ["SYS_ADMIN"]
+      command: ["/usr/bin/hwpc-sensor"]
+      args:
+        - "-n"
+        - "hwpc"
+        - "-r"
+        - "mongodb"
+        - "-U"
+        - "mongodb://mongo-svc.powerapi.svc.cluster.local"
+        - "-D"
+        - "db_sensor"
+        - "-C"
+        - "report_0"
+        - "-s"
+        - "rapl"
+        - "-o"
+        - "-e"
+        - "RAPL_ENERGY_PKG"
+        - "-s" 
+        - "msr"
+        - "-e"
+        - "TSC"
+        - "-e"
+        - "APERF"
+        - "-e"
+        - "MPERF" 
+        - "-c"
+        - "core"
+        - "-e"
+        - "TSC"
+        - "-e"
+        - "APERF" 
+        - "-e"
+        - "MPERF"
+        #############
+        # AMD stuff #
+        #############
+        # - "-e"
+        # - "CYCLES_NOT_IN_HALT"
+        # - "-e"
+        # - "RETIRED_INSTRUCTIONS"
+        ###############
+        # Intel stuff #
+        ###############
+        - "-e"
+        - "CPU_CLK_THREAD_UNHALTED:REF_P"
+        - "-e"
+        - "CPU_CLK_THREAD_UNHALTED:THREAD_P"
+        - "-e"
+        - "LLC_MISSES"
+        - "-e"
+        - "INSTRUCTIONS_RETIRED"

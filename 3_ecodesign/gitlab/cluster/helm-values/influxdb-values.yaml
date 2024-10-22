@@ -1,0 +1,10 @@
+#influxdb:
+#  ingress:
+#    enabled: true
+#    ingressClassName: nginx
+#    hosts:
+#      - influxdb.some.domain
+ingress:
+  enabled: true
+  hostname: influxdb.monitoring
+  className: nginx

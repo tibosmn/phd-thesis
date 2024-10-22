@@ -1,0 +1,169 @@
+{
+    "metrics": {
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 58,
+            "value": 0
+        },
+        "vus_max": {
+            "max": 1,
+            "value": 1,
+            "min": 1
+        },
+        "http_reqs": {
+            "count": 58,
+            "rate": 0.9569709225523978,
+            "thresholds": {
+                "count>=29": false
+            }
+        },
+        "successful_requests": {
+            "passes": 57,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "iteration_duration": {
+            "p(90)": 1095.1420702000003,
+            "p(95)": 1728.2670095499993,
+            "avg": 1044.898290672414,
+            "min": 322.844767,
+            "med": 1001.5833554999999,
+            "max": 2369.752487
+        },
+        "http_reqs{controller:Projects::MergeRequestsController#commits.json}": {
+            "count": 57,
+            "rate": 0.9404714238877013,
+            "thresholds": {
+                "count>=29": false
+            }
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 0.302266,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.009420362068965517,
+            "min": 0
+        },
+        "data_received": {
+            "rate": 264969.0954455662,
+            "count": 16059221
+        },
+        "http_req_waiting": {
+            "avg": 771.0883705172415,
+            "min": 294.801366,
+            "med": 708.663694,
+            "max": 2053.327576,
+            "p(90)": 779.8294002000001,
+            "p(95)": 1091.8258412999987
+        },
+        "vus": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "group_duration": {
+            "avg": 1057.508174087719,
+            "min": 714.908484,
+            "med": 1003.447155,
+            "max": 2369.702164,
+            "p(90)": 1098.3744736,
+            "p(95)": 1750.860997599998
+        },
+        "http_req_sending": {
+            "max": 0.212859,
+            "p(90)": 0.1853303,
+            "p(95)": 0.1959147,
+            "avg": 0.15723934482758622,
+            "min": 0.101665,
+            "med": 0.1545105
+        },
+        "http_req_duration": {
+            "avg": 779.757807086207,
+            "min": 298.022944,
+            "med": 716.7660625,
+            "max": 2061.087449,
+            "p(90)": 788.1113479,
+            "p(95)": 1101.6981518499986
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0.747083672413793,
+            "min": 0,
+            "med": 0,
+            "max": 23.307695,
+            "p(90)": 0
+        },
+        "data_sent": {
+            "count": 154561,
+            "rate": 2550.179013114158
+        },
+        "http_req_receiving": {
+            "p(95)": 11.270411549999999,
+            "avg": 8.512197224137934,
+            "min": 3.02587,
+            "med": 7.995705,
+            "max": 13.931848,
+            "p(90)": 10.8875217
+        },
+        "http_req_waiting{controller:Projects::MergeRequestsController#commits.json}": {
+            "avg": 779.4442828771931,
+            "min": 649.251455,
+            "med": 710.885906,
+            "max": 2053.327576,
+            "p(90)": 782.0036136,
+            "p(95)": 1138.725543399996,
+            "thresholds": {
+                "p(90)<1950": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 779.757807086207,
+            "min": 298.022944,
+            "med": 716.7660625,
+            "max": 2061.087449,
+            "p(90)": 788.1113479,
+            "p(95)": 1101.6981518499986
+        },
+        "http_req_blocked": {
+            "avg": 0.7675699137931035,
+            "min": 0.000827,
+            "med": 0.0010915,
+            "max": 23.942004,
+            "p(90)": 0.001507,
+            "p(95)": 0.0017230499999999998
+        },
+        "iterations": {
+            "rate": 0.9404714238877013,
+            "count": 57
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/merge_requests"
+    },
+    "root_group": {
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+                "setup": {
+                    "checks": {},
+                    "name": "setup",
+                    "path": "::setup",
+                    "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                    "groups": {}
+                },
+                "Web - Merge Request Commits Page": {
+                    "id": "09affb56ceb7845c1325d1f2050426aa",
+                    "groups": {},
+                    "checks": {},
+                    "name": "Web - Merge Request Commits Page",
+                    "path": "::Web - Merge Request Commits Page"
+                }
+            }
+    }
+}

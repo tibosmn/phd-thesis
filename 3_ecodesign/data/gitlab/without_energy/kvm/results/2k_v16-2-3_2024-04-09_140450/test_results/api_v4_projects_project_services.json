@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 601,
+            "value": 0
+        },
+        "http_req_duration": {
+            "med": 56.650356,
+            "max": 166.733411,
+            "p(90)": 67.508488,
+            "p(95)": 72.932361,
+            "avg": 58.86298848918468,
+            "min": 38.352262
+        },
+        "http_req_receiving": {
+            "avg": 0.12570837437604002,
+            "min": 0.066261,
+            "med": 0.12227,
+            "max": 0.352561,
+            "p(90)": 0.150027,
+            "p(95)": 0.162241
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 58.86298848918468,
+            "min": 38.352262,
+            "med": 56.650356,
+            "max": 166.733411,
+            "p(90)": 67.508488,
+            "p(95)": 72.932361
+        },
+        "http_req_connecting": {
+            "avg": 0.008308465890183027,
+            "min": 0,
+            "med": 0,
+            "max": 0.597761,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_received": {
+            "count": 319732,
+            "rate": 5323.84414509046
+        },
+        "iteration_duration": {
+            "avg": 922.1800129186057,
+            "min": 0.260557,
+            "med": 998.0901565,
+            "max": 1072.670129,
+            "p(90)": 1009.3731553,
+            "p(95)": 1012.8714712
+        },
+        "http_req_sending": {
+            "avg": 0.05553114309484191,
+            "min": 0.026264,
+            "med": 0.050996,
+            "max": 0.178157,
+            "p(90)": 0.073293,
+            "p(95)": 0.084327
+        },
+        "http_req_waiting": {
+            "p(90)": 67.312125,
+            "p(95)": 72.77106,
+            "avg": 58.68174897171379,
+            "min": 38.171585,
+            "med": 56.443519,
+            "max": 166.58852,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_reqs": {
+            "count": 601,
+            "rate": 10.007225836636202,
+            "thresholds": {
+                "count>=480": false
+            }
+        },
+        "successful_requests": {
+            "passes": 601,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 10
+        },
+        "data_sent": {
+            "count": 109983,
+            "rate": 1831.3223281044252
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "iterations": {
+            "count": 601,
+            "rate": 10.007225836636202
+        },
+        "http_req_blocked": {
+            "avg": 0.023686838602329438,
+            "min": 0.005156,
+            "med": 0.010094,
+            "max": 0.801237,
+            "p(90)": 0.026345,
+            "p(95)": 0.033856
+        },
+        "group_duration": {
+            "avg": 923.6519784891847,
+            "min": 63.217277,
+            "med": 998.038989,
+            "max": 1072.586695,
+            "p(90)": 1009.341379,
+            "p(95)": 1012.817986
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Services": {
+                "id": "2778068a11245384f3f3182579cf2794",
+                "groups": {},
+                "checks": {},
+                "name": "API - Project Services",
+                "path": "::API - Project Services"
+            }
+        },
+        "checks": {}
+    }
+}

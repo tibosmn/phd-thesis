@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "data_received": {
+            "count": 23204068,
+            "rate": 386687.34593274404
+        },
+        "http_req_duration": {
+            "avg": 159.9613246258389,
+            "min": 115.499972,
+            "med": 151.8194555,
+            "max": 535.11842,
+            "p(90)": 183.37458750000002,
+            "p(95)": 225.49741975
+        },
+        "successful_requests": {
+            "passes": 596,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_blocked": {
+            "med": 0.010162000000000001,
+            "max": 0.779383,
+            "p(90)": 0.016267999999999998,
+            "p(95)": 0.03057125,
+            "avg": 0.023049303691275138,
+            "min": 0.005015
+        },
+        "http_req_connecting": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.00861726845637584,
+            "min": 0,
+            "med": 0,
+            "max": 0.603672
+        },
+        "iterations": {
+            "count": 596,
+            "rate": 9.932123030147793
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 159.9613246258389,
+            "min": 115.499972,
+            "med": 151.8194555,
+            "max": 535.11842,
+            "p(90)": 183.37458750000002,
+            "p(95)": 225.49741975
+        },
+        "vus": {
+            "max": 10,
+            "value": 1,
+            "min": 1
+        },
+        "http_req_waiting": {
+            "avg": 159.59121388422818,
+            "min": 115.259403,
+            "med": 151.40113150000002,
+            "max": 534.816745,
+            "p(90)": 183.00880899999999,
+            "p(95)": 225.17834525,
+            "thresholds": {
+                "p(90)<400": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_sending": {
+            "avg": 0.055505397651006705,
+            "min": 0.026487,
+            "med": 0.0522485,
+            "max": 0.229612,
+            "p(90)": 0.07244249999999999,
+            "p(95)": 0.080264
+        },
+        "group_duration": {
+            "max": 1389.316927,
+            "p(90)": 1030.260119,
+            "p(95)": 1050.447269,
+            "avg": 930.8199053489928,
+            "min": 134.70688,
+            "med": 994.589114
+        },
+        "http_reqs": {
+            "count": 596,
+            "rate": 9.932123030147793,
+            "thresholds": {
+                "count>=480": false
+            }
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 596,
+            "value": 0
+        },
+        "http_req_receiving": {
+            "avg": 0.3146053439597315,
+            "min": 0.143175,
+            "med": 0.270183,
+            "max": 4.473356,
+            "p(90)": 0.42992699999999995,
+            "p(95)": 0.5060807500000001
+        },
+        "data_sent": {
+            "count": 112644,
+            "rate": 1877.171252697933
+        },
+        "iteration_duration": {
+            "max": 1389.369629,
+            "p(90)": 1030.3120802,
+            "p(95)": 1050.3371163999998,
+            "avg": 929.3200441323286,
+            "min": 0.251653,
+            "med": 994.625149
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "checks": {},
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {}
+            },
+            "API - Merge Requests List": {
+                "name": "API - Merge Requests List",
+                "path": "::API - Merge Requests List",
+                "id": "7993accdf31b0e6eb7dc5b99008e333a",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

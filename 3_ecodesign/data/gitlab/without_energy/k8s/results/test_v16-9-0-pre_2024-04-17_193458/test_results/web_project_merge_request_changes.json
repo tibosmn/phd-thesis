@@ -1,0 +1,187 @@
+{
+    "metrics": {
+        "http_req_duration": {
+            "avg": 574.1987405186718,
+            "min": 191.495409,
+            "med": 595.760999,
+            "max": 2958.605357,
+            "p(90)": 774.993106,
+            "p(95)": 849.931494
+        },
+        "http_req_waiting{controller:Projects::MergeRequests::DiffsController#diffs_metadata.json}": {
+            "avg": 480.2660013333334,
+            "min": 405.439076,
+            "med": 473.785187,
+            "max": 583.876568,
+            "p(90)": 538.6823903000001,
+            "p(95)": 550.05953625,
+            "thresholds": {
+                "p(90)<1500": false
+            }
+        },
+        "http_req_sending": {
+            "p(95)": 0.19566,
+            "avg": 0.14270856016597505,
+            "min": 0.072269,
+            "med": 0.137893,
+            "max": 0.353181,
+            "p(90)": 0.175498
+        },
+        "iterations": {
+            "count": 24,
+            "rate": 0.38575991757456524
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 241,
+            "value": 0
+        },
+        "http_reqs{controller:Projects::MergeRequests::DiffsController#diffs_metadata.json}": {
+            "rate": 0.38575991757456524,
+            "count": 24,
+            "thresholds": {
+                "count>=15": false
+            }
+        },
+        "http_req_connecting": {
+            "avg": 0.0064143443983402494,
+            "min": 0,
+            "med": 0,
+            "max": 0.530315,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_sent": {
+            "count": 742928,
+            "rate": 11941.326835159858
+        },
+        "vus": {
+            "min": 1,
+            "max": 4,
+            "value": 2
+        },
+        "group_duration": {
+            "max": 10468.421204,
+            "p(90)": 10232.498326899999,
+            "p(95)": 10273.3541978,
+            "avg": 9815.874486,
+            "min": 7463.8374,
+            "med": 9999.177487500001
+        },
+        "http_req_waiting{controller:Projects::MergeRequests::DiffsController#diffs_batch.json}": {
+            "med": 611.36134,
+            "max": 2916.545627,
+            "p(90)": 764.2894544999999,
+            "p(95)": 829.3213535,
+            "avg": 576.4136464027777,
+            "min": 189.891223,
+            "thresholds": {
+                "p(90)<1500": false
+            }
+        },
+        "http_req_receiving": {
+            "avg": 8.48484639419087,
+            "min": 0.37269,
+            "med": 1.849549,
+            "max": 41.962157,
+            "p(90)": 27.510517,
+            "p(95)": 35.015475
+        },
+        "http_reqs{controller:Projects::MergeRequests::DiffsController#diffs_batch.json}": {
+            "count": 216,
+            "rate": 3.4718392581710873,
+            "thresholds": {
+                "count>=15": false
+            }
+        },
+        "http_reqs": {
+            "rate": 3.8736725056445924,
+            "count": 241,
+            "thresholds": {
+                "count>=154": false
+            }
+        },
+        "successful_requests": {
+            "passes": 240,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 849.931494,
+            "avg": 574.1987405186718,
+            "min": 191.495409,
+            "med": 595.760999,
+            "max": 2958.605357,
+            "p(90)": 774.993106
+        },
+        "iteration_duration": {
+            "p(95)": 10271.142089,
+            "avg": 9435.33024368,
+            "min": 300.486249,
+            "med": 9991.242841,
+            "max": 10468.596657,
+            "p(90)": 10231.9292338
+        },
+        "http_req_waiting": {
+            "p(90)": 757.631131,
+            "p(95)": 818.258135,
+            "avg": 565.5711855643154,
+            "min": 189.891223,
+            "med": 588.456679,
+            "max": 2916.545627
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0.5179961618257262,
+            "min": 0,
+            "med": 0,
+            "max": 26.070266,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_received": {
+            "count": 91542197,
+            "rate": 1471387.9320547755
+        },
+        "http_req_blocked": {
+            "p(95)": 0.018771,
+            "avg": 0.5335011120331942,
+            "min": 0.000635,
+            "med": 0.001101,
+            "max": 27.063318,
+            "p(90)": 0.001717
+        },
+        "vus_max": {
+            "min": 4,
+            "max": 4,
+            "value": 4
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/merge_requests"
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {},
+                "name": "setup"
+            },
+            "Web - Merge Request Changes Page": {
+                "name": "Web - Merge Request Changes Page",
+                "path": "::Web - Merge Request Changes Page",
+                "id": "175534f14ab9da06e283547c2b4cd37f",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

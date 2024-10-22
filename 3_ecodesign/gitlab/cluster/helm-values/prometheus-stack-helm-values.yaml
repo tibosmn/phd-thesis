@@ -1,0 +1,35 @@
+alertManager: enable:false
+grafana:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hosts:
+      - grafana.some.domain
+  sidecar:
+    datasources:
+      defaultDatasourceScrapeInterval: 15s
+  additionalDataSources:
+    - name: InfluxDB
+      type: influxdb
+      database: k6
+      url: http://influxdb.monitoring:8086
+prometheus:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hosts:
+      - prometheus.some.domain
+  # prometheusSpec:
+  #   podMonitorSelectorNilUsesHelmValues: false
+  #   serviceMonitorSelectorNilUsesHelmValues: false
+  #   additionalScrapeConfigs:
+  #   - job_name: "cloudjoule-external"
+  #     scrape_interval: 2s
+  #     static_configs:
+  #     - targets:
+  #       - "host.k3d.internal:8080"
+  #     - labels:
+  #        cloudjoule: "external"
+kube-state-metrics:
+  extraArgs:
+    - --metric-labels-allowlist=pods=[*]

@@ -1,0 +1,154 @@
+{
+    "metrics": {
+        "group_duration": {
+            "max": 4511.231858,
+            "p(90)": 3821.5050044,
+            "p(95)": 4186.9502444,
+            "avg": 3356.056443028986,
+            "min": 2938.92064,
+            "med": 3242.530537
+        },
+        "data_sent": {
+            "count": 9214,
+            "rate": 145.79286227453295
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 4
+        },
+        "http_req_sending": {
+            "p(95)": 0.09553589999999999,
+            "avg": 0.040474928571428564,
+            "min": 0.019562,
+            "med": 0.0358025,
+            "max": 0.151708,
+            "p(90)": 0.049282
+        },
+        "http_req_duration": {
+            "p(95)": 4184.972829,
+            "avg": 3294.835001985715,
+            "min": 299.121234,
+            "med": 3230.7389825,
+            "max": 4510.90346,
+            "p(90)": 3818.2686893
+        },
+        "http_req_blocked": {
+            "max": 0.779439,
+            "p(90)": 0.013002700000000015,
+            "p(95)": 0.5789066499999994,
+            "avg": 0.0536937285714286,
+            "min": 0.003582,
+            "med": 0.0054785
+        },
+        "http_reqs": {
+            "count": 70,
+            "rate": 1.1076080268306172,
+            "thresholds": {
+                "count>=10": false
+            }
+        },
+        "successful_requests": {
+            "passes": 69,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_waiting": {
+            "avg": 3292.799094057143,
+            "min": 298.487228,
+            "med": 3229.0687115,
+            "max": 4508.876855,
+            "p(90)": 3815.5383267,
+            "p(95)": 4182.97577425,
+            "thresholds": {
+                "p(90)<7500": false
+            }
+        },
+        "data_received": {
+            "count": 29512064,
+            "rate": 466968.55678198417
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "http_req_connecting": {
+            "p(95)": 0.4121681499999997,
+            "avg": 0.03611851428571429,
+            "min": 0,
+            "med": 0,
+            "max": 0.612317,
+            "p(90)": 0
+        },
+        "http_req_receiving": {
+            "max": 6.75563,
+            "p(90)": 2.5467971,
+            "p(95)": 2.776079549999999,
+            "avg": 1.9954329999999987,
+            "min": 0.482298,
+            "med": 1.8523619999999998
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 70,
+            "value": 0
+        },
+        "iteration_duration": {
+            "min": 300.839608,
+            "med": 3241.194783,
+            "max": 4511.290715,
+            "p(90)": 3818.644969,
+            "p(95)": 4185.3169680500005,
+            "avg": 3312.4724254428575
+        },
+        "iterations": {
+            "count": 69,
+            "rate": 1.0917850550187513
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 3294.835001985715,
+            "min": 299.121234,
+            "med": 3230.7389825,
+            "max": 4510.90346,
+            "p(90)": 3818.2686893,
+            "p(95)": 4184.972829
+        },
+        "vus_max": {
+            "value": 4,
+            "min": 4,
+            "max": 4
+        }
+    },
+    "setup_data": {
+        "endpointPath": "-/compare"
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "Web - Project Repository Compare branches": {
+                "name": "Web - Project Repository Compare branches",
+                "path": "::Web - Project Repository Compare branches",
+                "id": "237a8933b99e299d5212a8d323dbd354",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

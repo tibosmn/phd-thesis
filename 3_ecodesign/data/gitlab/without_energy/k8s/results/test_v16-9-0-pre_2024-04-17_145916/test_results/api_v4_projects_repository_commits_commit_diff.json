@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_sending": {
+            "min": 0.046023,
+            "med": 0.137088,
+            "max": 0.477069,
+            "p(90)": 0.18432969999999999,
+            "p(95)": 0.20044734999999997,
+            "avg": 0.13772801429933262
+        },
+        "iteration_duration": {
+            "avg": 950.35480386279,
+            "min": 0.295646,
+            "med": 956.370803,
+            "max": 2604.272325,
+            "p(90)": 1239.0081106,
+            "p(95)": 1304.2669718
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 550.7345977421361,
+            "min": 180.84584,
+            "med": 536.5577935,
+            "max": 2100.830721,
+            "p(90)": 805.5203217,
+            "p(95)": 864.42508245
+        },
+        "http_req_connecting": {
+            "max": 0.375814,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.0045575705433746425,
+            "min": 0,
+            "med": 0
+        },
+        "group_duration": {
+            "avg": 950.7489742626303,
+            "min": 189.700824,
+            "med": 956.415618,
+            "max": 2604.236234,
+            "p(90)": 1238.9729175,
+            "p(95)": 1304.2343502999997
+        },
+        "data_received": {
+            "count": 41163439,
+            "rate": 683701.4710789069
+        },
+        "iterations": {
+            "rate": 34.84659496801389,
+            "count": 2098
+        },
+        "successful_requests": {
+            "passes": 2098,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_blocked": {
+            "p(90)": 0.0016546,
+            "p(95)": 0.0019467499999999993,
+            "avg": 0.4141975367016201,
+            "min": 0.000264,
+            "med": 0.000977,
+            "max": 30.173231
+        },
+        "http_reqs": {
+            "count": 2098,
+            "rate": 34.84659496801389,
+            "thresholds": {
+                "count>=1728": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 29.552375,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.40413618732125833
+        },
+        "data_sent": {
+            "count": 293507,
+            "rate": 4874.985485832628
+        },
+        "http_req_duration": {
+            "max": 2100.830721,
+            "p(90)": 805.5203217,
+            "p(95)": 864.42508245,
+            "avg": 550.7345977421361,
+            "min": 180.84584,
+            "med": 536.5577935
+        },
+        "http_req_waiting": {
+            "avg": 550.2047259118204,
+            "min": 180.159245,
+            "med": 535.9159965,
+            "max": 2100.258647,
+            "p(90)": 805.105058,
+            "p(95)": 863.98726125,
+            "thresholds": {
+                "p(90)<200": true
+            }
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 36
+        },
+        "http_req_receiving": {
+            "avg": 0.3921438160152532,
+            "min": 0.112903,
+            "med": 0.3594675,
+            "max": 1.279335,
+            "p(90)": 0.6025368999999999,
+            "p(95)": 0.6842317999999998
+        },
+        "vus_max": {
+            "value": 36,
+            "min": 36,
+            "max": 36
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2098,
+            "value": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {}
+            },
+            "API - Project Repository Commit Diff": {
+                "name": "API - Project Repository Commit Diff",
+                "path": "::API - Project Repository Commit Diff",
+                "id": "7ded1b4c0681c94307d4d18cba63b7b2",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {}
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "http_req_duration{expected_response:true}": {
+            "med": 60.94022,
+            "max": 1154.480069,
+            "p(90)": 72.877016,
+            "p(95)": 88.620255,
+            "avg": 67.47999825623961,
+            "min": 41.517436
+        },
+        "data_sent": {
+            "rate": 1860.0011392120123,
+            "count": 111786
+        },
+        "iterations": {
+            "count": 601,
+            "rate": 10.000006124795766
+        },
+        "successful_requests": {
+            "passes": 601,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_receiving": {
+            "p(90)": 0.17276,
+            "p(95)": 0.186534,
+            "avg": 0.1422012096505823,
+            "min": 0.06876,
+            "med": 0.137065,
+            "max": 0.598373
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "http_req_sending": {
+            "avg": 0.05928379034941768,
+            "min": 0.032117,
+            "med": 0.054311,
+            "max": 0.146377,
+            "p(90)": 0.076813,
+            "p(95)": 0.080469
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 601,
+            "value": 0
+        },
+        "http_reqs": {
+            "count": 601,
+            "rate": 10.000006124795766,
+            "thresholds": {
+                "count>=480": false
+            }
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 10
+        },
+        "data_received": {
+            "count": 564940,
+            "rate": 9400.00575730802
+        },
+        "http_req_duration": {
+            "avg": 67.47999825623961,
+            "min": 41.517436,
+            "med": 60.94022,
+            "max": 1154.480069,
+            "p(90)": 72.877016,
+            "p(95)": 88.620255
+        },
+        "http_req_blocked": {
+            "avg": 0.024467131447587328,
+            "min": 0.005361,
+            "med": 0.010791,
+            "max": 0.743716,
+            "p(90)": 0.030931,
+            "p(95)": 0.034801
+        },
+        "group_duration": {
+            "p(90)": 1011.733141,
+            "p(95)": 1017.90645,
+            "avg": 924.2786738452586,
+            "min": 62.096479,
+            "med": 997.046714,
+            "max": 2102.40573
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.008370091514143096,
+            "min": 0,
+            "med": 0,
+            "max": 0.56504,
+            "p(90)": 0
+        },
+        "http_req_waiting": {
+            "avg": 67.27851325623962,
+            "min": 41.345329,
+            "med": 60.730146,
+            "max": 1154.240723,
+            "p(90)": 72.70896,
+            "p(95)": 88.417026,
+            "thresholds": {
+                "p(90)<200": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0
+        },
+        "iteration_duration": {
+            "p(90)": 1011.7680389999999,
+            "p(95)": 1017.9299611499999,
+            "avg": 922.8051667159475,
+            "min": 0.28174,
+            "med": 997.087959,
+            "max": 2102.462225
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {},
+                "name": "setup"
+            },
+            "API - Project Deploy Keys": {
+                "groups": {},
+                "checks": {},
+                "name": "API - Project Deploy Keys",
+                "path": "::API - Project Deploy Keys",
+                "id": "5171887c28c5ba6959d8fc6bc6c35761"
+            }
+        },
+        "checks": {}
+    }
+}
